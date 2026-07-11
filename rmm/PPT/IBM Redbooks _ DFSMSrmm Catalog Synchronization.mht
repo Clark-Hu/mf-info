@@ -1,0 +1,4277 @@
+From: <Saved by UnMHT>
+Subject: =?iso-2022-jp?B?SUJNIFJlZGJvb2tzIHwgREZTTVNybW0gQ2F0YWxvZyBTeW5jaHJvbml6YXRpb24=?=
+Date: Thu, Jul 22 2010 11:09:14 GMT+0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0000_3E3EA601.3433C47E";
+	type="text/html"
+
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.itso.ibm.com/abstracts/tips0526.html?Open
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "ht=
+tp://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dutf-8">
+
+
+<meta content=3D"IBM Redbooks technotes " name=3D"Keywords">
+<meta content=3D"1-26-20-5-" name=3D"DC.Date">
+<meta content=3D"1-26-20-5-" name=3D"IBM.Effective">
+<meta content=3D"STHQFE, STCVPXW" name=3D"DC.Subject">
+<meta content=3D"CT741" name=3D"DC.Type">
+<meta content=3D"index, follow" name=3D"Robots">
+<meta content=3D"In this Technote we describe how DFSMSrmm Catalog Synchron=
+ization can be used to synchronize your MVS user catalogs with DFSMSrmm to=
+ reduce catalog" name=3D"Description">
+<title>IBM Redbooks | DFSMSrmm Catalog Synchronization</title>
+<meta content=3D"index,follow" name=3D"robots">
+<meta content=3D"IBM internal use only" name=3D"security">
+<meta content=3D"w3 v8 template generator" name=3D"source">
+<meta content=3D"US" name=3D"ibm.country">
+<meta content=3D"2003-12-30" scheme=3D"iso8601" name=3D"dc.date">
+<meta content=3D"en-US" scheme=3D"rfc1766" name=3D"dc.language">
+<meta content=3D"Copyright (c) 2003 IBM Corporation" name=3D"dc.rights">
+<meta content=3D"&lt;ZZ999&gt;" scheme=3D"IBM_ContentClassTaxonomy" name=3D=
+"dc.type">
+<meta content=3D"&lt;&gt;" scheme=3D"IBM_SubjectTaxonomy" name=3D"dc.subjec=
+t">
+<meta content=3D"IBM Corporation" name=3D"dc.publisher">
+<meta content=3D"&lt;&gt;" scheme=3D"W3CDTF" name=3D"ibm.effective">
+<meta content=3D"&lt;ZZ&gt;" scheme=3D"IBM_IndustryTaxonomy" name=3D"ibm.in=
+dustry">
+
+<script src=3D"//w3.ibm.com/ui/v8/scripts/scripts.js" type=3D"text/javascri=
+pt"></script>
+<script src=3D"//w3.itso.ibm.com/scripts/localsearch.js" type=3D"text/javas=
+cript"></script>
+
+<link href=3D"//w3.itso.ibm.com/css/w3v8/v4-screen.css" type=3D"text/css"=
+ rel=3D"stylesheet"></link>
+<link href=3D"//w3.itso.ibm.com/css/w3v8/rbmenu.css" type=3D"text/css" rel=
+=3D"stylesheet"></link>
+<style media=3D"all" type=3D"text/css">
+<!--
+@import url("//w3.ibm.com/ui/v8/css/screen.css");
+@import url("//w3.ibm.com/ui/v8/css/interior.css");
+@import url("//w3.ibm.com/ui/v8/css/icons.css");
+@import url("//w3.ibm.com/ui/v8/css/search.css");
+@import url("//w3.ibm.com/ui/v8/css/tables.css");
+-->
+</style>
+<!-- print stylesheet MUST follow imported stylesheets -->
+<link href=3D"//w3.ibm.com/ui/v8/css/print.css" media=3D"print" type=3D"tex=
+t/css" rel=3D"stylesheet"></link>
+<link title=3D"IBM Redbooks Intranet RSS feed" type=3D"application/rss+xml"=
+ rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/all.xml"></link>
+<link title=3D"IBM Redbooks/Application Development RSS feed" type=3D"appli=
+cation/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/aim.xm=
+l"></link>
+<link title=3D"IBM Redbooks/BladeCenter Intranet RSS feed" type=3D"applicat=
+ion/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/bladecent=
+er.xml"></link>
+<link title=3D"IBM Redbooks/Information Management software Intranet RSS fe=
+ed" type=3D"application/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.i=
+bm.com/rss/db2.xml"></link>
+<link title=3D"IBM Redbooks/System i Intranet RSS feed" type=3D"application=
+/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/iseries.xml"=
+></link>
+<link title=3D"IBM Redbooks/System p Intranet RSS feed" type=3D"application=
+/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/pseries.xml"=
+></link>
+<link title=3D"IBM Redbooks/System x Intranet RSS feed" type=3D"application=
+/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/xseries.xml"=
+></link>
+<link title=3D"IBM Redbooks/System z Intranet RSS feed" type=3D"application=
+/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/zseries.xml"=
+></link>
+<link title=3D"IBM Redbooks/System Storage Intranet RSS feed" type=3D"appli=
+cation/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/storag=
+e.xml"></link>
+<link title=3D"IBM Redbooks/Linux Intranet RSS feed" type=3D"application/rs=
+s+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/linux.xml"></li=
+nk>
+<link title=3D"IBM Redbooks/Lotus Intranet RSS feed" type=3D"application/rs=
+s+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/lotus.xml"></li=
+nk>
+<link title=3D"IBM Redbooks/Networking Intranet RSS feed" type=3D"applicati=
+on/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/networking=
+.xml"></link>
+<link title=3D"IBM Redbooks/On Demand Intranet RSS feed" type=3D"applicatio=
+n/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/ondemand.xm=
+l"></link>
+<link title=3D"IBM Redbooks/Solutions Intranet RSS feed" type=3D"applicatio=
+n/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/solutions.x=
+ml"></link>
+<link title=3D"IBM Redbooks/Tivoli Intranet RSS feed" type=3D"application/r=
+ss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/tivoli.xml"></=
+link>
+<link title=3D"IBM Redbooks/WebSphere Intranet RSS feed" type=3D"applicatio=
+n/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/websphere.x=
+ml"></link>
+<link title=3D"IBM Redbooks/Windows Intranet RSS feed" type=3D"application/=
+rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/windows.xml">=
+</link>
+<style type=3D"text/css">table.webahead-widget-ets-tagadd-shadow td { paddi=
+ng: 0px !important; }=20
+.webahead-widget-ets-tagadd-shadow .webahead-widget-ets-tagadd-r { width:=
+ 6px; background: url(//w3.tap.ibm.com/widget/ets/tagadd/img/v12/shadow_114=
+_r.png) no-repeat; }=20
+ .webahead-widget-ets-tagadd-shadow .webahead-widget-ets-tagadd-b { margin-=
+right: 10px; height: 9px; background: url(//w3.tap.ibm.com/widget/ets/tagad=
+d/img/v12/shadow_114_b.png) no-repeat; }=20
+.webahead-widget-ets-tagadd-shadow .webahead-widget-ets-tagadd-br { float:=
+ right; height: 9px; width: 10px; background: url(//w3.tap.ibm.com/widget/e=
+ts/tagadd/img/v12/shadow_114_br.png) no-repeat; }=20
+input.webahead-widget-ets-tagadd-ac { width: 200px; border-top: 1px solid=
+ #666; border-left: 1px solid #666; border-right: 1px solid #aaa; border-bo=
+ttom: 1px solid #aaa; display: block; margin-top: 5px; }=20
+input.webahead-widget-ets-tagadd-compact-ac { width: 80px; border-top: 1px=
+ solid #666; border-left: 1px solid #666; border-right: 1px solid #aaa; bor=
+der-bottom: 1px solid #aaa; display: block; margin-top: 5px; }=20
+div.webahead-widget-ets-tagadd-ac { z-index: 100; position: absolute; displ=
+ay: none; width: 207px; margin: 1px 0px 0px 0px; } table.webahead-widget-et=
+s-tagadd-ac-cont { height: auto; width:100%; }=20
+table.webahead-widget-ets-tagadd-ac { opacity: 0.90; filter:alpha(opacity=
+=3D90); background: #fff; width: 100%; } td.webahead-widget-ets-tagadd-ac-e=
+ntry-cnt { color: #72b54a; }=20
+tr.webahead-widget-ets-tagadd-ac-entry td, tr.webahead-widget-ets-tagadd-ac=
+-entry-on td { padding: 5px 10px 5px 10px !important; font-size: 1.0em; cur=
+sor: pointer;} tr.webahead-widget-ets-tagadd-ac-entry-on td { color: #fff;=
+ background: #72b54b; }=20
+input.webahead-widget-ets-tagadd-login-input { width: 150px; border-top: 1p=
+x solid #666; border-left: 1px solid #666; border-right: 1px solid #aaa; bo=
+rder-bottom: 1px solid #aaa; display: block; margin-top: 1px; }=20
+input.webahead-widget-ets-tagadd-compact-login-input { width: 100px; border=
+-top: 1px solid #666; border-left: 1px solid #666; border-right: 2px solid=
+ #aaa; border-bottom: 1px solid #aaa; display: block; margin-top: 1px; }=20
+.webahead-widget-ets-tagadd-login-header{display: inline; font-family: Verd=
+ana, Arial, Helvetica, sans-serif; font-size: 80%; }=20
+.webahead-widget-ets-tagadd-login-msg { color: #FFFFFF; font-style: bold;=
+ padding: 5px 4px 4px 5px;}=20
+.webahead-widget-ets-tagadd-login-msg a{ color:white; cursor: pointer; text=
+-decoration: underline; font-style: bold;}=20
+.webahead-widget-ets-tagadd-rm, .webahead-widget-ets-tagadd-rm:visited { ma=
+rgin-left: 10px; color: #999; font-size: 90%; text-decoration: none; } .web=
+ahead-widget-ets-tagadd-rm:hover { color: #333; text-decoration: underline;=
+ }=20
+.webahead-widget-ets-tagadd-header{display: inline; font-family: Verdana,=
+ Arial, Helvetica, sans-serif; font-size: 100%; font-weight: bold; }=20
+.webahead-widget-ets-tagadd-header-box-content{padding: 3px 5px 3px 5px;}.w=
+ebahead-widget-ets-tagadd-tagger-input{float:left;}=20
+.webahead-widget-ets-tagadd-clear{ clear: both;}.webahead-widget-ets-tagadd=
+-resource-title{ font-weight: bold;}=20
+.webahead-widget-ets-tagadd-tagger-box-top-left{background: url(//w3.tap.ib=
+m.com/widget/ets/tagadd/img/topleft-corner.gif) top left no-repeat; z-index=
+: 0;}.webahead-widget-ets-tagadd-tagger-box-top-right{background: url(//w3.=
+tap.ibm.com/widget/ets/tagadd/img/topright-corner.gif) top right no-repeat;=
+ z-index: 0;}.webahead-widget-ets-tagadd-tagger-box-bottom-right{background=
+: url(//w3.tap.ibm.com/widget/ets/tagadd/img/bottom-right-corner.gif) botto=
+m right no-repeat; z-index: 0;}.webahead-widget-ets-tagadd-tagger-box-botto=
+m-left{background: url(//w3.tap.ibm.com/widget/ets/tagadd/img/bottom-left-c=
+orner.gif) bottom left no-repeat; z-index: 0;}.webahead-widget-ets-tagadd-m=
+ore { vertical-align:middle; color:#086BB5; text-align: right; margin-botto=
+m: 6px;} .webahead-widget-ets-tagadd-footer { font-size: 10px; color:#4477B=
+B; text-align: center; }=20
+ .webahead-widget-ets-tagadd-link-block { margin-bottom: 6px;}=20
+.webahead-widget-ets-tagadd-link-block-larger { margin-bottom: 12px;}=20
+.webahead-widget-ets-tagadd-link { text-decoration: none; margin-bottom: 6p=
+x;}=20
+.webahead-widget-ets-tagadd-link:hover { text-decoration: underline; }
+.webahead-widget-ets-tagadd-link-small { text-decoration: none; font-size:=
+ 10px; }=20
+.webahead-widget-ets-tagadd-link-small:hover { text-decoration: underline;=
+ font-size: 10px; }
+.webahead-widget-ets-tagadd-sect { margin-top: 0px; border: 0px solid #99CC=
+FF; padding: 0px; }=20
+.webahead-widget-ets-tagadd-sect-head-clear {padding: 2px 4px 2px 4px; curs=
+or: pointer; }=20
+ .webahead-widget-ets-tagadd-bg-clear {padding: 3px 5px 3px 5px; zoom: 100%=
+;}
+.webahead-widget-ets-tagadd-sect-head-blue {background: #6699CC; padding:=
+ 2px 4px 2px 4px; border: 1px solid #6699CC; cursor: pointer; color:#FFF;}
+ .webahead-widget-ets-tagadd-sect-head-orange {background: #d3832c; padding=
+: 2px 4px 2px 4px; border: 1px solid #d3832c; cursor: pointer; color:#FFF;}
+ .webahead-widget-ets-tagadd-sect-head-green {background: #81bc61; padding:=
+ 2px 4px 2px 4px; border: 1px solid #81bc61; cursor: pointer; color:#FFF;}
+ .webahead-widget-ets-tagadd-sect-head-lightblue {background: #cae1ff; padd=
+ing: 2px 4px 2px 4px; border: 1px solid #cae1ff; cursor: pointer; color:#FF=
+F;}
+ .webahead-widget-ets-tagadd-sect-head img { float: left; width: 11px; heig=
+ht: 11px; margin: 2px 5px 0px 0px;}
+.webahead-widget-ets-tagadd-header-blue { background: #4477bb; border: 0px=
+ solid #6699CC; padding: 0px; zoom: 100%; z-index: -10px;}=20
+.webahead-widget-ets-tagadd-header-green { background: #5d9c3a; border: 0px=
+ solid #81bc61; padding: 0px; zoom: 100%; z-index: -10px; color:#fff;}=20
+.webahead-widget-ets-tagadd-header-orange { background: #c5741b; border: 0p=
+x solid #d3832c; padding: 0px; zoom: 100%; z-index: -10px; color:#fff;}=20
+.webahead-widget-ets-tagadd-header-lightblue { background: #dee4f1; border:=
+ 0px solid #7f9db9; padding: 0px; zoom: 100%; z-index: -10px; color:#fff;}=
+=20
+.webahead-widget-ets-tagadd-header-title{font-weight: 800; color: #fff;}.we=
+bahead-widget-ets-tagadd-blue-border{  border: 1px solid #6699CC; z-index:=
+ 100;}.webahead-widget-ets-tagadd-green-border{  border: 1px solid #81bc61;=
+ z-index: 100;}.webahead-widget-ets-tagadd-orange-border{  border: 1px soli=
+d #d3832c; z-index: 100;}.webahead-widget-ets-tagadd-lightblue-border{  bor=
+der: 1px solid #7f9db9; z-index: 100;}.webahead-widget-ets-tagadd-msg { col=
+or: #333; font-style: italic; padding: 5px 4px 8px 5px;}=20
+.webahead-widget-ets-tagadd-info { border: none; margin: 2px 0px 0px 10px; }
+ .webahead-widget-ets-tagadd-tag_blue { float: left; border: none; margin:=
+ 2px 5px 0px 3px; }=20
+ .webahead-widget-ets-tagadd-submit-button {cursor: pointer;   float:right;=
+  margin: 6px 10px 0px 0px; padding:0px 3px 0px 0px; border:0;}=20
+.webahead-widget-ets-tagadd-login-buttons {margin: 6px 3px 1px 0px; border:=
+0;}=20
+.webahead-widget-ets-tagadd-login-buttons img {cursor: pointer; margin-righ=
+t: 3px; border:0;}=20
+.webahead-widget-ets-tagadd-button-blue-compact { cursor: pointer; color:#f=
+ff; float:right; margin: 5px 0px 0px 0px; font-weight:bold; text-align:cent=
+er; border-style:solid; border-width:1px; border-color:#6ae #000 #000 #6ae;=
+ background:#003366 url(//w3.tap.ibm.com/widget/ets/tagadd/img/bg-btn-blue-=
+dark.gif) repeat-x; }
+ .webahead-widget-ets-tagadd-widget-info { position: absolute; width: 165px=
+; font-family: Verdana, Geneva, Arial, sans-serif; font-size:11px; border:=
+ 1px solid black; padding: 3px; background-color: lightyellow; visibility:=
+ hidden; z-index: 100; }=20
+.webahead-widget-ets-tagadd-login { position: absolute; width: 260px; font-=
+family:verdana,arial,helvetica,sans-serif;  font-size:100%; border: 1px sol=
+id black; visibility: hidden; z-index: 100; }=20
+.webahead-widget-ets-tagadd-toggle-margin{margin-right: 5px;}=20
+.webahead-widget-ets-tagadd-sectBody{padding: 10px 4px 3px 20px;}=20
+.webahead-widget-ets-tagadd-example{color: #fff; margin-bottom:5px;}=20
+.webahead-widget-ets-tagadd-logo{vertical-align:middle; border:none;}=20
+#green_idlogo{text-align:center; border:1px solid #81bc61; border-top:0px;=
+ padding: 4px;}=20
+#orange_idlogo{text-align:center; border:1px solid #c5741b; border-top:0px;=
+ padding: 4px;}=20
+#blue_idlogo{text-align:center; border:1px solid #6699CC; border-top:0px;=
+ padding: 4px;}=20
+#lightblue_idlogo{text-align:center; border:1px solid #6699CC; border-top:0=
+px; padding: 4px;}=20
+#green_idlogo a{text-decoration: none; font-family: verdana; font-weight:bo=
+ld; font-size:9px; color:#81bc61;}=20
+#orange_idlogo a{text-decoration: none; font-family: verdana; font-weight:b=
+old; font-size:9px; color: #C5741B;}=20
+#blue_idlogo a{text-decoration: none; font-family: verdana; font-weight:bol=
+d; font-size:9px; color: #6699cc;}=20
+#lightblue_idlogo a{text-decoration: none; font-family: verdana; font-weigh=
+t:bold; font-size:9px; color: #6699cc;}=20
+.webahead-widget-ets-tagadd-troubleshoot-box{background:transparent url(//w=
+3.tap.ibm.com/widget/ets/tagadd/img/graygradient.png) repeat-x scroll 0 0;=
+ clear:both; color:#333333; height:130px; text-align:left; padding:0px 0px=
+ 0px 10px; width:250px;}=20
+#tag-add-anchor-link a{background:none;}
+#tag-add-anchor-link a:hover{background:none; text-decoration: underline;=
+ }
+</style><base href=3D"http://w3.itso.ibm.com/abstracts/"></base></head><bod=
+y text=3D"#000000" bgcolor=3D"#ffffff" class=3D"article" id=3D"w3-ibm-com">
+<!-- start accessibility prolog -->
+<div class=3D"skip"><a accesskey=3D"2" href=3D"#content-main">Skip to main=
+ content</a></div>
+<div class=3D"skip"><a accesskey=3D"n" href=3D"#left-nav">Skip to navigatio=
+n</a></div>
+<div id=3D"access-info">
+	<p class=3D"access">The access keys for this page are:</p>
+	<ul class=3D"access">
+		<li>ALT plus 0 links to this site&#x27;s <a accesskey=3D"0" href=3D"http:=
+//w3.ibm.com/w3/access-stmt.html">Accessibility Statement.</a></li>
+		<li>ALT plus 1 links to the w3.ibm.com home page.</li>
+		<li>ALT plus 2 skips to main content.</li>
+		<li>ALT plus 4 skips to the search form.</li>
+		<li>ALT plus 9 links to the feedback page.</li>
+		<li>ALT plus N skips to navigation.</li>
+	</ul>
+	<p class=3D"access">Additional accessibility information for w3.ibm.com ca=
+n be found <a href=3D"http://w3.ibm.com/w3/access-stmt.html">on the w3 Acce=
+ssibility Statement page.</a></p>
+</div>
+<!-- end accessibility prolog -->
+<!-- start masthead //////////////////////////////////////////// -->
+<div id=3D"masthead">
+	<h2 class=3D"access">Start of masthead</h2>
+	<div id=3D"prt-w3-sitemark"><img width=3D"54" height=3D"33" alt=3D"" src=
+=3D"//w3.ibm.com/ui/v8/images/id-w3-sitemark-simple.gif"></div>
+	<div id=3D"prt-ibm-logo"><img width=3D"44" height=3D"15" alt=3D"" src=3D"/=
+/w3.ibm.com/ui/v8/images/id-ibm-logo-black.gif"></div>
+	<div id=3D"w3-sitemark"><img width=3D"266" height=3D"70" usemap=3D"#sitema=
+rk_map" alt=3D"IBM Logo" src=3D"//w3.ibm.com/ui/v8/images/id-w3-sitemark-la=
+rge.gif"><map name=3D"sitemark_map" id=3D"sitemark_map"><area accesskey=3D"=
+1" href=3D"http://w3.ibm.com/" coords=3D"0,0,130,70" alt=3D"Link to W3 Home=
+ Page" shape=3D"rect"></area></map></div>
+	<div id=3D"site-title-only">IBM Redbooks</div>
+	<div id=3D"ibm-logo"><img width=3D"44" height=3D"15" alt=3D"" src=3D"//w3.=
+ibm.com/ui/v8/images/id-ibm-logo.gif"></div>
+	<div id=3D"persistent-nav"><a href=3D"http://w3.ibm.com" id=3D"w3home"> w3=
+ Home </a><a href=3D"http://w3.ibm.com/bluepages/" id=3D"bluepages"> BluePa=
+ges </a><a href=3D"http://w3.ibm.com/help/" id=3D"helpnow"> HelpNow </a><a=
+ accesskey=3D"9" href=3D"http://w3.ibm.com/feedback/" id=3D"feedback"> Feed=
+back </a></div>
+	<div id=3D"header-search">
+		<form id=3D"search" method=3D"get" action=3D"/cgi-bin/searchsite.cgi" ons=
+ubmit=3D"DoSearch();return false" name=3D"RBsearch">
+		<table cellspacing=3D"0" cellpadding=3D"0" class=3D"header-search">
+		<tbody><tr><td class=3D"label"><label for=3D"header-search-field">Search=
+ w3</label></td><td class=3D"field"><input type=3D"text" accesskey=3D"4" na=
+me=3D"query" id=3D"header-search-field" value=3D""></input></td><td class=
+=3D"submit"><label for=3D"header-search-btn" class=3D"access">go button</la=
+bel><input type=3D"image" src=3D"//w3.ibm.com/ui/v8/images/btn-go-dark.gif"=
+ alt=3D"Go" id=3D"header-search-btn" value=3D""></input></td></tr>
+
+		<tr><td></td><td class=3D"limiter" colspan=3D"2"><input type=3D"hidden"=
+ name=3D"url" value=3D""></input><input type=3D"checkbox" value=3D"redbooks=
+" id=3D"lsearch" name=3D"lsearch" checked=3D"checked"></input><label for=3D=
+"lsearch"> Search IBM Redbooks</label></td></tr>
+
+
+		</tbody></table>
+		</form>
+	</div>
+
+	<div id=3D"browser-warning"><img width=3D"12" height=3D"10" alt=3D"Error"=
+ src=3D"//w3.ibm.com/ui/v8/images/icon-system-status-alert.gif"> This Web=
+ page is best used in a modern browser. Since your browser is no longer sup=
+ported by IBM, please upgrade your web browser at the <a href=3D"http://w3.=
+ibm.com/download/">ISSI site</a>.</div>
+
+</div>
+<!-- stop masthead //////////////////////////////////////////// -->
+
+<style media=3D"all" type=3D"text/css">
+<!--
+@import url("//w3.ibm.com/ui/v8/css/interior-1-col.css");
+@import url("//w3.ibm.com/ui/v8/css/interior-partial-sidebar.css");
+-->
+</style>
+<link href=3D"//w3.itso.ibm.com/css/w3v8/rbspecs.css" type=3D"text/css" rel=
+=3D"stylesheet"></link><script src=3D"//w3.itso.ibm.com/scripts/sortable.js=
+" type=3D"text/javascript"></script>
+
+<!-- start navigation //////////////////////////////////////////// -->
+<div id=3D"navigation">
+	<h2 class=3D"access">Start of left navigation</h2>
+	<!-- start left nav -->
+=09
+	<div id=3D"left-nav">
+		<div class=3D"top-level">
+			<a href=3D"http://w3.itso.ibm.com" id=3D"site-home">IBM Redbooks=C2=AE</=
+a>
+			<a href=3D"http://w3.itso.ibm.com/portals/">Advanced Search</a>
+			<a href=3D"/portals/software" id=3D"hover-l1">Software</a>
+			<a href=3D"/portals/Storage">System Storage</a>
+			<a href=3D"/portals/systems" id=3D"hover-l1">Systems &amp; Servers</a>
+			<a href=3D"/portals/Solutions">Solutions</a>
+			<a href=3D"/portals/business">IT Business Perspectives</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/residents.nsf/ResIndex?OpenVi=
+ew">Residencies</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/projects.nsf/ProjectIndex?Ope=
+nView">Projects</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/projects.nsf/WorkshopIndex?Op=
+enView">Workshops</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3addmats/=
+">Additional Materials</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/cdroms?OpenView"=
+>Redbooks on CD</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3howtobuy=
+?Open">How to buy</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3about?Op=
+en">About Redbooks</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3contact?=
+Open">Contact Us</a>
+			<a href=3D"https://w3.itso.ibm.com/itsoapps/redbooks.nsf/subscribe?OpenF=
+orm">Mailing List</a>
+			<a href=3D"http://w3.itso.ibm.com/rss.html">RSS feeds</a>
+		</div>
+	</div>
+	<!-- stop left nav -->
+   <!-- Enterprise Tagging Service /////////////// -->
+   <script type=3D"text/javascript">
+        function ETSTagAddOptions() {}
+        ETSTagAddOptions.ITEMS =3D
+        [
+            {
+                element: 'ETSTagAdd',=20
+                tagURLBase: 'http://w3.tap.ibm.com/ets/explore?action=3Dexp=
+lore.bytag&tag=3D',=20
+                appId: 'redbooks',=20
+                sectionsToShow: 'myTags,otherTags',
+                resourceURL: location.href
+            }
+        ];
+    </script>
+    <script src=3D"http://w3.tap.ibm.com/widget/ets/tagadd/load.js" type=3D=
+"text/javascript"></script><script type=3D"text/javascript" src=3D"//w3.tap=
+.ibm.com/widget/ets/tagadd/ETSTagAdd-en-XX.js"></script><script type=3D"tex=
+t/javascript" src=3D"//w3.webahead.ibm.com/widget/bluecard/load.js"></scrip=
+t><script type=3D"text/javascript" src=3D"//w3.webahead.ibm.com/widget/blue=
+card/bluecard.js"></script>
+    <div id=3D"ETSTagAdd" style=3D"width: 100%; overflow: hidden;"><div cla=
+ss=3D"webahead-widget-ets-tagadd-cont" id=3D"tag-add-anchor-link"><div clas=
+s=3D"webahead-widget-ets-tagadd-header-blue" id=3D"ETSTagAddItemId____TagAd=
+d_0_0"><div class=3D"webahead-widget-ets-tagadd-tagger-box-top-left"><div=
+ class=3D"webahead-widget-ets-tagadd-tagger-box-top-right"><div class=3D"we=
+bahead-widget-ets-tagadd-header-box-content"><div style=3D"color: rgb(255,=
+ 255, 255);" class=3D"webahead-widget-ets-tagadd-header">Tagging</div>&nbsp=
+;&nbsp;<a onmouseout=3D"hideInfoDiv();" onmouseover=3D"showInfoDiv(event);"=
+><img class=3D"webahead-widget-ets-tagadd-info" alt=3D"" id=3D"ETSTagAddIte=
+mId____TagAdd_0_infoicon1" src=3D"//w3.tap.ibm.com/widget/ets/tagadd/img/in=
+formation_blue.png"></a></div></div></div></div><div class=3D"webahead-widg=
+et-ets-tagadd-header-blue" id=3D"ETSTagAddItemId____TagAdd_0_7"><div class=
+=3D"webahead-widget-ets-tagadd-header-box-content"><div> <div class=3D"weba=
+head-widget-ets-tagadd-login-msg">Please <a style=3D"text-decoration: under=
+line; color: white;" href=3D"javascript:void(0)" id=3D"ETSTagAddItemId____T=
+agAdd_0_loginLink">login</a> to enable tagging.</div></div></div>
+
+
+</div><div class=3D"webahead-widget-ets-tagadd-blue-border"><div class=3D"w=
+ebahead-widget-ets-tagadd-sect" id=3D"ETSTagAddItemId____TagAdd_0_1"></div>=
+<div class=3D"webahead-widget-ets-tagadd-sect" id=3D"ETSTagAddItemId____Tag=
+Add_0_2"><div class=3D"webahead-widget-ets-tagadd-sect-head-blue" id=3D"ETS=
+TagAddItemId____TagAdd_0_sectHead2"><img class=3D"webahead-widget-ets-tagad=
+d-toggle-margin" alt=3D"Collapse" src=3D"//w3.tap.ibm.com/widget/ets/tagadd=
+/img/collection_open_white.gif" id=3D"ETSTagAddItemId____TagAdd_0_sectToggl=
+e2"><span class=3D"webahead-widget-ets-tagadd-resource-title">Related Tags<=
+/span></div><div class=3D"webahead-widget-ets-tagadd-sectBody" id=3D"ETSTag=
+AddItemId____TagAdd_0_sectBody2"><div class=3D"msg">No one else has tagged=
+ this link</div></div></div><div class=3D"webahead-widget-ets-tagadd-sect"=
+ id=3D"ETSTagAddItemId____TagAdd_0_3"></div><div class=3D"webahead-widget-e=
+ts-tagadd-sect" id=3D"ETSTagAddItemId____TagAdd_0_4"></div></div><div class=
+=3D"webahead-widget-ets-tagadd-sect" id=3D"ETSTagAddItemId____TagAdd_0_5"><=
+div class=3D"webahead-widget-ets-tagadd-tagger-box-bottom-right"><div class=
+=3D"webahead-widget-ets-tagadd-tagger-box-bottom-left"><div id=3D"blue_idlo=
+go"> <a href=3D"http://w3.tap.ibm.com/tags"> <img class=3D"webahead-widget-=
+ets-tagadd-logo" src=3D"//w3.tap.ibm.com/widget/ets/tagadd/img/blue_plain_e=
+ts_logo.png"> </a></div></div></div></div><div class=3D"webahead-widget-ets=
+-tagadd-widget-info" id=3D"ETSTagAddItemId____TagAdd_0_6"></div><div class=
+=3D"webahead-widget-ets-tagadd-login" id=3D"ETSTagAddItemId____TagAdd_0_8">=
+</div><div style=3D"display: none;" id=3D"ETSTagAddItemId____TagAdd_0_9">=
+ </div></div></div>
+   <!-- Stop Enterprise Tagging Service /////////////// -->
+	<!-- start Site related links -->
+	<div id=3D"related-links">		=09
+	<p class=3D"title"><strong>Related Links</strong></p>
+<ul>
+	<li><a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/itsointr=
+o?Open">ITSO Global Content Services</a>
+	</li><li><a href=3D"http://w3.ehone.ibm.com/public/applications/publicatio=
+ns/cgibin/pbi.cgi">IBM Publications Center</a>
+</li></ul>
+	</div>
+	<!-- stop Site related links -->
+</div>
+<!-- stop navigation //////////////////////////////////////////// -->
+<!-- start content //////////////////////////////////////////// -->
+<div id=3D"content"><div id=3D"content-head">
+<p id=3D"date-stamp">Last updated 26 =E4=B8=80=E6=9C=88 2005</p>
+<div class=3D"hrule-dots">&nbsp;</div>
+<p id=3D"breadcrumbs"></p>
+</div>
+<!-- start main content //////////////////////////////////////////// -->
+<div id=3D"content-main"><div id=3D"partial-sidebar">
+<h2 class=3D"access">Start of sidebar content</h2><div class=3D"bar-blue-me=
+d"><b>Profile</b></div>=20
+<div style=3D"font-size: 8pt;" class=3D"indent">=20
+
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody><tr valign=3D"top"><td width=3D"100%"><p><b>Publish Date</b>
+</p><p>26 =E4=B8=80=E6=9C=88 2005</p></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%" class=3D"dotted"><img width=3D"1" hei=
+ght=3D"1" border=3D"0" alt=3D"" src=3D"/icons/ecblank.gif"></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%"><p class=3D"small"><b>Rating: </b>Not=
+ yet rated</p></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%"><p class=3D"small"><a class=3D"rate-l=
+ink" href=3D"/itsoapps/redbooks.nsf/306ab6ae75c430bf85256c880075583c?OpenFo=
+rm&amp;ParentUNID=3DA30C551484499C6085256F8F00045372">Rate this Web Doc</a>=
+</p></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%" class=3D"dotted"><img width=3D"1" hei=
+ght=3D"1" border=3D"0" alt=3D"" src=3D"/icons/ecblank.gif"></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%"><p class=3D"small"><b>Author(s)</b><b=
+r>
+Mary Lovelace<br>
+</p></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%" class=3D"dotted"><img width=3D"1" hei=
+ght=3D"1" border=3D"0" alt=3D"" src=3D"/icons/ecblank.gif"></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%"><p class=3D"small"><b>IBM Form Number=
+</b><br>
+TIPS0526</p></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%"><p class=3D"small"><b>Feedback</b><br>
+<img width=3D"20" height=3D"11" align=3D"top" src=3D"/itsoapps/redbooks.nsf=
+/icon-link-email.gif?OpenImageResource"> <a href=3D"mailto:redbook@us.ibm.c=
+om">Send e-mail</a></p></td></tr>
+</tbody></table>
+</div>
+	<div id=3D"ibm-merchandising-module">
+	<!--IBM Web Merchandising Module-->
+	</div>
+</div>
+<p><img width=3D"280" height=3D"37" alt=3D"Redbooks Technote" src=3D"/itsoa=
+pps/redbooks.nsf/rbtech.gif?OpenImageResource"></p><p></p><h1>DFSMSrmm Cata=
+log Synchronization</h1><p>
+</p><h2 class=3D"bar-blue-med-dark">Abstract</h2>
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody><tr valign=3D"top"><td width=3D"651"><p>In this Technote we describe=
+ how DFSMSrmm Catalog Synchronization can be used to synchronize your MVS=
+ user catalogs with DFSMSrmm to reduce catalog locates. </p></td></tr>
+</tbody></table>
+<h2 class=3D"bar-gray-med-light">Contents</h2>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody><tr valign=3D"top"><td width=3D"100%"><p></p><div class=3D"ibm-domin=
+o-rtf"><br>
+<br>
+<br>
+
+<p><b><font face=3D"Arial">Catalog synchronization</font></b>
+</p><p><font face=3D"Arial" size=3D"2">When you run DFSMSrmm with user cata=
+logs and the DFSMSrmm control data set unsynchronized, DFSMSrmm issues cata=
+log locates as required to check if data sets are cataloged. Catalog locate=
+s use the standard catalog search to find if a data set is cataloged. Any=
+ data sets cataloged using JOBCAT or STEPCAT might not be found to be catal=
+oged, because the standard catalog search might not find them.</font>
+</p><p><font face=3D"Arial" size=3D"2">When you enable catalog synchronizat=
+ion, DFSMSrmm synchronizes the DFSMSrmm control data set and available user=
+ catalogs. Enabling catalog synchronization is normally a one-time task. On=
+ce the catalog status is synchronized, DFSMSrmm continually tracks and upda=
+tes the catalog status. When you run DFSMSrmm with user catalogs and the DF=
+SMSrmm control data set synchronized, DFSMSrmm does not need to issue catal=
+og locates to find if a data set is cataloged. The catalog status tracked=
+ by DFSMSrmm in the control data set is used to determine if a data set is=
+ cataloged. When DFSMSrmm tracks catalog status, it does so regardless of=
+ whether JOBCAT or STEPCAT is used. During catalog synchronization, DFSMSrm=
+m uses the Catalog Search Interface (CSI) to retrieve data set catalog info=
+rmation. CSI returns catalog information for all data sets in all catalogs=
+ that are in or connected to the master catalog. Because of this, DFSMSrmm=
+ can detect that a data set is cataloged even if it cannot be found using=
+ the standard catalog search.</font>
+</p><p><font face=3D"Arial" size=3D"2">If you have switched on catalog sync=
+hronization, you do not need shared ICF-user catalogs to retain tape data=
+ sets as long as they are cataloged. If you have unshared ICF-user catalogs=
+ you have to split your daily inventory management. This is because you hav=
+e to run the expiration processing on each system that has unshared ICF-use=
+r catalogs to return expired volumes back to scratch status. </font><br>
+
+</p><p><font face=3D"Arial" size=3D"2">You enable catalog synchronization=
+ by specifying the DFSMSrmm EDGRMMxx OPTION CATSYSID operand. When you spec=
+ify the CATSYSID operand, DFSMSrmm uses the catalog search interface to obt=
+ain catalog information used for DFSMSrmm vital record processing. DFSMSrmm=
+ performs checking to determine that the catalog search interface catalog=
+ environment does not have any errors that might prevent successful process=
+ing. DFSMSrmm issues messages EDG2235E, EDG2236I, or EDG2237E when an error=
+ is encountered. If you do not specify the DFSMSrmm EDGRMMxx OPTION CATSYSI=
+D operand, DFSMSrmm vital record processing uses catalog locates to determi=
+ne if data sets are still cataloged. </font>
+</p><p><font face=3D"Arial" size=3D"2">You must re-synchronize the DFSMSrmm=
+ control data set and user catalogs under these conditions: </font>
+</p><ul>
+<li type=3D"disc"><font face=3D"Arial" size=3D"2">You ran EDGHSKP with CATS=
+YNCH and VERIFY, and differences in catalog status were found. DFSMSrmm cle=
+ars the catalog synchronization date and time to force you to run CATSYNCH.=
+ </font>
+</li><li type=3D"disc"><font face=3D"Arial" size=3D"2">DFSMSrmm is not acti=
+ve when catalog activity for tape data sets is taking place. DFSMSrmm issue=
+s messages EDG8200E and EDG8201E when DFSMSrmm cannot track catalog updates=
+. </font>
+</li><li type=3D"disc"><font face=3D"Arial" size=3D"2">A DFSMSrmm failure=
+ occurs during catalog processing. DFSMSrmm issues messages EDG8200E and ED=
+G8201E when an error is detected in processing. </font>
+</li><li type=3D"disc"><font face=3D"Arial" size=3D"2">You connect or disco=
+nnect user catalogs (that contain entries for tape data sets) to the master=
+ catalog.</font></li></ul>
+<br>
+<font face=3D"Arial" size=3D"2">When you use IDCAMS REPRO MERGECAT for cata=
+log maintenance, you do not need to run a job to re-synchronize the DFSMSrm=
+m control data set and catalogs.</font><font face=3D"Arial" size=3D"2"> </f=
+ont></div></td></tr>
+</tbody></table>
+<h2 class=3D"bar-gray-med-dark">Special Notices</h2>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody><tr valign=3D"top"><td width=3D"100%" style=3D"font-size: 84%;"><p>T=
+hese pages are Web versions of IBM Redbooks- and Redpapers-in-progress. The=
+y are published here for those who need the information now and may contain=
+ spelling, layout and grammatical errors. This material has not been submit=
+ted to any formal IBM test and is published AS IS. It has not been the subj=
+ect of rigorous review. Your feedback is welcomed to improve the usefulness=
+ of the material to others. </p><p>IBM assumes no responsibility for its ac=
+curacy or completeness. The use of this information or the implementation=
+ of any of these techniques is a customer responsibility and depends upon=
+ the customer&#x27;s ability to evaluate and integrate them into the custom=
+er&#x27;s operational environment. </p></td></tr>
+</tbody></table>
+<p class=3D"terms"><a href=3D"//w3.ibm.com/w3/info_terms_of_use.html">Terms=
+ of use</a></p>
+</div>
+<!-- stop main content -->=20
+<img width=3D"0" vspace=3D"0" hspace=3D"0" height=3D"0" border=3D"0" nosave=
+=3D"" alt=3D"" src=3D"http://www.redbooks.ibm.com/cgi-bin/redbooks/count.cg=
+i?id=3DTIPS0526"></div></body></html>
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.ibm.com/ui/v8/scripts/scripts.js
+
+//function loadJSCall(scriptId, scriptSrc) {
+//	if (document.getElementsByTagName("head").length < 1) {
+//		setTimeout(function () {loadJSCall(scriptId, scriptSrc);}, 100);
+//		return;
+//	}
+//	ibmCommonDynamicNavHeadElement =3D document.getElementsByTagName("head")=
+.item(0);
+//	var ibmCommonDynamicNavScriptTag =3D document.createElement("script");
+//	ibmCommonDynamicNavScriptTag.setAttribute("id", scriptId);
+//	ibmCommonDynamicNavScriptTag.setAttribute("type", "text/javascript");
+//	ibmCommonDynamicNavScriptTag.setAttribute("src", scriptSrc);
+//	ibmCommonDynamicNavHeadElement.appendChild(ibmCommonDynamicNavScriptTag);
+//}
+
+//loadJSCall("wwwcommon","//www.ibm.com/common/js/ibmcommon.js");
+
+// popup window
+function popup( url, type, height, width ) {
+newWin=3Dwindow.open(url,'popupWindow','height=3D'+height+',width=3D'+width=
++',resizable=3Dyes,menubar=3Dno,status=3Dno,toolbar=3Dno,scrollbars=3Dyes');
+newWin.focus();
+void(0);
+}
+
+function toggle(c,r) {
+	var c =3D document.getElementById(c);
+	var r =3D document.getElementById(r);
+	if(c.checked) {r.disabled=3Dfalse;}
+	else {r.checked=3Dfalse;r.disabled=3Dtrue;}
+}
+
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.itso.ibm.com/scripts/localsearch.js
+
+function DoSearch(n){
+//alert(n.toString());
+var loc=3Ddocument.forms[0].lsearch.checked;
+if (n>0) var st=3Ddocument.forms[n].query.value;
+else {n=3D0; var st=3Ddocument.forms[0].query.value}
+
+//var fl=3Ddocument.forms.length;
+//alert(fl.toString());
+//if (st=3D=3D'') st=3Ddocument.forms[1].q.value;
+if (st=3D=3D'') alert("Enter one or more keywords in the 'Search' box. For=
+ an exact phrase search, enclose keywords in double quotes.");
+else {  if (loc || n>0)
+	{
+		var sepStr =3D "+AND+";
+		if (st.toUpperCase().indexOf(' AND ')!=3D-1) sepStr =3D "+";
+		if (st.toUpperCase().indexOf(' OR ')!=3D-1) sepStr =3D "+";
+		if (st.toUpperCase().indexOf(' NOT ')!=3D-1) sepStr =3D "+";
+		//if (st.toUpperCase().indexOf('"')!=3D-1) sepStr =3D "+";
+	=09
+		var target =3D "http://w3.itso.ibm.com/cgi-bin/searchsite.cgi?query=3D"+q=
+ueryFormat(st, ' ', sepStr)
+
+		if (n>0) {
+			fuzzy=3D'';
+			if (document.forms[n].SearchFuzzy.checked) fuzzy =3D '&SearchFuzzy=3DTRU=
+E';
+			target =3D target + '&SearchOrder=3D' + (document.forms[n].SearchOrder.o=
+ptions[document.forms[n].SearchOrder.selectedIndex].value) + fuzzy;
+			}
+		window.location.href =3D target
+	}
+	else
+		window.location.href=3D"http://w3.ibm.com/search/w3results.jsp?qt=3D"+st
+     }
+}
+
+function queryFormat(origStr, findText, replaceText) {
+	var pos =3D 0=09
+	var len =3D findText.length
+=09
+	pos =3D origStr.indexOf(findText)
+	while (pos !=3D -1) {
+		var q =3D 0
+		var newSep =3D replaceText
+		preString =3D origStr.substring(0, pos)=09
+	=09
+		// skip text in quotes
+		for (var i =3D 0; i < preString.length+1; i++) {
+		   if (preString.charAt(i)=3D=3D'"') q++;
+		}
+		if (q/2 !=3D Math.round(q/2)) newSep =3D '+'
+	=09
+		postString =3D origStr.substring(pos+1, origStr.length)
+		origStr =3D preString + newSep + postString
+		pos =3D origStr.indexOf(findText)
+	=09
+	}
+	return origStr
+}
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.itso.ibm.com/css/w3v8/v4-screen.css
+
+/*-----------------------------------------------------
+w3 general styles for v4 screen media
+Used by: w3 web pages for displaying in version 4 browsers like Netscape Na=
+vigator 4.7
+$Id: v4-screen.css,v 1.6 2003/12/18 22:16:55 kuahmed Exp $
+-----------------------------------------------------*/
+/* next line blocks modern browsers from parsing but lets NN4 through */
+/*/*/ /*/
+
+#masthead	{
+	position:absolute; top:0; left:0; width:100%; color:#000; z-index:1;=20
+}
+
+html,body	{background:#fff; margin:0; padding:0 0 50px 0; font-size:13px;}
+html,body,p	{color:#000; font-family:verdana,arial,helvetica,sans-serif;}
+a img	{border:0 solid #f00;}
+
+#w3-sitemark	{position:absolute; top:0; left:0; clip:rect(0, 110%, 70px, 0p=
+x); layer-background-color:#4477bb;}
+#ibm-logo	{position:absolute; left:99%; top:13px;}
+#site-title-plus	{
+	position:absolute; top:26px; left:131px; color:#fff; font-size:21px; font-=
+size:21px; font-weight:bold; font-family:arial,verdana,helvetica,sans-serif=
+;=20
+}
+#site-title-only	{
+	position:absolute; top:35px; left:131px; color:#fff; font-size:21px; font-=
+size:21px; font-weight:bold; font-family:arial,verdana,helvetica,sans-serif=
+;=20
+}
+#browser-warning	{position:absolute; left:160px; top:77px; font-weight:bold=
+; color:#f00; padding:6px;}
+
+#content,
+#left-content,
+#center-content,
+#right-content,
+#navigation,
+#persistent-nav,
+#personalization-links,
+#header-search,
+#tabs,
+#site-title-user,
+#site-sub-title,
+#edit-layout,
+.access	{display:none;}
+
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.itso.ibm.com/css/w3v8/rbmenu.css
+
+#top-level a#hover-l1 div {
+	display:none
+}
+#top-level a#hover-l1:hover div {
+	display:inline;
+	position:relative;
+	top:0;
+	left:0px;
+	padding:0px 0px 0px 0
+}
+
+#top-level div#hover-l2:hover div {
+	display:none
+}
+
+span.rb-normal{
+	font-family:arial,sans-serif;
+	font-size:1.4em;
+	font-style:normal;
+}
+
+table.rbspecs
+{ width: Automatic;
+font-family: arial,sans-serif;
+font-weight: normal;
+font-size: 1.4em;
+background-color: #fcfcfc;
+border-collapse: collapse;
+border-spacing: 0px;=20
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 3px;
+margin-bottom: 3px;
+}
+table.rbspecs td=20
+{font-size:1em !important;
+padding: 3px 3px 3px 3px;
+}
+
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.ibm.com/ui/v8/css/print.css
+
+@charset "utf-8";
+/*-----------------------------------------------------
+w3 general styles for print media
+Used by: most w3 web pages=20
+$Id: print.css,v 1.9.4.2 2004/08/11 22:11:08 coop Exp $
+-----------------------------------------------------*/
+body {
+	background: white;
+	font-family:arial,verdana,helvetica,sans-serif;=20
+	font-size: 10pt;
+	color: #000;
+}
+#masthead {
+	color: #000;=20
+	background-color: #fff;
+	height: 33px !important;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+#prt-w3-sitemark {
+	position:absolute;=20
+	top:0;
+	left:0px;=20
+	display:block !important;
+}
+#prt-ibm-logo	{
+	position:absolute;
+	top:10px;
+	right:19px;
+	display:block !important;
+}
+#site-title-only	{
+	position:absolute;
+	top:6px;
+	left:68px;=20
+	padding-right:2em; /*moz bug*/
+	color:#000;=20
+	background-color: #fff;
+	font-size:21px;=20
+	font-weight:bold;=20
+}
+
+#content,
+#content-head,
+#content-main,
+#content-sidebar {
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#content-head {margin-top: 44px !important;}
+#content-main {
+	float: none !important;
+	border-right: 0;
+	border-bottom: 1px dashed #000;
+}
+#content-sidebar	{
+	clear:left;
+	margin: 1em 0 0 0 !important;
+	width:40% !important;
+}
+
+a:link, a:visited {
+	text-decoration: underline;
+}
+
+.skip,=20
+.access,=20
+.portlet-icons,
+.terms,
+.noprint,
+#w3-sitemark,=20
+#ibm-logo,=20
+#personalization-links,=20
+#site-title-user,=20
+#persistent-nav,=20
+#header-search,=20
+#navigation,=20
+#browser-warning,
+#content-head .hrule-dots,
+#page-tools-main,
+.page-tools-side,
+#r-col-search {display:none !important;}
+
+/* for portal pages */
+#tabs	{top:40px; left:0;}
+#left-content {left:0 !important;}
+#right-content {right:0;}
+#left-content, #right-content {
+	top:70px;
+	width:27%;
+	font-size: 8pt;
+}
+#center-content {
+	margin: 75px 27% 0 27%;
+	font-size: 8pt;
+}
+
+h2.portlet-head-blue-med,
+h2.portlet-head-gray-med,
+h2.portlet-head-green-med,
+h2.portlet-head-blue-dark,
+h2.portlet-head-gray-dark {color:#333;}
+
+/* printing forms */
+textarea {overflow:visible}
+
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.ibm.com/ui/v8/images/id-w3-sitemark-simple.gif
+
+R0lGODlhNgAhAKIFAFBQUNnZ2Y+PjyoqKgEBAf///wAAAAAAACH5BAEAAAUALAAAAAA2ACEAAAP/
+WLrc/nAJMAgZQITIuy9CZY3jIHzoJ5CZMLFp/KzW2QQ0YctyMG4QnwXISwGGHdqu6BECmpYBE6X8
+HAlTFdJzLVxHT4fo5xCSLKiKNDd6nHUONqH1cSreRIUZLD7nk1tfNQ1yaAx7hlpzEmdhC4JkjDBN
+VwNEiFgMb4OSI0sMEwAUnn0kl5uLC2NbcW8arSQ7bGNSeme1M6KjYHmIuF8mpgpynxE4JXmrBEBj
+GbHDfjEBIo4gZyd7Gs8Fq7gp06zE1mS0BYjVKTTVt14l0D/iRVEMkOAWYWwvwjR/HF2dNbZlW4WP
+FZdE5m4JU0Dr2rtiEdQ0UEYCFKpltlJB0fjuQk21QvMWRAIE5xCqJZg4vfMWZKSqTX8oYlxgD0C/
+ThBBwjpTJtYffRxNNtrJp0w3XQ4juOqZtEyIizazTMERqkW/BAA7
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.ibm.com/ui/v8/images/id-ibm-logo-black.gif
+
+R0lGODlhLAAPAJEDAAAAAD4+Pn9/f////yH5BAEAAAMALAAAAAAsAA8AAAJahA8RyDLDwHsxzIuz
+3nzHtHyGVT0hYnXqymKIa5jHxFBoi+fce4m9IRCldEQdj/b5SV6HYfG5OtokgxNSEgQ4mtBuJvZR
+iEYQXqzMLUO8xilDLHKgz0qybVAAADs=
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.ibm.com/ui/v8/images/id-w3-sitemark-large.gif
+
+R0lGODlhCgFGAPcAAER3u////16KxY2s1Uh6vE9/v0d5vGiRyEl7vUl6vWKNxmaQx0t8vV6KxEp7
+vXufz0x9vnOZzG2VylGBwE1+vnKYzE5+v12JxFqHw3GYy3mdzmWPx3WbzVOCwFeFwlmGw019vlSD
+wVKBwFWDwVaEwomp1Et8vlyJxFiFwoqq1FCAv3qezlyIxI6t1l+LxVSCwViGwour1WCMxWOOxmyU
+yluIw3abzW+Wy4ip1GeQyGSOxmGMxXidznCXy2qTyXGXy1GAwGuTyWmSyG6VyneczYys1XmezmSP
+x2yUyWqSyW6Wyn+i0FaEwWCLxYio1Iyr1X6h0HSazHWazXygz5Gv17TJ5M3b7VCAwH2gz4io0+bt
+9pu220V4vI+t1sHS6EZ4vPb4/IKk0u3y+Ieo02mSyYen0/X4+7DF4qrB4ISm0qjA3+vx+JSx2FuI
+xIGj0YCi0JCu1+Tr9YOl0trk8bPI44ao06zD4YSl0oCj0eHp9MDR6LjL5Xyfz9fi8ZKw19ji8X2g
+0I+u17XK5JOx2HSazYuq1H6g0HufzrHG47bK5MnY7Jez2eLq9anB4OPq9YWm0oan0q/E4nOazcTU
+6YCj0J+53MnY67/Q6K3E4brN5oKk0ff5/LTI5O/0+bvO5oeo1Ozx+Ian08fW6/P2+rLG436h0X2h
+z6nA4IWn0n6hz4qq1fX4/LLH46zC4YCi0YOk0qnB39nj8aa+3+fu9sPT6a3D4d/o9Ovw+Nnk8cjX
+66O83pKv14ur1HecznaczbXJ5ODo9Ji02t/o83+i0Zaz2Y6t1bzO56vC4KG63ZCu1qK73Xqfz7HG
+4qe/35y228bW6oGk0pOx14Ol0cXV6rnN5urv987b7cbV6q7E4o6u1qW+3n+h0Jy3273O573P54uq
+1WiSyJWy2Iqp1IWn03iczp653IGk0Ymp1aC63OPr9QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAKAUYA
+AAj/AC8QAECwoMGCXAQoXKiwzcGHBS0wnEix4sQJEDNq3Mixo8ePIEOKHEmypMYUxZZAwfKgpcuW
+K2KOGUCz5oA0MY3oNKKhpwYeQB+oikE0RoqjSEsoXYqjqVMcTrJIhRKhqlWrFbJWyJDhx48eYHvc
+uKGkrJIhQySolUADiVskQeL68JFEiF0hB/LqzZFjgd8FGwIfOaKj8IzDChIr2MFYhowmTVy4aECZ
+8oXLJ06w2FyjM4bPH0LDgIEChYfTHkiQYMJkhOsQIV686EC7g4jbIiZMAKJCRYHfwIFbsECheHEQ
+ICAoV26CgfPnDqI7QEC9eoLrCQho326gu/fvCjF2/5RIEUJHLh8sql8vwILJ9/Djy59Pvz7BFFSo
+vGL50mXMFVjYVNMhOe3k0088pFEUUUilsBRTT0XoRFRZ2HAVVlpxpaFXX4lFFlporaVWW2/FFcRc
+SdSFl1579fVXYDAOpsNhMyi2WGOPSTZZZQ1cdkFmm7HgGWihfTBaaailRoJrI8AW22y14abblLz5
+Ftxvww1nHHLJLQdBc885J1101SGA3XXbpfndmgsJ1FEbE33QkQrs1UkRCfblqeeefPa5EX5UwMHL
+FP098J9MAkKygoEH/gTFgg06+KBSETY14YRSlUFEBFp1mpWGXYE11qhnpbUWDaiiCpeJc9FVF4t5
+uf/414uCGVajjYs55phkPFqWGZCc1fAZBkUeWZppSrL2GmyyRSmlbkBE29uVWRq3JZfMmaAtdGOW
+eeaZaaq5pgFflDsRnhtNcNFGCFxg57vh+SnvvPTWCxKgcLTQwhj9HbrCGwK+sahOjWIxFKQNTkpp
+pZdG5QaGnn66oaijfmjqiKmuemKrrq7IoqyzAlbrjIjZuIOuMvDa64+/BjkksaKRduxpqq227JPO
+3kaltFYGp6W1FHSZrbZgjkmmdd+iGa5243r3RUUjaMTARAxk1C6876pg79Zcdy0vvvrqyy9Mhx4i
+IIGMaoDFNwsaFamkEFYKlRN3aBBFFBBHDGqHFX//KCLGbbHKcYp2wXoAXyGLLCPJuOaqq8o8sgys
+kC/HfCyyNbfWpJM445YbtDxfWUCWxG3pJdHbMmD00WYmnd3SBDTd3dMWRQ3RRBBdjfV6KLjn9e/A
+B/8evl2ErW8KhPor4KE6mRLDE9A/0TbCCU9aBx5GcKA9B1LcffeFV3XKlVdheWhWqSKS6JbgKhYO
+K+K0brA4ybcmxtjJj0W2Y2U+Tt6ZsEQyksySpBplLatZztrZtESHpdJdy0tfCpOYpFMm6oALdrJj
+zwXMYxDcGYQ8u2PIB0ZggYEI74QoTCFHiGc8440BC/9Z3n/SUIQaRk9602NQCR6hCTfwYQU2CGIQ
+/7dHxO55D3x5G1+HKHa+EJ3qLRpD0V081qJZxYgwtqrfjfAHGchZBjOaCRYAYSZAJKGmgJrbHAJp
+4zloLZCBP3vg6SSoOgpW8ILikl167DQCCIxgIu7hAgrs1AYSTIABXFChIhfJSIgQYQl3CIU4BtBC
+fQnokoV4wgBqaMPoxaAEaRjGA4DCAyKYkghCFCIRV8k9IyKRUxnaG/nMB6KLjQiK7FOR4Q4HMhgJ
+hjA0MhmO9Le/L7LMZWMsUhmRRbMl3WyNttHZlHbzRp9V6zjIgSCYwmQ0b+Exj+N6CAJUQIIQUuQD
+KkBAI9fJznY+UiVYIFRLpuCGMYTtkpfkZAwegf+FnpDyn6U8ZSpTuUopGNSg30Oi+EAVqvJZzImn
+Up9cWvWq9/FFVlcsDOOEyUUvfrFlwRqWMgdIQGduzknNaiPoqmlNLXEpm0MjGrfsiLTXhUt23TkP
+nd41gUS286dAXeQ7VyLPQrUAnwLCwRQI1igEkfKUphzoEFnJPbwp1FMMnWVYHmpLtgRuoh2jYqwu
+Gr/5lcx++HNMFyHXPyD9b1hEMlaSlMQklEJTmtGqEgMbSJyXCg11qasj61qXtKXJziMIsFNQF8tY
+FA61qC+RA1IvuROeNPWfUEWlKqlaRKuCT2+yLJ9YSgVRjEURRRW1KPxE9ktbNQ5HOmIrGN06RjL/
+GsmMSirgM+/6ubyytKVBe+lyZDpTmtYUO+AMp0YIMMh3tcF3QSXDFrZghepWYQtduEBjt7unx7pk
+Cmm452RtUsMYoMIUPAEoZgW6WaoeNKFXldiGlgiWMBjDDAHIr373u4ZMvIF97lOtFWOURY6qNbb7
+a2sYXwaz0RyppDY7KW8/txu9Uot0fRWuNos72MJisGkP4cIE3GXONpHQhCi8ghr2y+IWB6AKV+Cu
+jOHzTjfIwQmVPOoT3vCGQgioDnXgJCdxSBRQ4gEQT2VvewuKUM9+NpbzFcsTGOHiKuvXDNxArVjH
+2ksC0w9X98tRMY0JUsqJVIAPPmOEJSyb2TyL/0q/5WvpNDw0wXbTm8j98LhI0Fz1oMCEU1tIBwhC
+gBHbaYSHRPG8yDAKFlehC2QwiA2o2+IuzPjSIgFbjsdxqADVBBKVnUKQi0DkHLrNQY+QgysMsQxf
+uLfJr4SlfJW4glXsdxrkAJFXU0WDN/yBxX4g3C7J6hdfyq/AwjzwmHs0W2Se2cGkKWka7ZpSacK5
+Z8IhXXA1jDo6DhbPNr1p09ZzAegWhCEoeAgESFxiAXzAkFWbjxX2a2mPdGG/Wogxpvf9p/wEooUD
+WIKhlFeTEhTIsnxwAvRMfepJye0T0NAAQl8J2q54BQ37PYXfIsrrVZ1hv2dILZe73FoaafFGyv/u
+FbN/FUYzx1WuzdStGttcm2heG9vWvBa26izBOx8XdrEbd0U+oM7bMSQj6Gl3RVBQdJJoQb9VGMkc
+9DsHflsdIoD69/GK6q8VCAiGadPACpzA8KQ8SG6WmhAWKI5VJS5ivxoYy1n+tuuv+kAW+4XClnkZ
+v5IHM9liVvlsW145yzEzt5pjFm+nSU2cZ1vnMP1SYItbQcIqzbDjOqdPM0I1jSRd6RSxXUiqAHWS
+XGG/Nri66u/j7xYgr1+HSoWApDEwyx7ICJ/IodnjxjBMlYEPT16oxcGg30qQiu51X9Vc8qDfM+x9
+tcZe3N8VM0yPNtvZz3YwbpNV1zZDiY3T9G3/NTHswJ0P19vTqbzlL8+0DLZp8xkBoULQpRHdgZ4h
+iubIBfar75HMO79bsHqqByjZQAmFMnD/AQkCUgi1d1k88CgMEilnh3ZzExVlUAaucCEV9wNvl1+g
+UDFKgHwdN1F90HxiRWwDJj9YNH1opSvExD8+8iNiBFcxk2Y1I3NN4n01Z22hA0fXtG2n020T9G3r
+B3RCJwDxxhFwMhH5BwAXMFBusBTsQQYKoxSl4EEGcQVSFUSJoF9WYBJPl1+pJ4BWhx9jAAWQ5R//
+IXuX5AZpEwlWBgu79yArVmWXkgVlwAPhg3FWll+xAIIimDFyQQh5J3Io2Hcr+FrVZ31thX0N/6Z9
+mHODiaeDCbRSjpdt5Rd5krdNQ5h+lcd+etYdAiB6HNEBFUF/BbF/VdYI69EIVlYCDCEeBUF6LmYJ
+QhRpJHFv+aUFZHh1WUAJKpGGZBMTmnRJTxB2cVBlwDCHS2ELVqYHvgcIslYBoFBlaMA3IFhaXgVF
+SCAFa9B8wvY+ieNLWDQjiqhsYxaDC8Zgj0hSiJd4TwIlKuVGl9hAQKOJzNFzxgVuRrgmTccR8jcR
+HGQQW2Bl69GHihCLBqGKLqZd7+EF+pVvvWh13lUo/5EFk4UKTNUTbGBlzCCBSoEMfbgJ0ShrfNhi
+jsAhfGMW2qgqbmEDk7BfzpAiIhcr4+hlJ/+HVidDTAmmYJRTeIanZqsxbTiTM+HXG7/1g+Y3XJPX
+LZ+YZ6FoAB8RaOoBfwQRhi3GCRbhin14hfEyi1UWgCXRBVgZAPU2kfxWkbCHkZNVBNjTKJZQZbMA
+kiXwa30IjXj4ALJGfC42ACopKiw5BL3ABoTJBoPQDJOAX1fmB64Sjh8DMqx1bF9mYDwJg832P8lU
+LDCXOURZlNFEYY0XZ3G0lPmoj0RoeUAXdN7hEVSpHg5xEGFgZWRQEdXQhwGQkAqBYmRQZbzYETbQ
+h1qwBf2Hlmm5BMF4gCvAlm1ZBEvQKDzAly12CknRFMFgmwFAklmgCVWRFZxQZc+gkitZFmj/0ZFV
+lgdnsA0bQxd3YTirRSvSd1Y6KWY6EjmS44gjJTNmNJTwqHhGeXOX+IPBBUERZJrf5jo2BWIc0Zq8
+8xAQ6WJqYIoMUQ7WGQCSgIQG0aAtFgYe8Zu2aQVjSJz7NlT80R8lMF7kBQUbCYcuFgcJ0iC5MKF7
+cAdOBp0sthV7I1pjYQ6kQAqI0KOeYJcsRg2EQFEB9pg3KZkbZTIooz+CV58hJVLQdjkx15k0x0a9
+xTNIeWFAg01/NXmd6InrB4rakaBYk25ZaGUx9kcKIQwtpggt5g3wt5su5gXwEQYYml9zMJwgul0i
+WiglcFQmShM1hKIHkowupg2lBAUp4Act/9YJe9BiYtA9VkGLLYYGNjoxDmUx6ZMq0fCN+pUHjVmT
+fHeT5Qif9rOkHrVy/lNbjyilzWRA1OZm1haaLIVh1kKaXro64PZNTWgQCspHB1GQDloQCJAMLXYJ
+ktCQF1plDhkfVzB1+iWWe8qnxrkS/WFPgBqonDQFBzIIVRYHAtWFLLYHONAJLdYKnkWj+uUIDKVE
+HkIqc8dxqWIDnhoAZkAINPl8kKk4GmWqKAcZL7gyYPSk2ZdmiHcz/BkljGdhFwag2BSEBHqa3xIu
+nldisniVzFoQ/7df4DABj+poBcGhLSat8yGyAUCy0xpUIlpUcgBwJspJKXAgPKAHVYYJUf8Fqdpj
+B5BqVZTKYi3Qrg3VNxu3qS4JpH2QrwI2joOxgjnJRQA7n/QJLG9Fg5DITJlTV3a1g1eKpQ0bR0AI
+sei3j6ipJhqxR+b0j7HpYlEHACabX2vLkPxHEBuLb3oirPmVso21si0BBZWkrZxUNweirvklBqYk
+rvslCNsjBi2mC3dTZaJgo2hAB5K7CBxCMXLXVdu4PoyqX1DgmFyWOICxtK71WqhaTDEogwTbjnIl
+iQjLLDlDYVjqeA6Lj5vIiXZ2R66zHfGndHKyrMp6p/mFiwDQs/mlBmxbZRoqt9EaH6iHt4ullthq
+SYG6SUO2Ageioi1ms+oKBkSksyyWDlH/8AtVJjG4oF90ULnvOrQRVSI+sF+70D4nuK842TiOo1aR
+oXLMdkwud2bLZLVpdFLxWG2gWSVxNjqZuJRCuDpgelyXlxF9VmJJCACnp7Zwm190mooudgVzq18X
+rLxuy7z69aHO607VWlR/Kr0v20nQYwhOxQOGymJiUAsthrjbIwWKy2LKYI2g0g36xQikUlq89lVg
+5QT7VQF7AbqsxbSk+zjLJjmEl5n9G4mwmrCfCbs9iIlbym3EZWdgaqD9uCbl8gUODHoRDAB2y2Ib
+HAAiPLwtVpb71axmHLcmoYsBMAojrLIl7BInnK3jNWTRw8L/5K0TGgAF1QqD7AiXmgED/7BfrHC5
+tjSCYDUXJZhftPAxSIyTpppWKdPELGefhpefMpe1VsqDV/x49xiExKWrDAyV4tY0YgwR5aR0ZQwA
+blxlX3gQFWxlKEvLEWkSJnuWd8xOatmyKNzHKvwEfABQRECz1knDNWzDE9oCifwDdMDI6gs4p7V8
++nUL7Cm/Kji6SsrEgtfJM/hyrnq1ANw5byZ+oqNtpsOUqazKYSqm7efKVqN0cFwQaWuba0wQxOti
+vXkQV1CW/dwRPQvMwbxOfarH4uW3NRQKPgFQgttiS8YB3tuHorCdsYQO+7UKxtdEj/wWNmAN+9UH
+U9TNKWhW8Blm+cOI+vuT/Atzr0qUi/JniXtlwPcoNKXJTWLLq9yBoBDxq/Bibr5rZbf8ELmcoRpB
+vGqgpxBBlvjm1AnNSAvN0HxszEUQsxH9T9hgm5dQ0Rxww1aWRBZ3DSxmBp4QDuizFueQCfWaX2uA
+A/CL0mVVqis9TExKny89tWQk08lC099XxfR4014boHNEoE8ppjgllZ7HbvAyywUxwVaWvBDxz/vV
+wRpRhy02B9VVXbYs1VNN1dU6oi6xBNMrqG5pey0MFC/sYkvAWRbdh8cwjVnlFcRAZYOcX2ZwBhtD
+OPqagn6nRSwdsJa5qvy7TCWFtZ75mQsrmkqJj7bLxbsald8REAA7
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.ibm.com/ui/v8/images/id-ibm-logo.gif
+
+R0lGODlhLAAPAPcAAEJzvf//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAALAAPAAAIbQADCBwo
+EADBgwASHgyQsOHChhAjSpxIsSLFhQUxEjT4UGFHiyBDioS4kWRBjidRDlSZcqTLlxJLOsRoUuNK
+mDhxyvT4ESVLnzmDjtwJVObNoy2FKvXIcqXNjCWRIjW4FCbDp01v/lQ4U2vBgAAAOw==
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.ibm.com/ui/v8/images/btn-go-dark.gif
+
+R0lGODlhFwAUAMQAAAAziAtqsv///2Kl5wZJnwZLoQdRpApjrgdVpgZOowZOogpmsAlgrQlcqgpo
+sQdSpAhYqAhYqQZPowdRpQZPovj7/QpmrwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAA
+AAAALAAAAAAXABQAAAWRICCOZGmOQ6qubCsOQSzPNP3WOH7nfLz3uR+wJhQYBbKjcfZyOI2jigMq
+Mjodr4UWqrUAuAvw60CGkssCAFp9eDHe0CMDCk+/X408tBFP6/0NLxAQERFKaRCHIhEQLwiPjyWR
+JJAvBg8GE5ebBpydmJcvCRIKpQkJCqcKFKqopi8FsbKztLQvBLi5uru7J76/IQA7
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.ibm.com/ui/v8/images/icon-system-status-alert.gif
+
+R0lGODlhDAAKAKIEAP/MAJyaY///AAAAAP///wAAAAAAAAAAACH5BAEAAAQALAAAAAAMAAoAAAMh
+SKoi+wyAAJeQtN4xpgac91xgJ0ZSmhFkqbJprAZ0bdMJADs=
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.itso.ibm.com/css/w3v8/rbspecs.css
+
+table.rbspecs
+{ width: Automatic;
+font-family: sans-serif;
+font-weight: normal;
+font-size: 11px;
+background-color: #fafafa;
+border: 1px #000000 solid;
+border-collapse: collapse;
+border-spacing: 0px; }
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.itso.ibm.com/scripts/sortable.js
+
+/*
+  SortTable
+  version 2
+  7th April 2007
+  Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/
+ =20
+  Instructions:
+  Download this file
+  Add <script src=3D"sorttable.js"></script> to your HTML
+  Add class=3D"sortable" to any table you'd like to make sortable
+  Click on the headers to sort
+ =20
+  Thanks to many, many people for contributions and suggestions.
+  Licenced as X11: http://www.kryogenix.org/code/browser/licence.html
+  This basically means: do what you want with it.
+*/
+
+=20
+var stIsIE =3D /*@cc_on!@*/false;
+
+sorttable =3D {
+  init: function() {
+    // quit if this function has already been called
+    if (arguments.callee.done) return;
+    // flag this function so we don't do the same thing twice
+    arguments.callee.done =3D true;
+    // kill the timer
+    if (_timer) clearInterval(_timer);
+   =20
+    if (!document.createElement || !document.getElementsByTagName) return;
+   =20
+    sorttable.DATE_RE =3D /^(\d\d?)[\/\.-](\d\d?)[\/\.-]((\d\d)?\d\d)$/;
+   =20
+    forEach(document.getElementsByTagName('table'), function(table) {
+      if (table.className.search(/\bsortable\b/) !=3D -1) {
+        sorttable.makeSortable(table);
+      }
+    });
+   =20
+  },
+ =20
+  makeSortable: function(table) {
+    if (table.getElementsByTagName('thead').length =3D=3D 0) {
+      // table doesn't have a tHead. Since it should have, create one and
+      // put the first table row in it.
+      the =3D document.createElement('thead');
+      the.appendChild(table.rows[0]);
+      table.insertBefore(the,table.firstChild);
+    }
+    // Safari doesn't support table.tHead, sigh
+    if (table.tHead =3D=3D null) table.tHead =3D table.getElementsByTagName=
+('thead')[0];
+   =20
+    if (table.tHead.rows.length !=3D 1) return; // can't cope with two head=
+er rows
+   =20
+    // Sorttable v1 put rows with a class of "sortbottom" at the bottom (as
+    // "total" rows, for example). This is B&R, since what you're supposed
+    // to do is put them in a tfoot. So, if there are sortbottom rows,
+    // for backwards compatibility, move them to tfoot (creating it if need=
+ed).
+    sortbottomrows =3D [];
+    for (var i=3D0; i<table.rows.length; i++) {
+      if (table.rows[i].className.search(/\bsortbottom\b/) !=3D -1) {
+        sortbottomrows[sortbottomrows.length] =3D table.rows[i];
+      }
+    }
+    if (sortbottomrows) {
+      if (table.tFoot =3D=3D null) {
+        // table doesn't have a tfoot. Create one.
+        tfo =3D document.createElement('tfoot');
+        table.appendChild(tfo);
+      }
+      for (var i=3D0; i<sortbottomrows.length; i++) {
+        tfo.appendChild(sortbottomrows[i]);
+      }
+      delete sortbottomrows;
+    }
+   =20
+    // work through each column and calculate its type
+    headrow =3D table.tHead.rows[0].cells;
+    for (var i=3D0; i<headrow.length; i++) {
+      // manually override the type with a sorttable_type attribute
+      if (!headrow[i].className.match(/\bsorttable_nosort\b/)) { // skip th=
+is col
+        mtch =3D headrow[i].className.match(/\bsorttable_([a-z0-9]+)\b/);
+        if (mtch) { override =3D mtch[1]; }
+	      if (mtch && typeof sorttable["sort_"+override] =3D=3D 'function') {
+	        headrow[i].sorttable_sortfunction =3D sorttable["sort_"+override];
+	      } else {
+	        headrow[i].sorttable_sortfunction =3D sorttable.guessType(table,i);
+	      }
+	      // make it clickable to sort
+	      headrow[i].sorttable_columnindex =3D i;
+	      headrow[i].sorttable_tbody =3D table.tBodies[0];
+	      dean_addEvent(headrow[i],"click", function(e) {
+
+          if (this.className.search(/\bsorttable_sorted\b/) !=3D -1) {
+            // if we're already sorted by this column, just=20
+            // reverse the table, which is quicker
+            sorttable.reverse(this.sorttable_tbody);
+            this.className =3D this.className.replace('sorttable_sorted',
+                                                    'sorttable_sorted_rever=
+se');
+            this.removeChild(document.getElementById('sorttable_sortfwdind'=
+));
+            sortrevind =3D document.createElement('span');
+            sortrevind.id =3D "sorttable_sortrevind";
+            sortrevind.innerHTML =3D '&nbsp;<img src=3D"//w3.ibm.com/ui/v8/=
+images/icon-link-sort-d-dark.gif">';
+            this.appendChild(sortrevind);
+            return;
+          }
+          if (this.className.search(/\bsorttable_sorted_reverse\b/) !=3D -1=
+) {
+            // if we're already sorted by this column in reverse, just=20
+            // re-reverse the table, which is quicker
+            sorttable.reverse(this.sorttable_tbody);
+            this.className =3D this.className.replace('sorttable_sorted_rev=
+erse',
+                                                    'sorttable_sorted');
+            this.removeChild(document.getElementById('sorttable_sortrevind'=
+));
+            sortfwdind =3D document.createElement('span');
+            sortfwdind.id =3D "sorttable_sortfwdind";
+            sortfwdind.innerHTML =3D '&nbsp;<img src=3D"//w3.ibm.com/ui/v8/=
+images/icon-link-sort-a-dark.gif">';
+            this.appendChild(sortfwdind);
+            return;
+          }
+         =20
+          // remove sorttable_sorted classes
+          theadrow =3D this.parentNode;
+          forEach(theadrow.childNodes, function(cell) {
+            if (cell.nodeType =3D=3D 1) { // an element
+              cell.className =3D cell.className.replace('sorttable_sorted_r=
+everse','');
+              cell.className =3D cell.className.replace('sorttable_sorted',=
+'');
+            }
+          });
+          sortfwdind =3D document.getElementById('sorttable_sortfwdind');
+          if (sortfwdind) { sortfwdind.parentNode.removeChild(sortfwdind);=
+ }		 =20
+          sortrevind =3D document.getElementById('sorttable_sortrevind');
+          if (sortrevind) { sortrevind.parentNode.removeChild(sortrevind);=
+ }		 =20
+         =20
+          this.className +=3D ' sorttable_sorted';
+          sortfwdind =3D document.createElement('span');
+          sortfwdind.id =3D "sorttable_sortfwdind";
+          sortfwdind.innerHTML =3D '&nbsp;<img src=3D"//w3.ibm.com/ui/v8/im=
+ages/icon-link-sort-a-dark.gif">';
+          this.appendChild(sortfwdind);
+
+	        // build an array to sort. This is a Schwartzian transform thing,
+	        // i.e., we "decorate" each row with the actual sort key,
+	        // sort based on the sort keys, and then put the rows back in order
+	        // which is a lot faster because you only do getInnerText once per=
+ row
+	        row_array =3D [];
+	        col =3D this.sorttable_columnindex;
+	        rows =3D this.sorttable_tbody.rows;
+	        for (var j=3D0; j<rows.length; j++) {
+	          row_array[row_array.length] =3D [sorttable.getInnerText(rows[j].=
+cells[col]), rows[j]];
+	        }
+	        /* If you want a stable sort, uncomment the following line */
+	        //sorttable.shaker_sort(row_array, this.sorttable_sortfunction);
+	        /* and comment out this one */
+	        row_array.sort(this.sorttable_sortfunction);
+	       =20
+	        tb =3D this.sorttable_tbody;
+	        for (var j=3D0; j<row_array.length; j++) {
+	          tb.appendChild(row_array[j][1]);
+	        }
+	       =20
+	        delete row_array;
+	      });
+	    }
+    }
+  },
+ =20
+  guessType: function(table, column) {
+    // guess the type of a column based on its first non-blank row
+    sortfn =3D sorttable.sort_alpha;
+    for (var i=3D0; i<table.tBodies[0].rows.length; i++) {
+      text =3D sorttable.getInnerText(table.tBodies[0].rows[i].cells[column=
+]);
+      if (text !=3D '') {
+        if (text.match(/^-?[=A3$=A4]?[\d,.]+%?$/)) {
+          return sorttable.sort_numeric;
+        }
+        // check for a date: dd/mm/yyyy or dd/mm/yy=20
+        // can have / or . or - as separator
+        // can be mm/dd as well
+        possdate =3D text.match(sorttable.DATE_RE)
+        if (possdate) {
+          // looks like a date
+          first =3D parseInt(possdate[1]);
+          second =3D parseInt(possdate[2]);
+          if (first > 12) {
+            // definitely dd/mm
+            return sorttable.sort_ddmm;
+          } else if (second > 12) {
+            return sorttable.sort_mmdd;
+          } else {
+            // looks like a date, but we can't tell which, so assume
+            // that it's dd/mm (English imperialism!) and keep looking
+            sortfn =3D sorttable.sort_ddmm;
+          }
+        }
+      }
+    }
+    return sortfn;
+  },
+ =20
+  getInnerText: function(node) {
+    // gets the text we want to use for sorting for a cell.
+    // strips leading and trailing whitespace.
+    // this is *not* a generic getInnerText function; it's special to sortt=
+able.
+    // for example, you can override the cell text with a customkey attribu=
+te.
+    // it also gets .value for <input> fields.
+   =20
+    hasInputs =3D (typeof node.getElementsByTagName =3D=3D 'function') &&
+                 node.getElementsByTagName('input').length;
+   =20
+    if (node.getAttribute("sorttable_customkey") !=3D null) {
+      return node.getAttribute("sorttable_customkey");
+    }
+    else if (typeof node.textContent !=3D 'undefined' && !hasInputs) {
+      return node.textContent.replace(/^\s+|\s+$/g, '');
+    }
+    else if (typeof node.innerText !=3D 'undefined' && !hasInputs) {
+      return node.innerText.replace(/^\s+|\s+$/g, '');
+    }
+    else if (typeof node.text !=3D 'undefined' && !hasInputs) {
+      return node.text.replace(/^\s+|\s+$/g, '');
+    }
+    else {
+      switch (node.nodeType) {
+        case 3:
+          if (node.nodeName.toLowerCase() =3D=3D 'input') {
+            return node.value.replace(/^\s+|\s+$/g, '');
+          }
+        case 4:
+          return node.nodeValue.replace(/^\s+|\s+$/g, '');
+          break;
+        case 1:
+        case 11:
+          var innerText =3D '';
+          for (var i =3D 0; i < node.childNodes.length; i++) {
+            innerText +=3D sorttable.getInnerText(node.childNodes[i]);
+          }
+          return innerText.replace(/^\s+|\s+$/g, '');
+          break;
+        default:
+          return '';
+      }
+    }
+  },
+ =20
+  reverse: function(tbody) {
+    // reverse the rows in a tbody
+    newrows =3D [];
+    for (var i=3D0; i<tbody.rows.length; i++) {
+      newrows[newrows.length] =3D tbody.rows[i];
+    }
+    for (var i=3Dnewrows.length-1; i>=3D0; i--) {
+       tbody.appendChild(newrows[i]);
+    }
+    delete newrows;
+  },
+ =20
+  /* sort functions
+     each sort function takes two parameters, a and b
+     you are comparing a[0] and b[0] */
+  sort_numeric: function(a,b) {
+    aa =3D parseFloat(a[0].replace(/[^0-9.-]/g,''));
+    if (isNaN(aa)) aa =3D 0;
+    bb =3D parseFloat(b[0].replace(/[^0-9.-]/g,''));=20
+    if (isNaN(bb)) bb =3D 0;
+    return aa-bb;
+  },
+  sort_alpha: function(a,b) {
+    if (a[0]=3D=3Db[0]) return 0;
+    if (a[0]<b[0]) return -1;
+    return 1;
+  },
+  sort_ddmm: function(a,b) {
+    mtch =3D a[0].match(sorttable.DATE_RE);
+    y =3D mtch[3]; m =3D mtch[2]; d =3D mtch[1];
+    if (m.length =3D=3D 1) m =3D '0'+m;
+    if (d.length =3D=3D 1) d =3D '0'+d;
+    dt1 =3D y+m+d;
+    mtch =3D b[0].match(sorttable.DATE_RE);
+    y =3D mtch[3]; m =3D mtch[2]; d =3D mtch[1];
+    if (m.length =3D=3D 1) m =3D '0'+m;
+    if (d.length =3D=3D 1) d =3D '0'+d;
+    dt2 =3D y+m+d;
+    if (dt1=3D=3Ddt2) return 0;
+    if (dt1<dt2) return -1;
+    return 1;
+  },
+  sort_mmdd: function(a,b) {
+    mtch =3D a[0].match(sorttable.DATE_RE);
+    y =3D mtch[3]; d =3D mtch[2]; m =3D mtch[1];
+    if (m.length =3D=3D 1) m =3D '0'+m;
+    if (d.length =3D=3D 1) d =3D '0'+d;
+    dt1 =3D y+m+d;
+    mtch =3D b[0].match(sorttable.DATE_RE);
+    y =3D mtch[3]; d =3D mtch[2]; m =3D mtch[1];
+    if (m.length =3D=3D 1) m =3D '0'+m;
+    if (d.length =3D=3D 1) d =3D '0'+d;
+    dt2 =3D y+m+d;
+    if (dt1=3D=3Ddt2) return 0;
+    if (dt1<dt2) return -1;
+    return 1;
+  },
+ =20
+  shaker_sort: function(list, comp_func) {
+    // A stable sort function to allow multi-level sorting of data
+    // see: http://en.wikipedia.org/wiki/Cocktail_sort
+    // thanks to Joseph Nahmias
+    var b =3D 0;
+    var t =3D list.length - 1;
+    var swap =3D true;
+
+    while(swap) {
+        swap =3D false;
+        for(var i =3D b; i < t; ++i) {
+            if ( comp_func(list[i], list[i+1]) > 0 ) {
+                var q =3D list[i]; list[i] =3D list[i+1]; list[i+1] =3D q;
+                swap =3D true;
+            }
+        } // for
+        t--;
+
+        if (!swap) break;
+
+        for(var i =3D t; i > b; --i) {
+            if ( comp_func(list[i], list[i-1]) < 0 ) {
+                var q =3D list[i]; list[i] =3D list[i-1]; list[i-1] =3D q;
+                swap =3D true;
+            }
+        } // for
+        b++;
+
+    } // while(swap)
+  } =20
+}
+
+/* ******************************************************************
+   Supporting functions: bundled here to avoid depending on a library
+   ****************************************************************** */
+
+// Dean Edwards/Matthias Miller/John Resig
+
+/* for Mozilla/Opera9 */
+if (document.addEventListener) {
+    document.addEventListener("DOMContentLoaded", sorttable.init, false);
+}
+
+/* for Internet Explorer */
+/*@cc_on @*/
+/*@if (@_win32)
+    document.write("<script id=3D__ie_onload defer src=3Djavascript:void(0)=
+><\/script>");
+    var script =3D document.getElementById("__ie_onload");
+    script.onreadystatechange =3D function() {
+        if (this.readyState =3D=3D "complete") {
+            sorttable.init(); // call the onload handler
+        }
+    };
+/*@end @*/
+
+/* for Safari */
+if (/WebKit/i.test(navigator.userAgent)) { // sniff
+    var _timer =3D setInterval(function() {
+        if (/loaded|complete/.test(document.readyState)) {
+            sorttable.init(); // call the onload handler
+        }
+    }, 10);
+}
+
+/* for other browsers */
+window.onload =3D sorttable.init;
+
+// written by Dean Edwards, 2005
+// with input from Tino Zijdel, Matthias Miller, Diego Perini
+
+// http://dean.edwards.name/weblog/2005/10/add-event/
+
+function dean_addEvent(element, type, handler) {
+	if (element.addEventListener) {
+		element.addEventListener(type, handler, false);
+	} else {
+		// assign each event handler a unique ID
+		if (!handler.$$guid) handler.$$guid =3D dean_addEvent.guid++;
+		// create a hash table of event types for the element
+		if (!element.events) element.events =3D {};
+		// create a hash table of event handlers for each element/event pair
+		var handlers =3D element.events[type];
+		if (!handlers) {
+			handlers =3D element.events[type] =3D {};
+			// store the existing event handler (if there is one)
+			if (element["on" + type]) {
+				handlers[0] =3D element["on" + type];
+			}
+		}
+		// store the event handler in the hash table
+		handlers[handler.$$guid] =3D handler;
+		// assign a global event handler to do all the work
+		element["on" + type] =3D handleEvent;
+	}
+};
+// a counter used to create unique IDs
+dean_addEvent.guid =3D 1;
+
+function removeEvent(element, type, handler) {
+	if (element.removeEventListener) {
+		element.removeEventListener(type, handler, false);
+	} else {
+		// delete the event handler from the hash table
+		if (element.events && element.events[type]) {
+			delete element.events[type][handler.$$guid];
+		}
+	}
+};
+
+function handleEvent(event) {
+	var returnValue =3D true;
+	// grab the event object (IE uses a global event object)
+	event =3D event || fixEvent(((this.ownerDocument || this.document || this)=
+.parentWindow || window).event);
+	// get a reference to the hash table of event handlers
+	var handlers =3D this.events[event.type];
+	// execute each event handler
+	for (var i in handlers) {
+		this.$$handleEvent =3D handlers[i];
+		if (this.$$handleEvent(event) =3D=3D=3D false) {
+			returnValue =3D false;
+		}
+	}
+	return returnValue;
+};
+
+function fixEvent(event) {
+	// add W3C standard event methods
+	event.preventDefault =3D fixEvent.preventDefault;
+	event.stopPropagation =3D fixEvent.stopPropagation;
+	return event;
+};
+fixEvent.preventDefault =3D function() {
+	this.returnValue =3D false;
+};
+fixEvent.stopPropagation =3D function() {
+  this.cancelBubble =3D true;
+}
+
+// Dean's forEach: http://dean.edwards.name/base/forEach.js
+/*
+	forEach, version 1.0
+	Copyright 2006, Dean Edwards
+	License: http://www.opensource.org/licenses/mit-license.php
+*/
+
+// array-like enumeration
+if (!Array.forEach) { // mozilla already supports this
+	Array.forEach =3D function(array, block, context) {
+		for (var i =3D 0; i < array.length; i++) {
+			block.call(context, array[i], i, array);
+		}
+	};
+}
+
+// generic enumeration
+Function.prototype.forEach =3D function(object, block, context) {
+	for (var key in object) {
+		if (typeof this.prototype[key] =3D=3D "undefined") {
+			block.call(context, object[key], key, object);
+		}
+	}
+};
+
+// character enumeration
+String.forEach =3D function(string, block, context) {
+	Array.forEach(string.split(""), function(chr, index) {
+		block.call(context, chr, index, string);
+	});
+};
+
+// globally resolve forEach enumeration
+var forEach =3D function(object, block, context) {
+	if (object) {
+		var resolve =3D Object; // default
+		if (object instanceof Function) {
+			// functions have a "length" property
+			resolve =3D Function;
+		} else if (object.forEach instanceof Function) {
+			// the object implements a custom forEach method so use that
+			object.forEach(block, context);
+			return;
+		} else if (typeof object =3D=3D "string") {
+			// the object is a string
+			resolve =3D String;
+		} else if (typeof object.length =3D=3D "number") {
+			// the object is array-like
+			resolve =3D Array;
+		}
+		resolve.forEach(object, block, context);
+	}
+};
+
+
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.tap.ibm.com/widget/ets/tagadd/load.js
+
+function ETSLogin()
+{
+this.$_finishTagAddLoad=3Dfunction(ETSLogin_Instance)
+{
+theETSTagAddLoginInstance=3DETSLogin_Instance;
+hasTagAddLoaded=3Dtrue;
+}
+this.$_dispatch=3Dfunction(id,data)
+{
+if(data.hashcode.toString()!=3D"0".toString())
+{
+if(ETSLogin.getCookie(ETSLogin.COOKIENAME)=3D=3Dnull){
+ETSLogin.setCookie(ETSLogin.COOKIENAME,data.hashcode,180,"/",".ibm.com");
+}
+}
+try{
+if(hasTagAddLoaded){
+theETSTagAddLoginInstance.dispatch(id,data,function(){theETSTagAddLoginInst=
+ance.load.apply(theETSTagAddLoginInstance,arguments)});
+}
+}
+catch(e){}
+try{
+if(hasTagCloudLoaded){
+theETSTagCloudLoginInstance.dispatch(id,data,function(){theETSTagCloudLogin=
+Instance.load.apply(theETSTagCloudLoginInstance,arguments)});
+}
+}
+catch(e){}
+}
+}
+ETSLogin.theInstance=3Dnull;
+ETSLogin.MAX_QUERY_TIME=3D30000;
+var __protocol=3D"https";
+var __hostSSL=3D"w3.tap.ibm.com:443";
+//var __hostSSL=3D"stage.tap.ibm.com:443";
+ETSLogin.BASE_URL=3D""+__protocol+"://"+__hostSSL+"/etsconfig/widgetlogin/j=
+_security_check";
+ETSLogin.SERVICE=3D""+__protocol+"://"+__hostSSL+"/etsconfig/widgetlogin/j_=
+security_check";
+ETSLogin.COOKIENAME=3D"EPSPROFILE";
+ETSLogin.getInstance=3Dfunction(){return ETSLogin.theInstance;}
+ETSLogin.finishTagAddLoad=3Dfunction(ETSLogin_Instance)
+{
+ETSLogin.getInstance().$_finishTagAddLoad(ETSLogin_Instance);
+}
+ETSLogin.dispatch=3Dfunction(id,data)
+{
+ETSLogin.getInstance().$_dispatch(id,data);
+}
+ETSLogin.theInstance=3Dnew ETSLogin();
+ETSLogin.getCookie=3Dfunction(name){
+var start=3Ddocument.cookie.indexOf(name+"=3D");
+var len=3Dstart+name.length+1;
+if((!start)&&(name!=3Ddocument.cookie.substring(0,name.length))){
+return null;
+}
+if(start=3D=3D-1)return null;
+var end=3Ddocument.cookie.indexOf(';',len);
+if(end=3D=3D-1)end=3Ddocument.cookie.length;
+return unescape(document.cookie.substring(len,end));
+}
+ETSLogin.setCookie=3Dfunction(name,value,expires,path,domain,secure)
+{
+var today=3Dnew Date();
+today.setTime(today.getTime());
+if(expires)
+{
+expires=3Dexpires*1000*60*60*24;
+}
+var expires_date=3Dnew Date(today.getTime()+(expires));
+document.cookie=3Dname+"=3D"+escape(value)+
+((expires)?";expires=3D"+expires_date.toGMTString():"")+
+((path)?";path=3D"+path:"")+
+((domain)?";domain=3D"+domain:"")+
+((secure)?";secure":"");
+}
+function ETSTagAdd()
+{
+if(ETSTagAdd.theInstance!=3Dnull)
+return ETSTagAdd.theInstance;
+var theETSTagAddInstance=3Dnull;
+var hasLoaded=3Dfalse;
+var hasLoadedPage=3Dfalse;
+var d=3Ddocument;
+var itemsToAdd=3D[];
+this.$_load=3Dfunction()
+{
+hasLoadedPage=3Dtrue;
+if(hasLoaded)
+{
+theETSTagAddInstance.load();
+for(var i=3D0;i<itemsToAdd.length;i++){
+theETSTagAddInstance.addItem(itemsToAdd[i][0],itemsToAdd[i][1]);
+}
+}
+}
+this.$_finishLoad=3Dfunction(ETSTagAdd_Instance)
+{
+theETSTagAddInstance=3DETSTagAdd_Instance;
+hasLoaded=3Dtrue;
+if(hasLoadedPage)
+{
+theETSTagAddInstance.load();
+for(var i=3D0;i<itemsToAdd.length;i++){
+theETSTagAddInstance.addItem(itemsToAdd[i][0],itemsToAdd[i][1]);
+}
+}
+}
+this.$_dispatch=3Dfunction(id,data)
+{
+if(hasLoaded){
+theETSTagAddInstance.dispatch(id,data);
+}
+}
+this.$_addItem=3Dfunction(item,options)
+{
+if(hasLoadedPage){
+theETSTagAddInstance.addItem(item,options);
+}
+else{
+itemsToAdd.push([item,options]);
+}
+}
+this.isCompatible=3Dfunction()
+{
+return(d.getElementById&&d.getElementsByTagName&&Function.prototype.apply
+&&window.encodeURIComponent&&d.createElement&&d.write);
+}
+this.initialize=3Dfunction()
+{
+if(!this.isCompatible())
+return;
+if(!d.body){return;}
+var currentLoad=3Dwindow.onload;
+if(typeof currentLoad!=3D'function'){
+window.onload=3DETSTagAdd.$_load;
+}
+else
+{
+window.onload=3Dfunction()
+{
+try{currentLoad();}catch(e){}
+ETSTagAdd.$_load();
+}
+}
+try
+{
+if(ETSTagAddOptions)
+{
+for(var i=3D0;i<ETSTagAdd.$_POSSIBLE_OPTIONS.length;i++)
+{
+var option=3DETSTagAdd.$_POSSIBLE_OPTIONS[i];
+eval("try { if(ETSTagAddOptions."+option+" || ETSTagAddOptions."+option+"=
+ =3D=3D false)"+
+"ETSTagAdd."+option+" =3D ETSTagAddOptions."+option+"; } catch(e) { }");
+}
+}
+}
+catch(e){}
+isCurrentlyLoading=3Dtrue;
+document.write('<'+'script src=3D"'+ETSTagAdd.BASE_URL+'/ETSTagAdd-en-XX.js=
+"'+' type=3D"text/javascript"><'+'/script>');
+try{
+var useBluecard=3Deval("ETSTagAddOptions.ITEMS[0].useBluecard");
+if(useBluecard=3D=3Dundefined||useBluecard){
+document.write('<'+'script src=3D"'+ETSTagAdd.BLUECARD_URL+'" type=3D"text/=
+javascript"><'+'/script>');
+}
+}catch(e){}
+}
+}
+ETSTagAdd.theInstance=3Dnull;
+ETSTagAdd.getInstance=3Dfunction(){return ETSTagAdd.theInstance;}
+ETSTagAdd.$_POSSIBLE_OPTIONS=3Dnew Array("ITEMS");
+ETSTagAdd.ITEMS=3D[];
+ETSTagAdd.BLUECARD_URL=3D"//w3.webahead.ibm.com/widget/bluecard/load.js";
+var __host=3D"w3.tap.ibm.com";
+ETSTagAdd.BASE_URL=3D"//"+__host+"/widget/ets/tagadd";
+ETSTagAdd.SERVICE=3D"//"+__host+"/widget/ets/data/tag_manage";
+ETSTagAdd.AUTOCOMPLETE_SERVICE=3D"//"+__host+"/widget/ets/data/autocomplete=
+";
+ETSTagAdd.MAX_QUERY_TIME=3D30000;
+ETSTagAdd.$_load=3Dfunction(){ETSTagAdd.getInstance().$_load();}
+ETSTagAdd.finishLoad=3Dfunction(ETSTagAdd_Instance)
+{
+ETSTagAdd.getInstance().$_finishLoad(ETSTagAdd_Instance);
+}
+ETSTagAdd.dispatch=3Dfunction(id,data)
+{
+ETSTagAdd.getInstance().$_dispatch(id,data);
+}
+ETSTagAdd.addItem=3Dfunction(item,options)
+{
+ETSTagAdd.getInstance().$_addItem(item,options);
+}
+ETSTagAdd.theInstance=3Dnew ETSTagAdd();
+ETSTagAdd.theInstance.initialize();
+
+
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.tap.ibm.com/widget/ets/tagadd/ETSTagAdd-en-XX.js
+
+function ETSTagAddNamespace()
+{
+var d=3Ddocument;
+$_Resource.$_items=3D[
+"Loading ETS Tagger...",
+"Tagger by ETS",
+"Add Tags to this Link",
+"Unable to load the Tagger at this time",
+"Error while commnicating with Tag Service.",
+"Tagging",
+"Add",
+"Info",
+"My tags",
+"Other people's tags",
+"Related Content",
+"Related People",
+"You have not tagged this link",
+"No one else has tagged this link",
+"There is currently no related content",
+"There are currently no related people",
+"Loading Tags... please wait",
+"Error in communicating with the server",
+"Error while extracting tags",
+"What is a tag?",
+"Tags are keywords or labels that describe a piece of information or a pers=
+on. By adding your own descriptive tags to information you find interesting=
+, you can quickly retrieve this content later and even view related content=
+ from others.",
+"How do I add a tag?",
+"These tags will help you and others find this idea in the future, so add=
+ as many tags as you think are necessary to describe it. Separate each tag=
+ with a comma (e.g. blog, java). To join two words together into one tag,=
+ use quotes or a comma with a space between the words, or an underscore (e.=
+g, \"mobility center\", Lotus Notes, Microsoft_Word).",
+"Please enter a tag to add.",
+"Delete this tag",
+"More",
+"To tag, please login and make sure that your browser cookies are enabled.",
+"Adding Tag . . . ",
+"The tag you entered is too long.",
+"<div id=3D'logMsgDiv'> <div class=3D'msg'> Please <a href =3D'javascript:v=
+oid(0)' onclick=3D'javascript:showLogin(event);'> login </a> to enable tagg=
+ing </div></div>",
+"<br/><br/><div id=3D'logMsgDiv'> <div class=3D'msg'> Login failed. Please=
+ <a href =3D'javascript:void(0)' onclick=3D'javascript:showLogin(event);'>=
+ login </a>again to enable tagging </div></div>",
+"Related Tags",
+"Login",
+"Cancel",
+"User",
+"Password",
+"Logging in...",
+"Please <a style=3D'color:white; cursor: pointer; text-decoration: underlin=
+e; font-style: bold' href =3D'javascript:void(0)'>login</a> to enable taggi=
+ng.",
+"Login attempt failed. Please <a style=3D'color:white; cursor: pointer; tex=
+t-decoration: underline; font-style: bold' href =3D'javascript:void(0)'>try=
+ again</a> OR <a style=3D'color:white; cursor: pointer; text-decoration: un=
+derline; font-style: bold' href =3D'javascript:void(0)' onclick=3D'javascri=
+pt:showLoginInfoDiv(event);'>troubleshoot</a>",
+"Please enter valid username",
+"Please enter valid password",
+"Login timeout.<a style=3D'color:white; cursor: pointer; text-decoration:=
+ underline; font-style: bold' href =3D'javascript:void(0)'>Try again</a>",
+"Click <a style=3D'color:white; cursor: pointer; text-decoration: underline=
+; font-style: bold' href =3D'javascript:void(0)'>here</a> to troubleshoot",
+"Make sure use your intranet credentials to login.",
+"Alternatively, sign in to <a href=3D'https://w3.ibm.com/w3login.html?retur=
+nUrl=3D/wps/myportal'>w3</a> then return to this page and refresh the page.=
+",
+"Please <a href=3D'mailto:anuragsr@in.ibm.com?subject=3DETS Login Servic fe=
+edback. Incorrect login'>contact us</a> to report any login problems.",
+"Please <a href=3D'mailto:anuragsr@in.ibm.com?subject=3DETS Login Servic fe=
+edback. Login service is down'>contact us</a> to report any login problems."
+];
+function $_Resource(){}
+$_Resource.$_getResource=3Dfunction(resourceId,args)
+{
+if($_Resource.$_items[resourceId].constructor=3D=3DString){
+return $_Resource.$_items[resourceId];
+}
+return $_Resource.$_items[resourceId].apply(this,args);
+}
+String.prototype.trim=3Dfunction(){return this.replace(/^\s*(\S*(\s+\S+)*)\=
+s*$/,'$1');}
+$_Util.$_getCaretEnd=3Dfunction(obj){
+if(typeof obj.selectionEnd!=3D"undefined"){
+return obj.selectionEnd;
+}else if(document.selection&&document.selection.createRange){
+var M=3Ddocument.selection.createRange();
+try{
+var Lp=3DM.duplicate();
+Lp.moveToElementText(obj);
+}catch(e){
+var Lp=3Dobj.createTextRange();
+}
+Lp.setEndPoint("EndToEnd",M);
+var rb=3DLp.text.length;
+if(rb>obj.value.length){
+return -1;
+}
+return rb;
+}
+};
+$_Util.$_stripCommaFromQuotedStrings=3Dfunction(inStr){
+var ind1=3D-1;
+var ind2=3D-1;
+var temp1=3DinStr;
+var inStrHolder=3D"";
+while(temp1.indexOf('"')>-1){
+ind1=3Dtemp1.indexOf('"');
+ind2=3Dtemp1.indexOf('"',ind1+1)+1;
+temp2=3Dtemp1.substring(ind1,ind2);
+temp2=3D$_Util.$_stripCharFromString(temp2,',');
+inStrHolder=3DinStrHolder+temp1.substring(0,ind1)+temp2;
+temp1=3Dtemp1.substring(ind2,temp1.length);
+}
+return inStrHolder+temp1;
+}
+$_Util.$_stripCharFromString=3Dfunction(inStr,charToStrip){
+var i;
+var retString=3D"";
+for(i=3D0;i<inStr.length;i++){
+var c=3DinStr.charAt(i);
+if(charToStrip!=3Dc)
+retString+=3Dc;
+}
+return retString;
+}
+function escapeSpecialHTML(text)
+{
+var newStr=3D"";
+var currentChar=3D"";
+for(var i=3D0;i<text.length;i++)
+{
+currentChar=3Dtext.charAt(i);
+if(currentChar=3D=3D"&")
+{newStr+=3D"&amp;";}
+else if(currentChar=3D=3D"<")
+{newStr+=3D"&lt;";}
+else if(currentChar=3D=3D">")
+{newStr+=3D"&gt;";}
+else if(currentChar=3D=3D"'")
+{newStr+=3D"&#39;";}
+else if(currentChar=3D=3D'"')
+{newStr+=3D"&#34;";}
+else
+{newStr+=3DcurrentChar;}
+}
+return newStr;
+};
+function $_Util(){}
+$_Util.$_isOpera=3D(navigator.userAgent.toLowerCase().indexOf("opera")!=3D-=
+1)?true:false;
+$_Util.$_isIE=3D(document.all&&!$_Util.$_isOpera);
+$_Util.$_fixPNG=3Dfalse;
+if($_Util.$_isIE&&d.body.filters)
+{
+if((navigator.appVersion.match(/MSIE (\d+\.\d+)/)[1])<7.0){
+$_Util.$_fixPNG=3Dtrue;
+}
+}
+$_Util.$_createInstanceCall=3Dfunction(instance,classMethod)
+{
+return function(){classMethod.apply(instance,arguments);}
+};
+$_Util.$_createEventCallbackForInstance=3Dfunction(instance,classMethod)
+{
+return $_Util.$_createEventAdapter($_Util.$_createInstanceCall(instance,cla=
+ssMethod));
+};
+$_Util.$_createSafeEventCallbackForInstance=3Dfunction(instance,classMethod=
+,currentCallback)
+{
+var normalCall=3D$_Util.$_createEventCallbackForInstance(instance,classMeth=
+od);
+return function()
+{
+if(currentCallback){
+try{currentCallback(arguments);}catch(e){}
+}
+normalCall.apply(this,arguments);
+}
+};
+$_Util.$_createEventAdapter=3Dfunction(function_eventHandler)
+{
+return function(e)
+{
+if(!e&&window.event){
+e=3Dwindow.event;
+}
+function_eventHandler(e);
+}
+};
+$_Util.$_setCSS=3Dfunction(Element,css)
+{
+Element.setAttribute("style",css);
+try{Element.style.cssText=3Dcss;}catch(e){}
+};
+$_Util.$_bind=3Dfunction(el,ev,i,m)
+{
+var a=3D[];
+for(var x=3D4;x<arguments.length;x++){a.push(arguments[x]);}
+var f=3Dfunction(e){
+var ar=3D[e||window.event];
+for(var x=3D0;x<a.length;x++){ar.push(a[x]);}
+return m.apply(i,ar);
+};
+if(el["addEventListener"]){
+el.addEventListener(ev,f,false);
+}
+else{
+el.attachEvent("on"+ev,f);
+}
+};
+$_Util.$=3Dfunction(id)
+{
+return d.getElementById(id);
+};
+$_Util.$_addCSSRules=3Dfunction(cssRules)
+{
+try
+{
+var style=3Dd.createElement("style");
+style.setAttribute("type","text/css");
+d.getElementsByTagName("head")[0].appendChild(style);
+if(style.styleSheet){style.styleSheet.cssText=3DcssRules;}
+else{style.appendChild(document.createTextNode(cssRules));}
+}
+catch(e){}
+};
+$_Util.$_addStyleSheet=3Dfunction(URI)
+{
+try
+{
+var style=3Dd.createElement("link");
+style.setAttribute("type","text/css");
+style.setAttribute("rel","stylesheet");
+style.setAttribute("href",URI);
+d.getElementsByTagName("head")[0].appendChild(style);
+}
+catch(e){}
+};
+$_Util.getCookie=3Dfunction(name){
+var start=3Ddocument.cookie.indexOf(name+"=3D");
+var len=3Dstart+name.length+1;
+if((!start)&&(name!=3Ddocument.cookie.substring(0,name.length))){
+return null;
+}
+if(start=3D=3D-1)return null;
+var end=3Ddocument.cookie.indexOf(';',len);
+if(end=3D=3D-1)end=3Ddocument.cookie.length;
+return unescape(document.cookie.substring(len,end));
+}
+$_Util.setCookie=3Dfunction(name,value,expires,path,domain,secure)
+{
+var today=3Dnew Date();
+today.setTime(today.getTime());
+if(expires)
+{
+expires=3Dexpires*1000*60*60*24;
+}
+var expires_date=3Dnew Date(today.getTime()+(expires));
+document.cookie=3Dname+"=3D"+escape(value)+
+((expires)?";expires=3D"+expires_date.toGMTString():"")+
+((path)?";path=3D"+path:"")+
+((domain)?";domain=3D"+domain:"")+
+((secure)?";secure":"");
+}
+$_Util. mouseX=3Dfunction(evt){
+if(evt.pageX)return evt.pageX;
+else if(evt.clientX)
+return evt.clientX+(document.documentElement.scrollLeft?
+document.documentElement.scrollLeft:
+document.body.scrollLeft);
+else return null;
+}
+$_Util. mouseY=3Dfunction(evt){
+if(evt.pageY)return evt.pageY;
+else if(evt.clientY)
+return evt.clientY+(document.documentElement.scrollTop?
+document.documentElement.scrollTop:
+document.body.scrollTop);
+else return null;
+}
+function $_CrossDomainRequest()
+{
+var openConnectionMapping=3D[];
+var self=3Dthis;
+var nextConnectionId=3D0;
+function $_createTimeoutFunction(connectionId)
+{
+return function(){self.$_cancelRequest(connectionId);}
+};
+this.$_getScriptId=3Dfunction(id)
+{
+return "__TADR"+id;
+};
+this.$_getScriptObject=3Dfunction(id)
+{
+return d.getElementById(this.$_getScriptId(id));
+};
+this.$_request=3Dfunction(urlpreamble,targeturl,timeLimit,callback,id)
+{
+if(id=3D=3D0)
+var objId=3Dthis.$_getScriptId(id);
+else
+var objId=3Dthis.$_getScriptId(++nextConnectionId);
+while(d.getElementById(objId)){
+objId=3Dthis.$_getScriptId(++nextConnectionId);
+}
+if(callback){
+if(id=3D=3D0)
+openConnectionMapping[0]=3Dcallback;
+else
+openConnectionMapping[nextConnectionId]=3Dcallback;
+}
+var script=3Dd.createElement("script");
+script.id=3DobjId;
+script.charset=3D"utf-8";
+try
+{
+script.src=3Durlpreamble+"&id=3D"+nextConnectionId+"&c=3D"+Math.round((Math=
+.random()*50),0)+targeturl;
+}
+catch(e)
+{
+return false;
+}
+var _head=3Ddocument.getElementsByTagName("head")[0];
+_head.appendChild(script);
+if(timeLimit)
+{
+var self=3Dthis;
+if(id=3D=3D0)
+window.setTimeout($_createTimeoutFunction(0),timeLimit);
+else
+window.setTimeout($_createTimeoutFunction(nextConnectionId),timeLimit);
+}
+return nextConnectionId;
+};
+this.$_cancelRequest=3Dfunction(id)
+{
+var callback=3DopenConnectionMapping[id];
+openConnectionMapping[id]=3Dnull;
+if(callback)
+{
+try
+{
+var script=3Dthis.$_getScriptObject(id);
+if(script){
+var _head=3Ddocument.getElementsByTagName("head")[0];
+_head.removeChild(script);
+}
+if(callback){
+callback(false);
+}
+}
+catch(e){}
+}
+};
+this.$_dispatch=3Dfunction(id,data,callbackFunction)
+{
+try
+{
+if(!id){
+id=3D0;
+}
+var callback=3DopenConnectionMapping[id];
+if(callback)
+{
+openConnectionMapping[id]=3Dnull;
+callback(true,data);
+var script=3Dthis.$_getScriptObject(id);
+if(script){
+var _head=3Ddocument.getElementsByTagName("head")[0];
+_head.removeChild(script);
+}
+}
+else if(callbackFunction)
+callbackFunction();
+}
+catch(e){}
+};
+}
+$_CrossDomainRequest.$_theInstance=3Dnew $_CrossDomainRequest();
+function $_AutoComplete(int_tagType,Element_input,Element_displayContainer,=
+Functor_selectionHandler,
+Functor_focusHandler,bool_allowAny)
+{
+var self=3Dthis;
+var isActive=3Dfalse;
+var Element_display;
+var Timeout_delayRequest;
+var Timeout_delayLoading;
+var lastRequest;
+var startPos;
+var endPos;
+var itemJustSelected;
+var selIndex;
+var indexToItem=3D[];
+var selectFirst;
+var cssP=3D$_ETSTagAdd.$_CSS_PREFIX;
+var tagFilter=3D"";
+function $_init()
+{
+Element_displayContainer.innerHTML=3D"<table cellspacing=3D'0' cellpadding=
+=3D'0' "+
+"class=3D'"+cssP+"ac-cont "+cssP+"shadow'><tr><td "+
+"style=3D'padding-top:0px;margin-top:0px;vertical-align:top;'>"+
+"<table class=3D'"+cssP+"ac' cellspacing=3D'0' cellpadding=3D'0'></table>"+
+"</td><td class=3D'"+cssP+"r'></td></tr><tr><td colspan=3D'2'>"+
+"<div class=3D'"+cssP+"br'></div><div class=3D'"+cssP+"b'></div></td></tr><=
+/table>";
+Element_display=3DElement_displayContainer.firstChild.rows[0].firstChild;
+Element_input.setAttribute("autocomplete","off");
+Element_input.onfocus=3D$_Util.$_createEventCallbackForInstance(self,self.$=
+_focus);
+Element_input.onkeydown=3D$_Util.$_createEventCallbackForInstance(self,self=
+.$_keyDown);
+Element_input.onclick=3D$_Util.$_createEventCallbackForInstance(self,self.$=
+_mouseClick);
+Element_input.onkeypress=3D$_Util.$_createEventCallbackForInstance(self,sel=
+f.$_keyPress);
+Element_input.onblur=3Dfunction()
+{
+window.setTimeout($_Util.$_createInstanceCall(self,self.$_blur),250);
+}
+}
+function $_reset()
+{
+isActive=3Dtrue;
+self.$_moveSelection(selectFirst?0:-1);
+}
+function $_trim(str)
+{
+for(var i=3D0;i<str.length;i++)
+{
+if(str.charAt(i)!=3D' ')
+{
+str=3Dstr.substr(i);
+break;
+}
+}
+bool_endSpace=3D(str.charAt(str.length-1)=3D=3D' ');
+for(var i=3Dstr.length-1;i>=3D0;i--)
+{
+if(str.charAt(i)!=3D' ')
+{
+str=3Dstr.substr(0,i+1);
+break;
+}
+}
+return(bool_endSpace)?str+" ":str;
+}
+this.$_setTagFilter=3Dfunction(tagFilterStr)
+{
+tagFilter=3DtagFilterStr;
+this.$_requestUpdate(true);
+}
+this.$_moveSelection=3Dfunction(index)
+{
+if(selIndex>-1&&indexToItem.length>selIndex)
+{
+try{Element_display.firstChild.rows[indexToItem[selIndex]].className=3DcssP=
++"ac-entry";}catch(e){}
+}
+selIndex=3DMath.min(Math.max(index,(bool_allowAny?-1:0)),indexToItem.length=
+-1);
+if(selIndex>-1&&indexToItem.length>selIndex)
+{
+try{Element_display.firstChild.rows[indexToItem[selIndex]].className=3DcssP=
++"ac-entry-on";}catch(e){}
+this.$_tryFocusHandler(Element_display.firstChild.rows[indexToItem[selIndex=
+]].
+firstChild.innerHTML);
+}
+}
+this.$_tryFocusHandler=3Dfunction(newElement)
+{
+try
+{
+if(Functor_focusHandler){
+Functor_focusHandler(newElement);
+}
+}
+catch(e){}
+}
+this.$_select=3Dfunction()
+{
+try
+{
+itemJustSelected=3Dtrue;
+if(selIndex!=3D-1)
+{
+var selectedTag=3DElement_display.firstChild.rows[indexToItem[selIndex]].fi=
+rstChild.innerHTML;
+if(Functor_selectionHandler(selectedTag,startPos,endPos))
+{
+Element_input.value=3D"";
+Element_displayContainer.style.display=3D"none";
+$_reset();
+this.$_requestUpdate();
+}
+this.$_blur();
+this.tryFocusHandler(null);
+}
+else{
+if(Element_input.value){
+var selectedTag=3DElement_input.value;
+if(Functor_selectionHandler(selectedTag,0,endPos))
+{
+Element_input.value=3D"";
+Element_displayContainer.style.display=3D"none";
+$_reset();
+this.$_requestUpdate();
+}
+this.$_blur();
+this.tryFocusHandler(null);
+}
+}
+try{window.clearTimeout(Timeout_delayLoading);}catch(e){}
+}
+catch(e){}
+}
+function $_createSelector(index)
+{
+return function(){self.$_moveSelection(index);};
+}
+this.$_displayRequestProgress=3Dfunction()
+{
+if(!isActive){return;}
+Element_display.innerHTML=3D"<tr class=3D'"+cssP+"ac-entry'><td colspan=3D'=
+2'><div style=3D'margin-bottom:2px;'>"+
+"<img src=3D'"+ETSTagAdd.BASE_URL+"/img/load.gif' style=3D'position: relati=
+ve; top: 2px; margin-right: 4px;'/>"+
+"<i>Loading tags . . .</i></div></td></tr>";
+Element_displayContainer.style.display=3D"block";
+}
+this.$_getCurrentTerm=3Dfunction()
+{
+var curPos=3D$_Util.$_getCaretEnd(Element_input);
+var val=3DElement_input.value;
+var currentChar=3D"";
+var prevChar=3D"";
+var inQuotes=3Dfalse;
+var startPos=3D-1;
+var endPos=3D-1;
+for(i=3D0;i<val.length;i++)
+{
+currentChar=3Dval.charAt(i);
+if(currentChar=3D=3D'"')
+{
+if(inQuotes)
+{
+endPos=3Di;
+if(curPos>=3DstartPos&&curPos<=3Di)
+{
+break;
+}
+startPos=3Di;
+}
+inQuotes=3D!inQuotes;
+if(inQuotes)
+{
+if(curPos<=3Di)
+{
+if(prevChar!=3D" "&&prevChar!=3D","&&prevChar!=3D'"')
+{
+endPos=3Di;
+}
+break;
+}
+startPos=3Di+1;
+}
+}
+else if(!inQuotes)
+{
+if(currentChar=3D=3D" "||currentChar=3D=3D",")
+{
+if(curPos<=3Di)
+{
+if(prevChar!=3D" "&&prevChar!=3D","&&prevChar!=3D'"')
+{
+endPos=3Di;
+}
+break;
+}
+startPos=3DendPos=3Di;
+}
+else if(startPos<=3DendPos)
+{
+startPos=3Di;
+}
+}
+if(currentChar!=3D" "&&currentChar!=3D","&&currentChar!=3D'"'&&i=3D=3Dval.l=
+ength-1)
+{
+endPos=3Di+1;
+}
+prevChar=3DcurrentChar;
+}
+newStr=3D"";
+if(startPos<endPos)
+{
+newStr=3Dval.substring(startPos,endPos);
+}
+var returnDat=3Dnew Array(newStr,startPos,endPos);
+return returnDat;
+}
+this.$_requestUpdate=3Dfunction(forceUpdate)
+{
+try{window.clearTimeout(Timeout_delayLoading);}catch(e){}
+var currentTermObj=3Dthis.$_getCurrentTerm();
+var currentTerm=3DcurrentTermObj[0];
+startPos=3DcurrentTermObj[1];
+endPos=3DcurrentTermObj[2];
+if(currentTerm.length=3D=3D0||itemJustSelected)
+{
+lastRequest=3D"";
+Element_displayContainer.style.display=3D"none";
+this.$_tryFocusHandler(null);
+return;
+}
+if(lastRequest=3D=3DcurrentTerm&&forceUpdate!=3D=3Dtrue)
+{
+Element_displayContainer.style.display=3D"block";
+return;
+}
+indexToItem=3D[];
+lastRequest=3DcurrentTerm;
+Timeout_delayLoading=3Dwindow.setTimeout(
+$_Util.$_createInstanceCall(this,this.$_displayRequestProgress),550);
+if(!isActive)
+{
+$_reset();
+}
+$_CrossDomainRequest.$_theInstance.$_request(
+ETSTagAdd.AUTOCOMPLETE_SERVICE+
+"?q=3D"+encodeURIComponent(lastRequest),"",5000,
+$_Util.$_createInstanceCall(this,this.$_receiveUpdate));
+}
+this.$_receiveUpdate=3Dfunction(bool_success,data)
+{
+var noTags=3Dfalse;
+currentTerm=3DElement_input.value.substring(startPos,endPos);
+if(!isActive||lastRequest!=3DcurrentTerm)
+{
+try{window.clearTimeout(Timeout_delayRequest);}catch(e){}
+this.$_requestUpdate();
+return;
+}
+try{window.clearTimeout(Timeout_delayLoading);}catch(e){}
+data=3D(bool_success)?data:null;
+var html=3D["<table class=3D'"+cssP+"ac' cellspacing=3D'0' cellpadding=3D'0=
+'>"];
+if(data&&data.tags)
+{
+if(data.tags.length)
+{
+var matchIndex=3D-1;
+for(var i=3D0;i<data.tags.length;i++)
+{
+html.push("<tr class=3D'"+cssP+"ac-entry'><td>"+data.tags[i][0]+
+"</td><td align=3D'right' class=3D'"+cssP+"ac-entry-cnt'>"+data.tags[i][1]+=
+"</td></tr>");
+indexToItem.push(i);
+}
+}
+else{
+noTags=3Dtrue;
+}
+}
+else{
+html.push("<tr class=3D'"+cssP+"ac-entry'><td colspan=3D'2'><i>"+$_Resource=
+.$_items[31]+"</i></td></tr>");
+}
+html.push("</table>");
+selectFirst=3D(!bool_allowAny||(data&&data.tags&&data.tags.length&&
+(data.tags[0][0].toLowerCase()=3D=3DElement_input.value.toLowerCase())));
+var oldDisplay=3DElement_display;
+Element_display=3Dd.createElement("td");
+Element_display.innerHTML=3Dhtml.join("");
+this.$_moveSelection(selectFirst?0:-1);
+oldDisplay.parentNode.replaceChild(Element_display,oldDisplay);
+for(var i=3D0;i<indexToItem.length;i++)
+{
+try
+{
+var itemObj=3DElement_display.firstChild.rows[indexToItem[i]];
+itemObj.onmouseover=3D$_createSelector(i);
+itemObj.onclick=3D$_Util.$_createInstanceCall(this,this.$_select);
+}
+catch(e){}
+}
+Element_displayContainer.style.display=3D(noTags)?"none":"block";
+}
+this.$_blur=3Dfunction()
+{
+isActive=3Dfalse;
+try{window.clearTimeout(Timeout_delayRequest);}catch(e){}
+Element_displayContainer.style.display=3D"none";
+this.$_tryFocusHandler(null);
+}
+this.$_focus=3Dfunction()
+{
+$_reset();
+this.$_requestUpdate();
+}
+this.$_mouseClick=3Dfunction()
+{
+itemJustSelected=3Dfalse;
+this.$_requestUpdate();
+}
+this.$_keyPress=3Dfunction(e)
+{
+itemJustSelected=3Dfalse;
+switch(window.event?e.keyCode:e.which)
+{
+case 13:
+if(window.event){
+e.returnValue=3Dfalse;
+e.cancelBubble=3Dtrue;
+}
+else{
+e.preventDefault();
+e.stopPropagation();
+}
+break;
+}
+}
+this.$_keyDown=3Dfunction(e)
+{
+itemJustSelected=3Dfalse;
+var cancel=3Dfalse;
+var keyCode=3Dwindow.event?e.keyCode:e.which;
+switch(keyCode)
+{
+case 38:
+cancel=3Dtrue;
+this.$_moveSelection(selIndex-1);
+break;
+case 40:
+cancel=3Dtrue;
+this.$_moveSelection(selIndex+1);
+break;
+case 13:
+cancel=3Dtrue;
+if(window.event){
+e.cancelBubble=3Dtrue;
+}
+else{
+e.stopPropagation();
+}
+this.$_select();
+break;
+default:
+try{window.clearTimeout(Timeout_delayRequest);}catch(e){}
+Timeout_delayRequest=3Dwindow.setTimeout(
+$_Util.$_createInstanceCall(this,this.$_requestUpdate),65);
+break;
+}
+if(cancel){
+if(window.event){
+e.returnValue=3Dfalse;
+}
+else{
+e.preventDefault();
+}
+}
+}
+$_init();
+}
+function $ETSLogin()
+{
+this.dispatch=3Dfunction(id,data,callbackFunction)
+{
+$_CrossDomainRequest.$_theInstance.$_dispatch(id,data,callbackFunction);
+};
+this.load=3Dfunction()
+{
+$_ETSTagAdd.theInstance.load();
+}
+}
+$ETSLogin.theInstance=3Dnew $ETSLogin();
+ETSLogin.finishTagAddLoad($ETSLogin.theInstance);
+function $_ETSTagAdd()
+{
+var uniqueId=3D0;
+var widgetskin;
+function $_toElement(idOrElement)
+{
+if(idOrElement.constructor=3D=3DString){
+return document.getElementById(idOrElement);
+}
+else{
+return idOrElement;
+}
+}
+this.load=3Dfunction()
+{
+try
+{
+if(ETSTagAdd.ITEMS)
+{
+if(ETSTagAdd.ITEMS[0]){
+widgetskin=3DETSTagAdd.ITEMS[0].skin;
+}
+for(var i=3D0;i<ETSTagAdd.ITEMS.length;i++)
+{
+try
+{
+var element=3D$_toElement(ETSTagAdd.ITEMS[i].element);
+if(element)
+{
+new $_ETSTagAddItem(element,ETSTagAdd.ITEMS[i],
+$_ETSTagAdd.theInstance.$_getUniqueId());
+}
+}
+catch(e){}
+}
+}
+}
+catch(e){}
+var p=3D"."+$_ETSTagAdd.$_CSS_PREFIX;
+var css=3D[];
+css.push("table"+p+"shadow td { padding: 0px !important; } \n");
+css.push(p+"shadow "+p+"r { width: 6px; background: url("+
+ETSTagAdd.BASE_URL+"/img/v12/shadow_114_r.png) no-repeat; } \n ");
+css.push(p+"shadow "+p+"b { margin-right: 10px; height: 9px; background: ur=
+l("+
+ETSTagAdd.BASE_URL+"/img/v12/shadow_114_b.png) no-repeat; } \n");
+css.push(p+"shadow "+p+"br { float: right; height: 9px; width: 10px; backgr=
+ound: url("+
+ETSTagAdd.BASE_URL+"/img/v12/shadow_114_br.png) no-repeat; } \n");
+css.push("input"+p+"ac { width: 200px; border-top: 1px solid #666; border-l=
+eft: 1px solid #666; border-right: 1px solid #aaa; border-bottom: 1px solid=
+ #aaa; display: block; margin-top: 5px; } \n");
+css.push("input"+p+"compact-ac { width: 80px; border-top: 1px solid #666;=
+ border-left: 1px solid #666; border-right: 1px solid #aaa; border-bottom:=
+ 1px solid #aaa; display: block; margin-top: 5px; } \n");
+css.push("div"+p+"ac { z-index: 100; position: absolute; display: none; wid=
+th: 207px; margin: 1px 0px 0px 0px; } ");
+css.push("table"+p+"ac-cont { height: auto; width:100%; } \n");
+css.push("table"+p+"ac { opacity: 0.90; filter:alpha(opacity=3D90); backgro=
+und: #fff; width: 100%; } ");
+css.push("td"+p+"ac-entry-cnt { color: #72b54a; } \n");
+css.push("tr"+p+"ac-entry td, tr"+p+
+"ac-entry-on td { padding: 5px 10px 5px 10px !important; font-size: 1.0em;=
+ cursor: pointer;} ");
+css.push("tr"+p+"ac-entry-on td { color: #fff; background: #72b54b; } \n");
+css.push("input"+p+"login-input { width: 150px; border-top: 1px solid #666;=
+ border-left: 1px solid #666; border-right: 1px solid #aaa; border-bottom:=
+ 1px solid #aaa; display: block; margin-top: 1px; } \n");
+css.push("input"+p+"compact-login-input { width: 100px; border-top: 1px sol=
+id #666; border-left: 1px solid #666; border-right: 2px solid #aaa; border-=
+bottom: 1px solid #aaa; display: block; margin-top: 1px; } \n");
+css.push(p+"login-header{display: inline; font-family: Verdana, Arial, Helv=
+etica, sans-serif; font-size: 80%; } \n");
+css.push(p+"login-msg { color: #FFFFFF; font-style: bold; padding: 5px 4px=
+ 4px 5px;} \n");
+css.push(p+"login-msg a{ color:white; cursor: pointer; text-decoration: und=
+erline; font-style: bold;} \n");
+css.push(p+"rm, "+p+"rm:visited { margin-left: 10px; color: #999; font-size=
+: 90%; text-decoration: none; } ");
+css.push(p+"rm:hover { color: #333; text-decoration: underline; } \n");
+css.push(p+"header{display: inline; font-family: Verdana, Arial, Helvetica,=
+ sans-serif; font-size: 100%; font-weight: bold; } \n");
+css.push(p+"header-box-content{padding: 3px 5px 3px 5px;}");
+css.push(p+"tagger-input{float:left;} \n");
+css.push(p+"clear{ clear: both;}");
+css.push(p+"resource-title{ font-weight: bold;} \n");
+css.push(p+"tagger-box-top-left{background: url("+ETSTagAdd.BASE_URL+"/img/=
+topleft-corner.gif) top left no-repeat; z-index: 0;}");
+css.push(p+"tagger-box-top-right{background: url("+ETSTagAdd.BASE_URL+"/img=
+/topright-corner.gif) top right no-repeat; z-index: 0;}");
+css.push(p+"tagger-box-bottom-right{background: url("+ETSTagAdd.BASE_URL+"/=
+img/bottom-right-corner.gif) bottom right no-repeat; z-index: 0;}");
+css.push(p+"tagger-box-bottom-left{background: url("+ETSTagAdd.BASE_URL+"/i=
+mg/bottom-left-corner.gif) bottom left no-repeat; z-index: 0;}");
+css.push(p+"more { vertical-align:middle; color:#086BB5; text-align: right;=
+ margin-bottom: 6px;} ");
+css.push(p+"footer { font-size: 10px; color:#4477BB; text-align: center; }=
+ \n ");
+css.push(p+"link-block { margin-bottom: 6px;} \n");
+css.push(p+"link-block-larger { margin-bottom: 12px;} \n");
+css.push(p+"link { text-decoration: none; margin-bottom: 6px;} \n");
+css.push(p+"link:hover { text-decoration: underline; }\n");
+css.push(p+"link-small { text-decoration: none; font-size: 10px; } \n");
+css.push(p+"link-small:hover { text-decoration: underline; font-size: 10px;=
+ }\n");
+css.push(p+"sect { margin-top: 0px; border: 0px solid #99CCFF; padding: 0px=
+; } \n");
+css.push(p+"sect-head-clear {padding: 2px 4px 2px 4px; cursor: pointer; }=
+ \n ");
+css.push(p+"bg-clear {padding: 3px 5px 3px 5px; zoom: 100%;}\n");
+css.push(p+"sect-head-blue {background: #6699CC; padding: 2px 4px 2px 4px;=
+ border: 1px solid #6699CC; cursor: pointer; color:#FFF;}\n ");
+css.push(p+"sect-head-orange {background: #d3832c; padding: 2px 4px 2px 4px=
+; border: 1px solid #d3832c; cursor: pointer; color:#FFF;}\n ");
+css.push(p+"sect-head-green {background: #81bc61; padding: 2px 4px 2px 4px;=
+ border: 1px solid #81bc61; cursor: pointer; color:#FFF;}\n ");
+css.push(p+"sect-head-lightblue {background: #cae1ff; padding: 2px 4px 2px=
+ 4px; border: 1px solid #cae1ff; cursor: pointer; color:#FFF;}\n ");
+css.push(p+"sect-head img { float: left; width: 11px; height: 11px; margin:=
+ 2px 5px 0px 0px;}\n");
+css.push(p+"header-blue { background: #4477bb; border: 0px solid #6699CC;=
+ padding: 0px; zoom: 100%; z-index: -10px;} \n");
+css.push(p+"header-green { background: #5d9c3a; border: 0px solid #81bc61;=
+ padding: 0px; zoom: 100%; z-index: -10px; color:#fff;} \n");
+css.push(p+"header-orange { background: #c5741b; border: 0px solid #d3832c;=
+ padding: 0px; zoom: 100%; z-index: -10px; color:#fff;} \n");
+css.push(p+"header-lightblue { background: #dee4f1; border: 0px solid #7f9d=
+b9; padding: 0px; zoom: 100%; z-index: -10px; color:#fff;} \n");
+css.push(p+"header-title{font-weight: 800; color: #fff;}");
+css.push(p+"blue-border{  border: 1px solid #6699CC; z-index: 100;}");
+css.push(p+"green-border{  border: 1px solid #81bc61; z-index: 100;}");
+css.push(p+"orange-border{  border: 1px solid #d3832c; z-index: 100;}");
+css.push(p+"lightblue-border{  border: 1px solid #7f9db9; z-index: 100;}");
+css.push(p+"msg { color: #333; font-style: italic; padding: 5px 4px 8px 5px=
+;} \n");
+if(!$_Util.$_fixPNG)
+{
+css.push(p+"info { border: none; margin: 2px 0px 0px 10px; }\n ");
+}
+css.push(p+"tag_blue { float: left; border: none; margin: 2px 5px 0px 3px;=
+ } \n ");
+css.push(p+"submit-button {cursor: pointer;   float:right;  margin: 6px 10p=
+x 0px 0px; padding:0px 3px 0px 0px; border:0;} \n");
+css.push(p+"login-buttons {margin: 6px 3px 1px 0px; border:0;} \n");
+css.push(p+"login-buttons img {cursor: pointer; margin-right: 3px; border:0=
+;} \n");
+css.push(p+"button-blue-compact { cursor: pointer; color:#fff; float:right;=
+ margin: 5px 0px 0px 0px; font-weight:bold; text-align:center; border-style=
+:solid; border-width:1px; border-color:#6ae #000 #000 #6ae; background:#003=
+366 url("+ETSTagAdd.BASE_URL+"/img/bg-btn-blue-dark.gif) repeat-x; }\n ");
+css.push(p+"widget-info { position: absolute; width: 165px; font-family: Ve=
+rdana, Geneva, Arial, sans-serif; font-size:11px; border: 1px solid black;=
+ padding: 3px; background-color: lightyellow; visibility: hidden; z-index:=
+ 100; } \n");
+css.push(p+"login { position: absolute; width: 260px; font-family:verdana,a=
+rial,helvetica,sans-serif;  font-size:100%; border: 1px solid black; visibi=
+lity: hidden; z-index: 100; } \n");
+css.push(p+"toggle-margin{margin-right: 5px;} \n");
+css.push(p+"sectBody{padding: 10px 4px 3px 20px;} \n");
+css.push(p+"example{color: #fff; margin-bottom:5px;} \n");
+css.push(p+"logo{vertical-align:middle; border:none;} \n");
+css.push("#green_idlogo{text-align:center; border:1px solid #81bc61; border=
+-top:0px; padding: 4px;} \n");
+css.push("#orange_idlogo{text-align:center; border:1px solid #c5741b; borde=
+r-top:0px; padding: 4px;} \n");
+css.push("#blue_idlogo{text-align:center; border:1px solid #6699CC; border-=
+top:0px; padding: 4px;} \n");
+css.push("#lightblue_idlogo{text-align:center; border:1px solid #6699CC; bo=
+rder-top:0px; padding: 4px;} \n");
+css.push("#green_idlogo a{text-decoration: none; font-family: verdana; font=
+-weight:bold; font-size:9px; color:#81bc61;} \n");
+css.push("#orange_idlogo a{text-decoration: none; font-family: verdana; fon=
+t-weight:bold; font-size:9px; color: #C5741B;} \n");
+css.push("#blue_idlogo a{text-decoration: none; font-family: verdana; font-=
+weight:bold; font-size:9px; color: #6699cc;} \n");
+css.push("#lightblue_idlogo a{text-decoration: none; font-family: verdana;=
+ font-weight:bold; font-size:9px; color: #6699cc;} \n");
+css.push(p+"troubleshoot-box{background:transparent url("+ETSTagAdd.BASE_UR=
+L+"/img/graygradient.png) repeat-x scroll 0 0; clear:both; color:#333333;=
+ height:130px; text-align:left; padding:0px 0px 0px 10px; width:250px;} \n"=
+);
+css.push("#tag-add-anchor-link a{background:none;}\n");
+css.push("#tag-add-anchor-link a:hover{background:none; text-decoration: un=
+derline; }\n");
+if($_Util.$_fixPNG)
+{
+if(widgetskin=3D=3D"green")
+{
+css.push("img"+p+"info  { background: none; "+
+"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=3D'"+ETSTagA=
+dd.BASE_URL+
+"/img/information_green.png'); } \n");
+}
+else if(widgetskin=3D=3D"orange")
+{
+css.push("img"+p+"info  { background: none; "+
+"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=3D'"+ETSTagA=
+dd.BASE_URL+
+"/img/information_orange.png'); } \n");
+}
+else if(widgetskin=3D=3D"lightblue")
+{
+css.push("img"+p+"info  { background: none; "+
+"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=3D'"+ETSTagA=
+dd.BASE_URL+
+"/img/information_lightblue.png'); } \n");
+}
+else
+{
+css.push("img"+p+"info  { background: none; "+
+"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=3D'"+ETSTagA=
+dd.BASE_URL+
+"/img/information_blue.png'); } \n");
+}
+css.push(p+"shadow "+p+"r { background: none; "+
+"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=3D'"+ETSTagA=
+dd.BASE_URL+
+"/img/v12/shadow_114_r.png', sizingMethod=3D'crop'); } \n");
+css.push(p+"shadow "+p+"b { background: none; "+
+"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=3D'"+ETSTagA=
+dd.BASE_URL+
+"/img/v12/shadow_114_b.png', sizingMethod=3D'crop'); } \n");
+css.push(p+"shadow "+p+"br { margin-left: -10px; background: none; "+
+"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=3D'"+ETSTagA=
+dd.BASE_URL+
+"/img/v12/shadow_114_br.png', sizingMethod=3D'crop'); } \n");
+}
+$_Util.$_addCSSRules(css.join(""));
+};
+this.dispatch=3Dfunction(id,data)
+{
+$_CrossDomainRequest.$_theInstance.$_dispatch(id,data);
+};
+this.addItem=3Dfunction(item,options)
+{
+new $_ETSTagAddItem($_toElement(item),options,$_ETSTagAdd.theInstance.$_get=
+UniqueId());
+};
+this.$_getUniqueId=3Dfunction()
+{
+return "__TagAdd_"+uniqueId++;
+};
+};
+$_ETSTagAdd.$_CSS_PREFIX=3D"webahead-widget-ets-tagadd-";
+$_ETSTagAdd.theInstance=3Dnew $_ETSTagAdd();
+ETSTagAdd.finishLoad($_ETSTagAdd.theInstance);
+function $_ETSTagAddItem(Element_itemDiv,options,ETSTagAddItemId)
+{
+var self=3Dthis;
+var itemPrefix=3D"ETSTagAddItemId__"+ETSTagAddItemId+"_";
+var ETSTagAddData;
+var useremail;
+var pagetitle;
+var resourceAppAndUser;
+var targetUrl;
+var maxRelatedIdeaCount=3D10;
+var maxPeopleCount=3D10;
+var maxOthersTags=3D10;
+var maxMyTags=3D100;
+var maxCharCountInLine=3D50;
+var maxTagCharCountToDisplay=3D15;
+var	enableAutoComplete=3Dtrue;
+var maxAutoCompleteOptions=3D5;
+var maxTagLength=3D250;
+var properHeader=3Dnull;
+var myTagsDiv=3Dnull;
+var othersTagsDiv=3Dnull;
+var relatedLinksDiv=3Dnull;
+var relatedPeopleDiv=3Dnull;
+var properFooter=3Dnull;
+var widgetInfoDiv=3Dnull;
+var loginDiv=3Dnull;
+var loginTimeOutDiv=3Dnull;
+var imagesDiv=3Dnull;
+var isLoginTimeOut=3Dtrue;
+var numberOfPeopleLinks=3D0;
+var cssP=3D$_ETSTagAdd.$_CSS_PREFIX;
+function $_init()
+{
+if(!options.appId){
+return $_configError("appId is a required parameter");
+}
+if(options.title){
+$_Resource.$_items[5]=3Doptions.title;
+}
+if(!pagetitle){
+pagetitle=3DencodeURIComponent(d.title);
+}
+if(options.myTagsTitle){
+$_Resource.$_items[8]=3Doptions.myTagsTitle;
+}
+if(options.allTagsTitle){
+$_Resource.$_items[9]=3Doptions.allTagsTitle;
+}
+if(options.relatedItemsTitle){
+$_Resource.$_items[10]=3Doptions.relatedItemsTitle;
+}
+if(options.relatedPeopleTitle){
+$_Resource.$_items[11]=3Doptions.relatedPeopleTitle;
+}
+if(!options.skin){
+options.skin=3D"blue";
+}
+if((options.sectionsToShow=3D=3D"undefined")||(options.sectionsToShow=3D=3D=
+null)){
+options.sectionsToShow=3D'tagger, myTags';
+}
+else if((options.sectionsToShow.indexOf('myTags')!=3D-1)&&options.sectionsT=
+oShow.indexOf('tagger')=3D=3D-1){
+options.sectionsToShow=3D'tagger,'+options.sectionsToShow;
+}
+if((options.moreLinks=3D=3D"undefined")||(options.moreLinks=3D=3Dnull)){
+options.moreLinks=3D[null,null,null,null];
+}
+if((options.relAppIds=3D=3D"undefined")||(options.relAppIds=3D=3Dnull)){
+options.relAppIds=3D"";
+}
+if((options.relCount=3D=3D"undefined")||(options.relCount=3D=3Dnull)){
+options.relCount=3D"";
+}
+var header_bg=3D"blue";
+if(options.skin=3D=3D"green"||options.skin=3D=3D"orange"||options.skin=3D=
+=3D"lightblue"){
+header_bg=3Doptions.skin;
+}else{
+header_bg=3D"blue";
+}
+Element_itemDiv.innerHTML=3D
+"<div id =3D'tag-add-anchor-link' class=3D'"+cssP+"cont'>"+
+"<div id=3D'"+itemPrefix+"0' class=3D'"+cssP+"header-"+header_bg+"'>"+"<spa=
+n class=3D'"+cssP+"header-title'>"+$_Resource.$_getResource(0)+"</span></di=
+v>"+
+"<div id=3D'"+itemPrefix+"7' class=3D'"+cssP+"header-"+header_bg+"'>"+"</di=
+v>"+
+"<div class=3D'"+cssP+options.skin+"-border'>"+
+((!options.sectionsToShow.indexOf('myTags')=3D=3D-1)?(""):("<div id=3D'"+it=
+emPrefix+"1' class=3D'"+cssP+"sect'></div>"))+
+((!options.sectionsToShow.indexOf('otherTags')=3D=3D-1)?(""):("<div id=3D'"=
++itemPrefix+"2' class=3D'"+cssP+"sect'></div>"))+
+((!options.sectionsToShow.indexOf('relatedLinks')=3D=3D-1)?(""):("<div id=
+=3D'"+itemPrefix+"3' class=3D'"+cssP+"sect'></div>"))+
+((!options.sectionsToShow.indexOf('relatedPeople')=3D=3D-1)?(""):("<div id=
+=3D'"+itemPrefix+"4' class=3D'"+cssP+"sect'></div>"))+
+"</div>"+
+"<div id=3D'"+itemPrefix+"5' class=3D'"+cssP+"sect'></div>"+
+((!options.sectionsToShow.indexOf('tagger')=3D=3D-1)?(""):("<div id=3D'"+it=
+emPrefix+"6' class=3D'"+cssP+"widget-info'></div>"))+
+"<div id=3D'"+itemPrefix+"8' class=3D'"+cssP+"login'></div>"+
+"<div id=3D'"+itemPrefix+"9' style=3D'display:none' > </div>"+
+"</div>";
+properHeader=3D$_Util.$(itemPrefix+"0");
+if(options.sectionsToShow.indexOf('myTags')!=3D-1){
+myTagsDiv=3D$_Util.$(itemPrefix+"1");
+}
+if(options.sectionsToShow.indexOf('otherTags')!=3D-1){
+othersTagsDiv=3D$_Util.$(itemPrefix+"2");
+}
+if(options.sectionsToShow.indexOf('relatedLinks')!=3D-1){
+relatedLinksDiv=3D$_Util.$(itemPrefix+"3");
+}
+if(options.sectionsToShow.indexOf('relatedPeople')!=3D-1){
+relatedPeopleDiv=3D$_Util.$(itemPrefix+"4");
+}
+if(options.sectionsToShow.indexOf('tagger')!=3D-1){
+widgetInfoDiv=3Ddocument.getElementById(itemPrefix+"6");
+}
+loginDiv=3Ddocument.getElementById(itemPrefix+"7");
+loginTimeOutDiv=3Ddocument.getElementById(itemPrefix+"8");
+properFooter=3D$_Util.$(itemPrefix+"5");
+imagesDiv=3Ddocument.getElementById(itemPrefix+"9");
+$_buildUserOptions();
+resourceAppAndUser=3D"&appId=3D"+options.appId+
+"&addop=3D"+options.sectionsToShow+
+(options.relAppIds?"&relAppIds=3D"+options.relAppIds:"")+
+(options.relCount?"&relCount=3D"+options.relCount:"");
+targetUrl=3D(options.resourceURL?"&resourceURL=3D"+encodeURIComponent(optio=
+ns.resourceURL):"");
+$_CrossDomainRequest.$_theInstance.$_request(ETSTagAdd.SERVICE+"?op=3Dgetta=
+gadd"+resourceAppAndUser,
+targetUrl,ETSTagAdd.MAX_QUERY_TIME,$_Util.$_createInstanceCall(self,self.$_=
+receiveTagAdd));
+};
+function $_configError(error)
+{
+window.alert("ETS Tag Add Config Error: "+error);
+}
+this.$_receiveMyTagsUpdate=3Dfunction(bool_status,data)
+{
+if(bool_status=3D=3D=3Dfalse||data.error){
+$_displayStatus((data&&data.error&&data.error.mesg?data.error.mesg:
+$_Resource.$_getResource(3)));
+}
+else
+{
+ETSTagAddData=3Ddata;
+$_AddMyTagsSection();
+}
+};
+this.$_receiveTagAdd=3Dfunction(bool_status,data)
+{
+if(!useremail&&data.useremail){
+useremail=3Ddata.useremail;
+resourceAppAndUser=3D"&appId=3D"+options.appId+
+"&addop=3D"+options.sectionsToShow+
+"&userId=3D"+useremail+
+(options.relAppIds?"&relAppIds=3D"+options.relAppIds:"")+
+(options.relCount?"&relCount=3D"+options.relCount:"");
+if(data.hashcode&&data.hashcode!=3D''){
+if($_Util.getCookie(ETSLogin.COOKIENAME)=3D=3Dnull){
+$_Util.setCookie(ETSLogin.COOKIENAME,data.hashcode,180,"/",".ibm.com");
+}
+}
+}
+if(bool_status=3D=3D=3Dfalse||!data||data.error)
+{
+$_displayStatus($_Resource.$_getResource(3),
+(data&&data.error&&data.error.mesg?data.error.mesg:""));
+}
+else if((!useremail||useremail=3D=3D"null")&&(options.sectionsToShow.indexO=
+f('tagger')!=3D-1)){
+ETSTagAddData=3Ddata;
+$_displayLogin("please login");
+}
+else{
+ETSTagAddData=3Ddata;
+if(ETSTagAddData.error){
+$_displayError();
+}
+else{
+$_displayTagAdd();
+}
+}
+};
+function $_displayError()
+{
+$_displayStatus("Status Code : "+ETSTagAddData.error.code+
+" <br> Message : "+(ETSTagAddData.error.mesg||"Failed")+"</br>");
+};
+function $_displayStatus(statusMsg,body)
+{
+var htmlStrForStatus=3D
+"<div class=3D'"+cssP+"bg' style=3D'border: 1px solid #669acc;'>"+
+"<div style=3D'color:#333;background:#fff;border-bottom: 2px solid #669acc;=
+padding:2px;'>"+
+"<strong>"+statusMsg+"</strong>"+
+(body?"<br/>"+body:"")+
+"</div></div>";
+properHeader.innerHTML=3DhtmlStrForStatus;
+myTagsDiv.innerHTML=3D"";
+othersTagsDiv.innerHTML=3D"";
+if(relatedLinksDiv!=3Dnull){
+relatedLinksDiv.innerHTML=3D"";
+}
+if(relatedPeopleDiv!=3Dnull){
+relatedPeopleDiv.innerHTML=3D"";
+}
+if(widgetInfoDiv!=3Dnull){
+widgetInfoDiv.innerHTML=3D"";
+}
+if(loginDiv!=3Dnull){
+loginDiv.innerHTML=3D"";
+}
+};
+function $_displayLogin(statusMsg)
+{
+if(options.sectionsToShow.indexOf('tagger')!=3D-1){
+$_AddTableHeader();
+$_AddTagAddLoginHeader(statusMsg);
+$_associateEventListenersForLogin();
+}
+else{
+properHeader.style.display=3D"none";
+properHeader.innerHTML=3D"";
+}
+if(othersTagsDiv!=3Dnull){
+$_AddOthersTagsSection("login");
+}
+if(relatedLinksDiv!=3Dnull){
+$_AddRelatedIdeasSection();
+}
+if(relatedPeopleDiv!=3Dnull){
+$_AddRelatedPeoplesSection();
+}
+$_AddProperFooter();
+};
+this.$_processEnterKey=3Dfunction(e)
+{
+var e=3Dwindow.event||e
+var keyunicode=3De.charCode||e.keyCode
+switch(keyunicode)
+{
+case 13:
+if(window.event){
+event.returnValue=3Dfalse;
+event.cancelBubble=3Dtrue;
+this.$_submitLoginForm();
+}
+else{
+e.preventDefault();
+e.stopPropagation();
+this.$_submitLoginForm();
+}
+break;
+case 27:
+this.$_closeLoginWindow();
+break;
+}
+}
+this.$_submitLoginForm=3Dfunction()
+{
+var userName=3D$_Util.$(itemPrefix+"userName");
+var password=3D$_Util.$(itemPrefix+"password");
+if((userName.value=3D=3Dundefined)||(userName.value=3D=3Dnull)||(userName.v=
+alue.length=3D=3D0)||userName.value.trim()=3D=3D"")
+{
+alert($_Resource.$_getResource(39));
+return;
+}
+if((password.value=3D=3Dundefined)||(password.value=3D=3Dnull)||(password.v=
+alue.length=3D=3D0)||password.value.trim()=3D=3D"")
+{
+alert($_Resource.$_getResource(40));
+return;
+}
+var submitURL=3DETSLogin.SERVICE+
+"?j_username=3D"+encodeURIComponent(userName.value)+
+"&j_password=3D"+encodeURIComponent(password.value)+"";
+loginDiv.innerHTML=3D"<div class=3D'"+cssP+"login-msg'><b>&nbsp;&nbsp;"+$_R=
+esource.$_getResource(36)+"<b></div>";
+$_CrossDomainRequest.$_theInstance.$_request(submitURL,'',ETSLogin.MAX_QUER=
+Y_TIME,$_Util.$_createInstanceCall(self,self.$receiveLoginStatus),0);
+}
+this.$_closeLoginWindow=3Dfunction()
+{
+$_AddTagAddLoginHeader("plese login");
+$_associateEventListenersForLogin();
+}
+this.$_closeLoginTimeOutWindow=3Dfunction()
+{
+loginTimeOutDiv.style.width=3D'';
+loginTimeOutDiv.style.height=3D'';
+loginTimeOutDiv.style.zIndex=3D-1;
+loginTimeOutDiv.style.visibility=3D"hidden";
+loginTimeOutDiv.innerHTML=3D"";
+}
+this.$receiveLoginStatus=3Dfunction(bool_status,data)
+{
+if(bool_status=3D=3D=3Dfalse||!data)
+{
+$_AddTagAddLoginHeader("login-timeout");
+$_associateEventListenersForLoginTimeOut();
+return;
+}
+else if(data.hashcode.toString()!=3D"0".toString())
+{
+$_init();
+}
+else
+{
+$_AddTagAddLoginHeader("login-fail");
+$_associateEventListenersForLoginFail();
+}
+}
+function $_bindToggle(sectId)
+{
+$_Util.$(itemPrefix+"sectHead"+sectId).onclick=3Dfunction(){
+var body=3D$_Util.$(itemPrefix+"sectBody"+sectId);
+var toggle=3D$_Util.$(itemPrefix+"sectToggle"+sectId);
+var head=3D$_Util.$(itemPrefix+"sectHead"+sectId);
+var isDisplayed=3D(body.style.display!=3D"none");
+body.style.display=3D(isDisplayed?"none":"block");
+toggle.src=3DETSTagAdd.BASE_URL+"/img/"+
+((options.skin)?
+(isDisplayed?"collection_closed_white":"collection_open_white")+".gif":
+(isDisplayed?"collection_closed_blue":"collection_open_blue")+".gif");
+};
+};
+function $_bindTagRemoval(linkId,tag)
+{
+$_Util.$(itemPrefix+"myTags"+linkId).onclick=3Dfunction(){
+window.setTimeout(function(){self.$_removeTag(tag);},1);
+};
+}
+function $_associateEventListeners()
+{
+if(options.sectionsToShow.indexOf('tagger')!=3D-1){
+var newTagsText=3D$_Util.$(itemPrefix+"newTags");
+var newTagsButton=3D$_Util.$(itemPrefix+"Add");
+newTagsButton.onclick=3D$_Util.$_createInstanceCall(self,self.$_parseAndSub=
+mitNewTags);
+}
+};
+function $_associateEventListenersForLogin()
+{
+if(options.sectionsToShow.indexOf('tagger')!=3D-1){
+var newLoginLink=3D$_Util.$(itemPrefix+"loginLink");
+newLoginLink.onclick=3D$_Util.$_createInstanceCall(self,self.$_showLogin);
+}
+};
+function $_associateEventListenersForLoginTimeOut()
+{if(options.sectionsToShow.indexOf('tagger')!=3D-1){
+var newLoginLink=3D$_Util.$(itemPrefix+"loginLink");
+newLoginLink.onclick=3D$_Util.$_createInstanceCall(self,self.$_showLogin);
+var newTroubleshootLink=3D$_Util.$(itemPrefix+"troubleShoot-timeout");
+newTroubleshootLink.onclick=3D$_Util.$_createInstanceCall(self,self.$_showL=
+oginTimeOutMsg);
+}
+}
+function $_associateEventListenersForLoginFail()
+{if(options.sectionsToShow.indexOf('tagger')!=3D-1){
+var newLoginLink=3D$_Util.$(itemPrefix+"loginLink");
+newLoginLink.onclick=3D$_Util.$_createInstanceCall(self,self.$_showLogin);
+var newTroubleshootLink=3D$_Util.$(itemPrefix+"troubleShoot-fail");
+newTroubleshootLink.onclick=3D$_Util.$_createInstanceCall(self,self.$_showL=
+oginFailMsg);
+}
+}
+this.$_showLoginFailMsg=3Dfunction(e)
+{
+this.$_showTroubleShootMsg(e,0);
+}
+this.$_showLoginTimeOutMsg=3Dfunction(e)
+{
+this.$_showTroubleShootMsg(e,1)
+}
+this.$_showTroubleShootMsg=3Dfunction(e,status)
+{
+var statusMsg;
+if(status=3D=3D0)
+statusMsg=3D$_Resource.$_getResource(45);
+else
+statusMsg=3D$_Resource.$_getResource(46);
+var htmlStrForLogin=3D"<div class=3D'"+cssP+"troubleshoot-box'><table width=
+=3D'100%' cellspacing=3D'4'> <tr><td align=3D'right'> <a id=3D'"+itemPrefix=
++"close' class=3D'"+cssP+"rm' style=3D'cursor: pointer; color:blue; font-we=
+ight: bold;' title=3D'Click to close login window' /> <span>close[x]</span>=
+ </a></td></tr><tr><td>"
++$_Resource.$_getResource(43)+"</td></tr><tr><td>"
++$_Resource.$_getResource(44)+"</td></tr><tr><td>"
++statusMsg+"</td></tr></table></div>";
+loginTimeOutDiv.innerHTML=3DhtmlStrForLogin;
+var closeButton=3D$_Util.$(itemPrefix+"close");
+closeButton.onclick=3D$_Util.$_createInstanceCall(self,self.$_closeLoginTim=
+eOutWindow);
+var evt=3Dwindow.event||e;
+var _xPos=3D$_Util. mouseX(evt);
+var _yPos=3D$_Util. mouseY(evt);
+var myWidth=3D0,myHeight=3D0;
+if(typeof(window.innerWidth)=3D=3D'number')
+{
+myWidth=3Dwindow.innerWidth;
+myHeight=3Dwindow.innerHeight;
+}
+else if(document.documentElement&&(document.documentElement.clientWidth||do=
+cument.documentElement.clientHeight))
+{
+myWidth=3Ddocument.documentElement.clientWidth;
+myHeight=3Ddocument.documentElement.clientHeight;
+}
+else if(document.body&&(document.body.clientWidth||document.body.clientHeig=
+ht))
+{
+myWidth=3Ddocument.body.clientWidth;
+myHeight=3Ddocument.body.clientHeight;
+}
+var _pageRight=3DmyWidth-($_Util.$_isIE?event.clientX:e.clientX)-20;
+var _pageBottom=3DmyHeight-($_Util.$_isIE?event.clientY:e.clientY)-20;
+if(_pageRight<loginTimeOutDiv.offsetWidth){
+loginTimeOutDiv.style.left=3D$_Util.$_isIE?document.body.scrollLeft+event.c=
+lientX-loginTimeOutDiv.offsetWidth+"px":window.pageXOffset+e.clientX-loginT=
+imeOutDiv.offsetWidth+"px";
+}else if(_xPos<-1000){
+loginTimeOutDiv.style.left=3D"5px";
+}else{
+loginTimeOutDiv.style.left=3D_xPos+"px";
+}
+if(_pageBottom<loginTimeOutDiv.offsetHeight){
+loginTimeOutDiv.style.top=3D$_Util.$_isIE?document.body.scrollTop+event.cli=
+entY-loginTimeOutDiv.offsetHeight+"px":window.pageYOffset+e.clientY-loginTi=
+meOutDiv.offsetHeight+"px";
+}else{
+loginTimeOutDiv.style.top=3D_yPos+"px";
+}
+if(!e)var e=3Dwindow.event;
+e.cancelBubble=3Dtrue;
+if(e.stopPropagation)e.stopPropagation();
+loginTimeOutDiv.style.display=3D"block";
+loginTimeOutDiv.style.zIndex=3D100;
+loginTimeOutDiv.style.visibility=3D"visible";
+return false;
+}
+this.$_showLogin=3Dfunction(e)
+{
+var html=3D[];
+html.push("<div class=3D'"+cssP+"header-box-content'>");
+html.push("<div id=3D'login_form' name=3D 'login_form'>");
+html.push("<div style=3D'font:0.9em; padding:1px;'>");
+html.push("<div class=3D'"+cssP+"'login-header' style=3D'color: rgb(255, 25=
+5, 255);'>")
+html.push($_Resource.$_getResource(34));
+html.push("</div>");
+html.push("<input type=3D'text' id=3D'"+itemPrefix+"userName' name=3D'j_use=
+rname' class=3D'"+cssP+((options.compact&&options.compact=3D=3D'true')?"com=
+pact-login-input":"login-input")+"'/>");
+html.push("</div>");
+html.push("<div style=3D'font:0.9em; padding:1px;'>");
+html.push("<div class=3D'"+cssP+"'login-header' style=3D'color: rgb(255, 25=
+5, 255);'>")
+html.push($_Resource.$_getResource(35));
+html.push("</div>");
+html.push("<input type=3D'password' id=3D'"+itemPrefix+"password' name=3D'j=
+_password' class=3D'"+cssP+((options.compact&&options.compact=3D=3D'true')?=
+"compact-login-input":"login-input")+"'/>");
+html.push("</div>");
+html.push("<div class=3D'"+cssP+"login-buttons'>");
+html.push("<img id=3D'"+itemPrefix+"action' src=3D'"+ETSTagAdd.BASE_URL+"/i=
+mg/"+options.skin+"_plain_loginbtn.png' />");
+html.push("<img id=3D'"+itemPrefix+"close' src=3D'"+ETSTagAdd.BASE_URL+"/im=
+g/"+options.skin+"_plain_cancelbtn.png' />");
+loginDiv.innerHTML=3Dhtml.join("");
+var userName=3D$_Util.$(itemPrefix+"userName");
+var password=3D$_Util.$(itemPrefix+"password");
+var newSubmitButton=3D$_Util.$(itemPrefix+"action");
+var closeButton=3D$_Util.$(itemPrefix+"close");
+newSubmitButton.onclick=3D$_Util.$_createInstanceCall(self,self.$_submitLog=
+inForm);
+password.onkeypress=3D$_Util.$_createInstanceCall(self,self.$_processEnterK=
+ey);
+closeButton.onclick=3D$_Util.$_createInstanceCall(self,self.$_closeLoginWin=
+dow);
+return false;
+}
+this.$_removeTag=3Dfunction(tag)
+{
+$_Util.$(itemPrefix+"sectBody"+1).innerHTML=3D"<span class=3D'"+cssP+"msg'>=
+Removing tag . . . </span>";
+$_CrossDomainRequest.$_theInstance.$_request(ETSTagAdd.SERVICE+"?op=3Ddelet=
+etag&tag=3D"+
+encodeURIComponent(tag.tag)+
+resourceAppAndUser,targetUrl,
+ETSTagAdd.MAX_QUERY_TIME,$_Util.$_createInstanceCall(this,this.$_receiveMyT=
+agsUpdate));
+};
+this.$_parseAndSubmitNewTags=3Dfunction()
+{
+var newTagsText=3D$_Util.$(itemPrefix+"newTags");
+var tagsColl=3DnewTagsText.value;
+if((tagsColl=3D=3Dundefined)||(tagsColl=3D=3Dnull)||(tagsColl.length=3D=3D0=
+)||(tagsColl.trim()=3D=3D""))
+{
+alert($_Resource.$_getResource(23));
+return;
+}
+else
+{
+if(tagsColl.length>maxTagLength){
+alert($_Resource.$_getResource(28));
+return;
+}
+}
+var newTags=3DtagsColl.replace(/'/g,"\'");
+var quoteMatch=3DnewTags.match(/\"/g);
+if(quoteMatch)
+{
+var numQuotes=3DquoteMatch.length;
+}
+if(numQuotes){
+if(numQuotes%2=3D=3D0){
+newTags=3D$_Util.$_stripCommaFromQuotedStrings(newTags);
+}
+else
+{
+alert($_Resource.$_getResource(28));
+return;
+}
+};
+var tagsArry=3DnewTags.split(",");
+var paramString=3D"";
+for(ii=3D0;ii<tagsArry.length;ii++)
+{
+var atag=3DtagsArry[ii];
+atag=3Datag.replace(/"/g,'');
+atag=3Datag.replace(/^\s+|\s+$/g,'');
+var encTag=3DencodeURIComponent(atag);
+if(encTag&&encTag.trim()!=3D"")
+{
+paramString+=3D"&tag=3D"+encodeURIComponent(atag);
+}
+}
+var submitURL=3DETSTagAdd.SERVICE+
+"?op=3Daddtags"+
+"&appId=3D"+options.appId+
+"&userId=3D"+useremail+
+"&t=3D"+pagetitle+
+paramString;
+newTagsText.value=3D"";
+if(myTagsDiv!=3Dnull){
+$_Util.$(itemPrefix+"sectBody"+1).innerHTML=3D"<span class=3D'"+cssP+"msg'>=
+"+$_Resource.$_getResource(27)+"</span>";
+}
+$_CrossDomainRequest.$_theInstance.$_request(submitURL,targetUrl,
+ETSTagAdd.MAX_QUERY_TIME,$_Util.$_createInstanceCall(self,self.$_receiveMyT=
+agsUpdate));
+};
+function $_displayTagAdd()
+{
+if(options.sectionsToShow.indexOf('tagger')!=3D-1){
+$_AddTableHeader();
+$_AddTagAddLoginHeader();
+}
+else{
+properHeader.style.display=3D"none";
+properHeader.innerHTML=3D"";
+}
+if(myTagsDiv!=3Dnull){
+$_AddMyTagsSection();
+}
+if(othersTagsDiv!=3Dnull){
+$_AddOthersTagsSection();
+}
+if(relatedLinksDiv!=3Dnull){
+$_AddRelatedIdeasSection();
+}
+if(relatedPeopleDiv!=3Dnull){
+$_AddRelatedPeoplesSection();
+}
+$_AddProperFooter();
+$_associateEventListeners();
+if(enableAutoComplete&&(options.sectionsToShow.indexOf('tagger')!=3D-1))
+{
+var autocompleteDIV=3D$_Util.$(itemPrefix+'ac');
+var autocompletetext=3D$_Util.$(itemPrefix+'newTags');
+new $_AutoComplete(0,autocompletetext,autocompleteDIV,
+$_Util.$_createInstanceCall(self,self.$_handleTagAddition),
+$_Util.$_createInstanceCall(self,self.$_handleTagFocus),true);
+}
+};
+this.$_handleTagAddition=3Dfunction(tag)
+{
+var o=3D$_Util.$(itemPrefix+"newTags");
+o.value=3Dtag;
+this.$_parseAndSubmitNewTags();
+};
+this.$_handleTagFocus=3Dfunction(tag){};
+function $_AddTableHeader()
+{
+var html=3D[];
+var text_color=3D((options.skin=3D=3D'blue')?" color: #FFFFFF":"#4477BB");
+if(options.skin=3D=3D'lightblue')
+text_color=3D" color: #000000";
+var hoverhtmlStr=3D"<b>"+$_Resource.$_getResource(19)+"</b>&nbsp;"+$_Resour=
+ce.$_getResource(20)+"<br/>"+
+"<b>"+$_Resource.$_getResource(21)+"</b>&nbsp;"+$_Resource.$_getResource(22=
+);
+html.push("<div class=3D'"+cssP+"tagger-box-top-left'><div class=3D'"+cssP+=
+"tagger-box-top-right'>");
+html.push("<div class=3D'"+cssP+"header-box-content'><div class=3D'"+cssP+"=
+header' style=3D'"+text_color+"'>"+$_Resource.$_getResource(5)+"</span></di=
+v>");
+html.push("&nbsp;&nbsp;");
+if($_Util.$_isIE&&$_Util.$_fixPNG){
+html.push("<a onmouseover=3D'showInfoDiv(event);' onmouseout=3D'hideInfoDiv=
+();'><img src=3D'"+ETSTagAdd.BASE_URL+"/img/blank.gif' id=3D'"+itemPrefix+"=
+infoicon1' alt=3D'' class=3D'"+cssP+"info'/></a>");
+}else{
+if(options.skin=3D=3D"green")
+{
+html.push("<a onmouseover=3D'showInfoDiv(event);' onmouseout=3D'hideInfoDiv=
+();'><img src=3D'"+ETSTagAdd.BASE_URL+"/img/information_green.png' id=3D'"+=
+itemPrefix+"infoicon1' alt=3D'' class=3D'"+cssP+"info'/></a>");
+}
+else if(options.skin=3D=3D"orange")
+{
+html.push("<a onmouseover=3D'showInfoDiv(event);' onmouseout=3D'hideInfoDiv=
+();'><img src=3D'"+ETSTagAdd.BASE_URL+"/img/information_orange.png' id=3D'"=
++itemPrefix+"infoicon1' alt=3D'' class=3D'"+cssP+"info'/></a>");
+}
+else if(options.skin=3D=3D"lightblue")
+{
+html.push("<a onmouseover=3D'showInfoDiv(event);' onmouseout=3D'hideInfoDiv=
+();'><img src=3D'"+ETSTagAdd.BASE_URL+"/img/information_lightblue.png' id=
+=3D'"+itemPrefix+"infoicon1' alt=3D'' class=3D'"+cssP+"info'/></a>");
+}
+else
+{
+html.push("<a onmouseover=3D'showInfoDiv(event);' onmouseout=3D'hideInfoDiv=
+();'><img src=3D'"+ETSTagAdd.BASE_URL+"/img/information_blue.png' id=3D'"+i=
+temPrefix+"infoicon1' alt=3D'' class=3D'"+cssP+"info'/></a>");
+}
+}
+html.push("</div>");
+properHeader.innerHTML=3Dhtml.join("");
+};
+function $_AddTagAddLoginHeader(statusMsg)
+{
+var html=3D[];
+var text_color=3D((options.skin=3D=3D'blue')?" color: #FFFFFF":"#4477BB");
+if(options.skin=3D=3D'lightblue')
+text_color=3D" color: #000000";
+html.push("<div class=3D'"+cssP+"header-box-content'>");
+if(!statusMsg)
+{
+html.push("<div style=3D'float:left;'><input type=3D'text' id=3D'"+itemPref=
+ix+"newTags' class=3D'"+cssP+((options.compact&&options.compact=3D=3D'true'=
+)?"compact-ac":"ac")+"'/>");
+html.push("<div id=3D'"+itemPrefix+"ac' class=3D'"+cssP+"ac'></div></div>");
+html.push("<img style=3D'cursor: pointer; float:right;  margin: 6px 0px 0px=
+ 0px; color:#fff; padding:0px 3px 0px 0px; border:0;' id=3D'"+itemPrefix+"A=
+dd' src=3D'"+ETSTagAdd.BASE_URL+"/img/"+options.skin+"_plain_addbtn.png' '/=
+> <br style=3D'clear: both' /><div style=3D'clear: both' class=3D'"+cssP+"e=
+xample'>e.g., ajax, big_blue</div></div>");
+}
+else
+{
+if($_Util.$_isIE)
+{
+var images=3D[
+""+ETSTagAdd.BASE_URL+"/img/"+options.skin+"_plain_loginbtn.png",
+""+ETSTagAdd.BASE_URL+"/img/"+options.skin+"_plain_cancelbtn.png",
+""+ETSTagAdd.BASE_URL+"/img/graygradient.png"
+];
+imagesDiv.innerHTML=3D"<img src=3D'"+images[0]+"'> <img src=3D'"+images[1]+=
+"'> <img src=3D'"+images[2]+"'>";
+}
+if(statusMsg.toString()=3D=3D"login-fail".toString()){
+html.push("<div> <div class=3D'"+cssP+"login-msg'>Incorrect login. Please=
+ <a id=3D'"+itemPrefix+"loginLink' href =3D'javascript:void(0)' style=3D'te=
+xt-decoration:underline; color:white'>try again</a></div>");
+html.push("<div align=3D'right' class=3D'"+cssP+"login-msg'> <a id=3D'"+ite=
+mPrefix+"troubleShoot-fail' href =3D'javascript:void(0)' style=3D'text-deco=
+ration:underline; color:white'>Problems?</a></div></div>");
+}
+else if(statusMsg.toString()=3D=3D"login-timeout".toString()){
+html.push("<div> <div class=3D'"+cssP+"login-msg'>Problem with Login Servic=
+e.Please <a id=3D'"+itemPrefix+"loginLink' href =3D'javascript:void(0)' sty=
+le=3D'text-decoration:underline; color:white'>try again</a></div>");
+html.push("<div align=3D'right' class=3D'"+cssP+"login-msg'> <a id=3D'"+ite=
+mPrefix+"troubleShoot-timeout' href =3D'javascript:void(0)' style=3D'text-d=
+ecoration:underline; color:white'>Problems?</a> </div></div>");
+}
+else{
+html.push("<div> <div class=3D'"+cssP+"login-msg'>Please <a id=3D'"+itemPre=
+fix+"loginLink' href =3D'javascript:void(0)' style=3D'text-decoration:under=
+line; color:white' >login</a> to enable tagging.</div></div>");
+}
+}
+html.push("</div>\n</div>\n</div>\n</div>");
+loginDiv.innerHTML=3Dhtml.join("");
+};
+function $_getSectionHeader(sectionId,titleResourceId)
+{
+return("<div id=3D'"+itemPrefix+"sectHead"+sectionId+"' class=3D'"+cssP+"se=
+ct-head-"+options.skin+"'>"+
+"<img id=3D'"+itemPrefix+"sectToggle"+sectionId+"' src=3D'"+ETSTagAdd.BASE_=
+URL+
+((options.skin)?"/img/collection_open_white.gif'":"/img/collection_open_blu=
+e.gif'")+" alt=3D'Collapse' class=3D'"+cssP+"toggle-margin' />"+
+"<span class=3D'"+cssP+"resource-title'>"+$_Resource.$_getResource(titleRes=
+ourceId)+"</span></div>"+
+"<div id=3D'"+itemPrefix+"sectBody"+sectionId+"' class=3D'"+cssP+"sectBody'=
+>");
+};
+function $_getSectionFooter()
+{
+return "</div>";
+};
+function $_AddProperFooter()
+{
+var logo;
+if(options.logo=3D=3Dfalse){
+logo=3D"";
+}else{
+if(options.skin=3D=3D"orange"||options.skin=3D=3D"green"||options.skin=3D=
+=3D"lightblue")
+logo=3D"<div id=3D'"+options.skin+"_idlogo'>";
+else
+logo=3D"<div id=3D'blue_idlogo'>";
+logo=3Dlogo+" <a href=3D'http://w3.tap.ibm.com/tags'> <img src=3D'"+ETSTagA=
+dd.BASE_URL+"/img/"+options.skin+"_plain_ets_logo.png' class=3D'"+cssP+"log=
+o' /> </a></div>";
+}
+properFooter.innerHTML=3D"<div class=3D'"+cssP+"tagger-box-bottom-right'><d=
+iv class=3D'"+cssP+"tagger-box-bottom-left'>"+logo+"</div></div>";
+};
+function $_PrintMoreLink(html,link){
+if(link!=3Dnull){
+html.push("<div class=3D'"+cssP+"more'><a class=3D'"+cssP+"link-small' href=
+=3D'"+link+"'>"+$_Resource.$_items[25]+"</a><img style=3D'vertical-align:mi=
+ddle;' src=3D'"+ETSTagAdd.BASE_URL+"/img/arrow_right.gif'/></div>");
+}
+}
+function $_AddMyTagsSection()
+{
+var html=3D[$_getSectionHeader(1,8)];
+var myTags=3DETSTagAddData.mytags;
+myTags.sort(function(x,y){
+return(x.tag.toLowerCase()>y.tag.toLowerCase()?1:-1);});
+var applicableLength=3DMath.min(myTags?myTags.length:0,maxMyTags);
+if(applicableLength<=3D0){
+html.push("<span class=3D'msg'>"+$_Resource.$_getResource(12)+"</span>");
+}
+else
+{
+for(var i=3D0;i<applicableLength;i++)
+{
+var encoded_tag=3DencodeURIComponent(myTags[i].tag);
+var tagToDisplay=3D(myTags[i].tag.length<=3DmaxTagCharCountToDisplay)?myTag=
+s[i].tag:(""+myTags[i].tag.substring(0,maxTagCharCountToDisplay-3)+"...");
+html.push("<div class=3D'"+cssP+"link-block'>");
+html.push("<a id=3D'"+ETSTagAddItemId+encoded_tag+"' class=3D'"+cssP+"link'=
+ href=3D'"+
+(options.myTagURLBase||options.tagURLBase)+
+encoded_tag+
+(options.myTagURLBase_end?options.myTagURLBase_end:(options.tagURLBase_end?=
+options.tagURLBase_end:""))+
+"' title=3D'"+myTags[i].tag+"&nbsp;("+myTags[i].count+")'>"+tagToDisplay+"<=
+/a>");
+html.push("<a href=3D'javascript:;' class=3D'"+cssP+"rm' title=3D'"+$_Resou=
+rce.$_getResource(24)+
+"' id=3D'"+itemPrefix+"myTags"+i+"'>[x]</a>");
+html.push("</div>");
+}
+$_PrintMoreLink(html,options.moreLinks[0]);
+}
+html.push($_getSectionFooter());
+myTagsDiv.innerHTML=3Dhtml.join("");
+$_bindToggle(1);
+for(var i=3D0;i<applicableLength;i++){
+$_bindTagRemoval(i,myTags[i]);
+}
+};
+function $_AddOthersTagsSection(isLogin)
+{
+var html;
+if(isLogin=3D=3Dnull){
+html=3D[$_getSectionHeader(2,9)];
+}else{
+html=3D[$_getSectionHeader(2,31)];
+}
+var othersTags=3DETSTagAddData.alltags;
+othersTags.sort(function(x,y){
+return(x.tag.toLowerCase()>y.tag.toLowerCase()?1:-1);});
+var applicableLength=3DapplicableLength=3DMath.min(othersTags?othersTags.le=
+ngth:0,maxOthersTags);
+if(applicableLength<=3D0){
+html.push("<div class=3D'msg'>"+$_Resource.$_getResource(13)+"</div>");
+}
+else
+{
+for(var i=3D0;i<applicableLength;i++)
+{
+var encoded_tag=3DencodeURIComponent(othersTags[i].tag);
+var tagToDisplay=3D(othersTags[i].tag.length<=3DmaxTagCharCountToDisplay)?o=
+thersTags[i].tag:(""+othersTags[i].tag.substring(0,maxTagCharCountToDisplay=
+-3)+"...");
+html.push("<div class=3D'"+cssP+"link-block'><a id=3D'"+ETSTagAddItemId+enc=
+oded_tag+"' class=3D'"+cssP+"link' href=3D'"+options.tagURLBase+
+encoded_tag+
+(options.tagURLBase_end?options.tagURLBase_end:"")+
+"' title=3D'"+othersTags[i].tag+"&nbsp;("+othersTags[i].count+")'>"+
+tagToDisplay+"</a></div>");
+}
+$_PrintMoreLink(html,options.moreLinks[1]);
+}
+html.push($_getSectionFooter());
+othersTagsDiv.innerHTML=3Dhtml.join("");
+$_bindToggle(2);
+};
+function $_AddRelatedIdeasSection()
+{
+var html=3D[$_getSectionHeader(3,10)];
+var relatedLinks=3DETSTagAddData.relatedlinks;
+relatedLinks.sort(function(x,y){
+return(x.linktext.toLowerCase()>y.linktext.toLowerCase()?1:-1);});
+var applicableLength=3DMath.min(relatedLinks?relatedLinks.length:0,maxRelat=
+edIdeaCount);
+if(applicableLength<=3D0){
+html.push("<span class=3D'msg'>"+$_Resource.$_getResource(14)+"</span>");
+}
+else
+{
+for(var i=3D0;i<applicableLength;i++)
+{
+var aLinkObject=3DrelatedLinks[i];
+var linktxt=3DaLinkObject['linktext'];
+if(linktxt.length>maxCharCountInLine)
+{
+linktxt=3DaLinkObject['linktext'].substr(0,(maxCharCountInLine-3));
+linktxt+=3D"...";
+}
+html.push("<div class=3D'"+cssP+"link-block-larger'><a class=3D'"+cssP+"lin=
+k' href=3D'"+aLinkObject['link']+"'>"+linktxt+"</a></div>");
+}
+$_PrintMoreLink(html,options.moreLinks[2]);
+}
+html.push($_getSectionFooter());
+relatedLinksDiv.innerHTML=3Dhtml.join("");
+$_bindToggle(3);
+};
+function $_AddRelatedPeoplesSection()
+{
+var html=3D[$_getSectionHeader(4,11)];
+var relatedPeople=3DETSTagAddData.relatedpeople;
+relatedPeople.sort(function(x,y){
+return(x.name.toLowerCase()>y.name.toLowerCase()?1:-1);});
+var applicableLength=3DMath.min(relatedPeople?relatedPeople.length:0,maxPeo=
+pleCount);
+numberOfPeopleLinks=3DapplicableLength;
+if(applicableLength<=3D0){
+html.push("<span class=3D'msg'>"+$_Resource.$_getResource(15)+"</span>");
+}
+else
+{
+for(var i=3D0;i<applicableLength;i++)
+{
+html.push(
+"<div class=3D'"+cssP+"link-block-larger'><a class=3D'"+cssP+"link' id=3D'"=
++itemPrefix+"per"+i+"'"+
+" href=3D'"+(options.personURLBase||"http://w3.ibm.com/bluepages/simpleSear=
+ch.wss?location=3DAll+locations&searchBy=3DInternet+address&task=3Dviewreco=
+rd&searchFor=3D")+
+relatedPeople[i].email+"'>"+relatedPeople[i].name+"</a></div>");
+}
+$_PrintMoreLink(html,options.moreLinks[3]);
+}
+html.push($_getSectionFooter());
+relatedPeopleDiv.innerHTML=3Dhtml.join("");
+$_bindToggle(4);
+if(!options.hideBluecard)
+{
+for(var i=3D0;i<applicableLength;i++){
+Bluecard.addItem(relatedPeople[i].email,itemPrefix+"per"+i);
+}
+}
+};
+showInfoDiv=3Dfunction(e)
+{
+var infoMsg=3D"<b>"+$_Resource.$_getResource(19)+"</b><br/>"+$_Resource.$_g=
+etResource(20)+"<br/><br/>"+
+"<b>"+$_Resource.$_getResource(21)+"</b><br/>"+$_Resource.$_getResource(22);
+widgetInfoDiv.style.width=3D400+"px";
+widgetInfoDiv.innerHTML=3DinfoMsg;
+var _xPos=3D($_Util.$_isIE)?event.clientX+document.body.scrollLeft:e.pageX;
+var _yPos=3D($_Util.$_isIE)?event.clientY+document.body.scrollTop:e.pageY;
+var myWidth=3D0,myHeight=3D0;
+if(typeof(window.innerWidth)=3D=3D'number')
+{
+myWidth=3Dwindow.innerWidth;
+myHeight=3Dwindow.innerHeight;
+}
+else if(document.documentElement&&(document.documentElement.clientWidth||do=
+cument.documentElement.clientHeight))
+{
+myWidth=3Ddocument.documentElement.clientWidth;
+myHeight=3Ddocument.documentElement.clientHeight;
+}
+else if(document.body&&(document.body.clientWidth||document.body.clientHeig=
+ht))
+{
+myWidth=3Ddocument.body.clientWidth;
+myHeight=3Ddocument.body.clientHeight;
+}
+var _pageRight=3DmyWidth-($_Util.$_isIE?event.clientX:e.clientX)-20;
+var _pageBottom=3DmyHeight-($_Util.$_isIE?event.clientY:e.clientY)-20;
+if(_pageRight<widgetInfoDiv.offsetWidth){
+widgetInfoDiv.style.left=3D$_Util.$_isIE?document.body.scrollLeft+event.cli=
+entX-widgetInfoDiv.offsetWidth+"px":window.pageXOffset+e.clientX-widgetInfo=
+Div.offsetWidth+"px";
+}else if(_xPos<-1000){
+widgetInfoDiv.style.left=3D"5px";
+}else{
+widgetInfoDiv.style.left=3D_xPos+"px";
+}
+if(_pageBottom<widgetInfoDiv.offsetHeight){
+widgetInfoDiv.style.top=3D$_Util.$_isIE?document.body.scrollTop+event.clien=
+tY-widgetInfoDiv.offsetHeight+"px":window.pageYOffset+e.clientY-widgetInfoD=
+iv.offsetHeight+"px";
+}else{
+widgetInfoDiv.style.top=3D_yPos+"px";
+}
+if(!e)var e=3Dwindow.event;
+e.cancelBubble=3Dtrue;
+if(e.stopPropagation)e.stopPropagation();
+widgetInfoDiv.style.display=3D"block";
+widgetInfoDiv.style.visibility=3D"visible";
+return false;
+}
+hideInfoDiv=3Dfunction()
+{
+widgetInfoDiv.style.width=3D'';
+widgetInfoDiv.style.visibility=3D"hidden";
+}
+function $_buildUserOptions()
+{
+for(var i=3D0;i<options.length;i++)
+{
+var aUserOptionObject=3Doptions[i];
+try
+{
+var aUserOptionKey=3DaUserOptionObject.keyName;
+var aUserOptionVal=3DaUserOptionObject.keyValue;
+switch(aUserOptionKey)
+{
+case('MAX_MY_TAGS_COUNT'):
+maxMyTags=3DaUserOptionVal;
+break;
+case('PEOPLE_LINK_URL'):
+peopleLinksURL=3DaUserOptionVal;
+break;
+case('MAX_RELATED_IDEA_COUNT'):
+maxRelatedIdeaCount=3DaUserOptionVal;
+break;
+case('MAX_PEOPLE_COUNT'):
+maxPeopleCount=3DaUserOptionVal;
+break;
+case('MAX_OTHERS_TAGS_COUNT'):
+maxOthersTags=3DaUserOptionVal;
+break;
+case('MAX_CHARS_IN_LINK'):
+maxCharCountInLine=3DaUserOptionVal;
+break;
+case('MAX_AUTOCOMPLETE_COUNT'):
+maxAutoCompleteOptions=3DaUserOptionVal;
+break;
+case('ENABLE_AUTOCOMPLETE'):
+enableAutoComplete=3DaUserOptionVal;
+break;
+case('SKIN'):
+skin=3DaUserOptionVal;
+break;
+}
+}
+catch(e){}
+}
+}
+$_init();
+}
+}ETSTagAddNamespace();
+
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.webahead.ibm.com/widget/bluecard/load.js
+
+	function Bluecard(){if(Bluecard.theInstance!=3Dnull)return Bluecard.theIns=
+tance;var $a=3Dnull;var $b=3Dfalse;var $c=3Dfalse;var d=3Ddocument;var $d=
+=3D[];this.$o=3Dfunction(){$c=3Dtrue;if($b){for(var i=3D0;i<$d.length;i++){=
+$a.addItem($d[i][0],$d[i][1]);};$a.doLoad();}};this.$p=3Dfunction($e){$a=3D=
+$e;$b=3Dtrue;if($c){for(var i=3D0;i<$d.length;i++){$a.addItem($d[i][0],$d[i=
+][1]);};$a.doLoad();}};this.$q=3Dfunction(id,$f){if($b){$a.dispatch(id,$f);=
+}};this.$r=3Dfunction($g,$h){if($c){$a.addItem($g,$h);}else{$d.push([$g,$h]=
+);}};this.$s=3Dfunction(){if($b){$a.scan();}};this.isCompatible=3Dfunction(=
+){return(d.getElementById&&d.getElementsByTagName&&Function.prototype.apply=
+&&window.encodeURIComponent&&d.createElement&&d.write);};this.initialize=3D=
+function(){if(!this.isCompatible())return;if(!d.body){return;};var $i=3Dwin=
+dow.onload;if(typeof $i!=3D'function'){window.onload=3DBluecard.$o;}else{wi=
+ndow.onload=3Dfunction(){try{$i();}catch(e){};Bluecard.$o();}};try{if(Bluec=
+ardOptions){for(var i=3D0;i<Bluecard.$t.length;i++){var $j=3DBluecard.$t[i]=
+;eval("try { if(BluecardOptions."+$j+" || BluecardOptions."+$j+" =3D=3D=3D=
+ false)"+"Bluecard."+$j+" =3D BluecardOptions."+$j+"; } catch(e) { }");}}}c=
+atch(e){};$k=3Dtrue;document.write('<'+'script src=3D"'+Bluecard.BASE_URL+'=
+/bluecard.js"'+' type=3D"text/javascript"><'+'/script>');}};Bluecard.theIns=
+tance=3Dnull;Bluecard.$t=3Dnew Array("AUTO_SCAN","FONT_SIZE","ALWAYS_ADD","=
+NEVER_ADD","ZINDEX");Bluecard.ALWAYS_ADD=3Dnull;Bluecard.NEVER_ADD=3Dnull;B=
+luecard.FONT_SIZE=3D"97%";Bluecard.AUTO_SCAN=3Dtrue;Bluecard.ZINDEX=3D"1005=
+";Bluecard.MAXIMUM_LDAP_QUERY_TIME=3D12000;Bluecard.MAXIMUM_SAMETIME_QUERY_=
+TIME=3D14000;Bluecard.BASE_URL=3D"//w3.webahead.ibm.com/widget/bluecard";Bl=
+uecard.LDAP_SERVICE=3D"/LDAP";Bluecard.getInstance=3Dfunction(){return Blue=
+card.theInstance;};Bluecard.$o=3Dfunction(){Bluecard.getInstance().$o();};B=
+luecard.dispatch=3Dfunction(id,$f){Bluecard.getInstance().$q(id,$f);};Bluec=
+ard.finishLoad=3Dfunction($e){Bluecard.getInstance().$p($e);};Bluecard.open=
+Window=3Dfunction($l,$m){var $n=3D($m)?Bluecard.BASE_URL+$l:$l;window.open(=
+$n,'_blank','fullscreen=3Dno, toolbar=3Dyes, location=3Dyes, menubar=3Dyes,=
+'+' resizable=3Dyes, status=3Dyes, height=3D700, width=3D1000, titlebar=3Dy=
+es, scrollbars=3Dyes');};Bluecard.addItem=3Dfunction($g,$h){Bluecard.getIns=
+tance().$r($g,$h);};Bluecard.rescanDocument=3Dfunction(){Bluecard.getInstan=
+ce().$s();};Bluecard.theInstance=3Dnew Bluecard();Bluecard.theInstance.init=
+ialize();
+
+
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://w3.webahead.ibm.com/widget/bluecard/bluecard.js
+
+function BluecardNamespace(){var d=3Ddocument;function $a(){};$a.$0C=3D(nav=
+igator.userAgent.toLowerCase().indexOf("opera")!=3D-1)?true:false;$a.$0D=3D=
+(document.all&&!$a.$0C);$a.$0E=3D(navigator.appVersion.indexOf("Safari")>=
+=3D0);$a.$0F=3Dfunction($p,$q){return function(){$q.apply($p,arguments);}};=
+$a.$0G=3Dfunction($p,$q){return $a.$0H($a.$0F($p,$q));};$a.$0I=3Dfunction($=
+p,$q,$r){var $s=3D$a.$0G($p,$q);return function(){if($r){try{$r(arguments);=
+}catch(e){}};$s.apply(this,arguments);}};$a.$0H=3Dfunction($t){return funct=
+ion(e){if(!e&&window.event){e=3Dwindow.event;};$t(e);}};$a.$0J=3Dfunction(E=
+lement,$u){Element.setAttribute("style",$u);try{Element.style.cssText=3D$u;=
+}catch(e){}};$a.$0K=3Dfunction($v,$w,$x){try{if($v.currentStyle)return $v.c=
+urrentStyle[$w];else if(window.getComputedStyle)return d.defaultView.getCom=
+putedStyle($v,null).getPropertyValue($x);}catch(e){};try{eval("return Eleme=
+nt_e.style."+$x+";");}catch(e){return "";}};$a.$0L=3Dfunction(Element,$y){i=
+f($y.dt){Element.style.top=3Dnull;Element.style.bottom=3D$y.y+"px";}else{El=
+ement.style.bottom=3Dnull;Element.style.top=3D$y.y+"px";};if($y.lj){Element=
+.style.right=3Dnull;Element.style.left=3D$y.x+"px";}else{Element.style.left=
+=3Dnull;Element.style.right=3D$y.x+"px";}};$a.$0M=3Dfunction($z,name){var=
+ p=3Dname.split(".");for(var i=3D0;i<p.length;i++){if(!($z[p[i]]))return fa=
+lse;$z=3D$z[p[i]];};return true;};$a.$0N=3Dfunction(){var $A=3D{x:0,y:0};if=
+(window.innerWidth){$A.x=3Dwindow.innerWidth;};if($a.$0M(document,"document=
+Element.clientWidth")){var w2=3Ddocument.documentElement.clientWidth;if(!$A=
+.x||w2&&w2<$A.x){$A.x=3Dw2;}}else if(document.body){$A.x=3Ddocument.body.cl=
+ientWidth;};if(window.innerHeight){$A.y=3Dwindow.innerHeight;}else if($a.$0=
+M(document,"documentElement.clientHeight")){$A.y=3Ddocument.documentElement=
+.clientHeight;}else if(document.body){$A.y=3Ddocument.body.clientHeight;};r=
+eturn $A;};$a.$0O=3Dfunction(){return{x:(window.pageXOffset||document.docum=
+entElement.scrollLeft||document.body.scrollLeft||0),y:(window.pageYOffset||=
+document.documentElement.scrollTop||document.body.scrollTop||0)};};$a.$0P=
+=3Dfunction($B,$C){var $D=3D0;while($B){var $E=3D$B[$C];if($E){$D+=3D$E-0;i=
+f($B=3D=3Ddocument.body){break;}};$B=3D$B.parentNode;};return $D;};$a.$0Q=
+=3Dfunction($B,$F){$F=3Dtrue;var $A=3D[];$A.x=3D$A.y=3D0;var so=3D$a.$0O();=
+var st=3Dso.y;var sl=3Dso.x;var db=3Ddocument["body"]||document["documentEl=
+ement"];if($a.$0D){var $G=3D$B.getBoundingClientRect();$A.x=3D$G.left-2;$A.=
+y=3D$G.top-2;}else if(document.getBoxObjectFor){var bo=3Ddocument.getBoxObj=
+ectFor($B);$A.x=3Dbo.x-$a.$0P($B,"scrollLeft");$A.y=3Dbo.y-$a.$0P($B,"scrol=
+lTop");}else{if($B["offsetParent"]){var $H;if(($a.$0E)&&($B.style.getProper=
+tyValue("position")=3D=3D"absolute")&&($B.parentNode=3D=3Ddb)){$H=3Ddb;}els=
+e{$H=3Ddb.parentNode;};if($B.parentNode!=3Ddb){var nd=3D$B;if($a.$0C){nd=3D=
+db;};$A.x-=3D$a.$0P(nd,"scrollLeft");$A.y-=3D$a.$0P(nd,"scrollTop");};var=
+ n=3D$B["offsetLeft"];$A.x+=3D(isNaN(n)?0:n);var m=3D$B["offsetTop"];$A.y+=
+=3D(isNaN(m)?0:m);$B=3D$B.offsetParent;while(($B!=3D$H)&&($B!=3Dnull)){var=
+ n=3D$B["offsetLeft"];$A.x+=3D(isNaN(n)?0:n);var m=3D$B["offsetTop"];$A.y+=
+=3D(isNaN(m)?0:m);$B=3D$B.offsetParent;}}else if($B["x"]&&$B["y"]){$A.x+=3D=
+isNaN($B.x)?0:$B.x;$A.y+=3DisNaN($B.y)?0:$B.y;}};if($F){$A.y+=3Dst;$A.x+=3D=
+sl;};$A[0]=3D$A.x;$A[1]=3D$A.y;if(isNaN($A[0])){$A[0]=3D0;};return $A;};fun=
+ction $b(){var $I=3D[];var self=3Dthis;var $J=3D0;function $c($K){return fu=
+nction(){self.$0R($K);}};this.$0S=3Dfunction(id){return "__BCCDR"+id;};this=
+.$0T=3Dfunction(id){return d.getElementById(this.$0S(id));};this.$0U=3Dfunc=
+tion($L,$M,$N){var $O=3Dthis.$0S(++$J);while(d.getElementById($O)){$O=3Dthi=
+s.$0S(++$J);};if($N){$I[$J]=3D$N;};var $P=3Dd.createElement("script");$P.id=
+=3D$O;try{$P.src=3D$L+"&id=3D"+$J+"&c=3D"+Math.round(Math.random()*50,0);}c=
+atch(e){return false;};d.body.appendChild($P);if($M){var self=3Dthis;window=
+.setTimeout($c($J),$M);};return $J;};this.$0R=3Dfunction(id){var $N=3D$I[id=
+];$I[id]=3Dnull;if($N){try{var $P=3Dthis.$0T(id);if($P){d.body.removeChild(=
+$P);};if($N){$N(false);}}catch(e){}}};this.$0V=3Dfunction(id,$Q){if(!id){re=
+turn;};try{var $N=3D$I[id];if($N){$I[id]=3Dnull;$N(true,$Q);var $P=3Dthis.$=
+0T(id);if($P){d.body.removeChild($P);}}}catch(e){}};};function $d(){};$d.$0=
+W=3D1;$d.$0X=3D2;$d.$0Y=3D1;$d.$0Z=3D3;$d.$10=3D/([a-zA-Z0-9._-]+@[a-zA-Z0-=
+9._-]+.ibm\.com)/i;$d.$11=3D/[uU][iI][dD](=3D|#)([A-Z0-9-]{9,9})\b/;$d.$12=
+=3Dfunction($R){$R=3Dunescape($R);var $S=3D$d.$10.exec($R);if($S!=3Dnull&&$=
+S[0]!=3D""){return{'status':$d.$0Y,'id':$S[0],'type':$d.$0W};};$S=3D$d.$11.=
+exec($R);if($S!=3Dnull&&$S[2]!=3D""){return{'status':$d.$0Y,'id':$S[2],'typ=
+e':$d.$0X};};return{'status':$d.$0Z};};function $e(){var self=3Dthis;var $T=
+;var $U;var $V;var $W=3D0;var $X=3D1;var $Y=3D2;var $Z=3D3;var $00=3D4;var=
+ $01=3D5;var $02=3Dnew Array(6);var $03;var $04;var $05;function $f(){if($0=
+3){try{window.clearTimeout($03);}catch(e){};$03=3Dnull;};$T.style.display=
+=3D"none";$U.style.display=3D"none";$V.style.display=3D"none";};this.$13=3D=
+function($06,$y,$07){$f();$04=3D$06;$a.$0L($V,$y);if($07){$a.$0L($T,$y);$T.=
+style.display=3D"inline";}};this.$14=3Dfunction(){$03=3Dwindow.setTimeout(f=
+unction(){self.$15();},$e.$16);};this.$15=3Dfunction(){$T.style.display=3D"=
+none";$U.style.display=3D"none";$V.style.display=3D"none";$03=3Dnull;$04=3D=
+null;};this.$17=3Dfunction(){if($03){try{window.clearTimeout($03);}catch(e)=
+{};$03=3Dnull;}};this.$18=3Dfunction($06){if($06!=3D$04){return;};$f();$V.s=
+tyle.display=3D"inline";};this.$19=3Dfunction($06,$08,$y){if($06!=3D$04)ret=
+urn;$f();$02[$W].innerHTML=3D"<img src=3D'"+$e.$1a+$08.mail+"' alt=3D'BlueP=
+ages Photo' width=3D'115' height=3D'115' "+"style=3D'margin-top:5px;border:=
+ 1px solid #43709e;'>";var x=3D"http://w3.ibm.com/bluepages/simpleSearch.ws=
+s?location=3DAll+locations&searchBy=3DInternet+address&task=3Dviewrecord&se=
+archFor=3D"+$08.mail;var y=3D"http://w3.ibm.com/cgi-bin/cdre/getsite.pl?wor=
+kloc=3D"+$08.workloc;var z=3D$08.executivecorner;$02[$X].innerHTML=3D"<div=
+ style=3D'margin-top:5px;'><strong><img src=3D'//w3.ibm.com/ui/v8/images/ic=
+on-link-popup.gif' width=3D'14' height=3D'14' alt=3D'Opens in a popup windo=
+w' border=3D'0'/>"+"<a href=3D'javascript:Bluecard.openWindow(\"" + x + "\"=
+)' style=3D'font-size:110%;'>"+$08.callupname+"</a></strong>"+"</div><div=
+ style=3D'margin-left:14px;margin-bottom:13px;'>"+$08.organization+"<br/>"+=
+$08.jobresponsibilities+"</div>"+"<img src=3D'//w3.ibm.com/ui/v8/images/ico=
+n-link-popup.gif' width=3D'14' height=3D'14' alt=3D'Opens in a popup window=
+' border=3D'0'/>"+"<a href=3D'javascript:Bluecard.openWindow(\"" + y + "\")=
+'>"+$08.location+" "+$08.co+"</a><br/>"+"<div style=3D'margin-left:14px;mar=
+gin-bottom:14px;'>"+"<b>Building:</b> "+$08.buildingname+" <font style=3D'c=
+olor:#669acc'>|</font> <b>Floor:</b>"+" "+$08.floor+" <font style=3D'color:=
+#669acc'>|</font> <b>Office:</b> "+$08.physicaldeliveryofficename+"</div>"+=
+($08.executivecorner?"<div style=3D'margin-bottom: 5px;'><img src=3D'//w3.i=
+bm.com/ui/v8/images/icon-link-popup.gif' width=3D'14' height=3D'14' alt=3D'=
+Opens in a popup window' border=3D'0'/>"+"<a href=3D'javascript:Bluecard.op=
+enWindow(\"" + z + "\")'>View their Executive Corner</a></div>":"");$02[$Y]=
+.innerHTML=3D$08.telephonenumber+" (T/L: "+$08.tieline+")";$02[$Z].innerHTM=
+L=3D($08.mobile=3D=3D"")?"N/A":$08.mobile;$02[$00].innerHTML=3D"<a href=3D'=
+mailto:"+$08.mail+"'>"+$08.mail+"</a>";$02[$01].innerHTML=3D$08.notesemail;=
+$a.$0L($U,$y);$U.style.display=3D"inline";};function $g($09){return "<nobr>=
+<img src=3D'"+Bluecard.BASE_URL+"/img/icon.gif' width=3D'13' height=3D'12'"=
++"style=3D'position: relative; top: 1px; left: -1px;'/>"+$09+"</nobr>";};fu=
+nction $h(){var $0a=3DBluecard.ZINDEX;var $0b=3D"padding:3px;position:absol=
+ute;display:none;background:#c0d6eb;border:1px solid #669acc;color:#333;"+"=
+height:15px;z-index:"+$0a+";font-size:"+Bluecard.FONT_SIZE+";font-family:ve=
+rdana,sans-serif;";$T=3Dd.createElement("div");$T.onmouseover=3D$a.$0G(self=
+,self.$17);$T.onmouseout=3D$a.$0G(self,self.$14);$a.$0J($T,"cursor:wait;"+$=
+0b);$T.innerHTML=3D$g("Loading Bluecard Information . . .");;d.body.appendC=
+hild($T);$V=3Dd.createElement("div");$V.onmouseover=3D$a.$0G(self,self.$17)=
+;$V.onmouseout=3D$a.$0G(self,self.$14);$a.$0J($V,$0b);$V.innerHTML=3D$g("Un=
+able to query Bluecard information at this time.");d.body.appendChild($V);$=
+U=3Dd.createElement("div");$U.onmouseover=3D$a.$0G(self,self.$17);$U.onmous=
+eout=3D$a.$0G(self,self.$14);$a.$0J($U,"padding-left:7px;position:absolute;=
+width:460px;"+"display:none;background:url('"+Bluecard.BASE_URL+"/img/bg.gi=
+f');background-repeat:repeat-x;"+"background-color:#fff;border:1px solid #6=
+69acc;z-index:"+$0a+";");var $0c=3D"__BCardElm_";var $0d=3D"href=3D'http://=
+w3.webahead.ibm.com/prototype/bluecard.htm' target=3D'_BLANK'";$U.innerHTML=
+=3D"<map name=3D'"+$0c+"map'><area id=3D'"+$0c+"x' coords=3D'308,0,325,15'=
+ href=3D'javascript:void(0);' alt=3D'Close Bluecard'/>"+"<area coords=3D'20=
+5,0,301,15' "+$0d+" alt=3D'Bluecard Integration Information'/></map>"+"<tab=
+le border=3D'0' cellspacing=3D'0' cellpadding=3D'0' style=3D'width:100%;fon=
+t-family:verdana,sans-serif;font-size:"+Bluecard.FONT_SIZE+";'><tr>"+"<td=
+ valign=3D'top' rowspan=3D'2' id=3D'"+$0c+"0'></td><td width=3D'22'>&nbsp;&=
+nbsp;&nbsp;</td>"+"<td valign=3D'top' align=3D'right'><img usemap=3D'#"+$0c=
++"map' src=3D'"+Bluecard.BASE_URL+"/img/top.gif' width=3D'325' height=3D'15=
+' border=3D'0'/></td>"+"</tr>"+"<tr>"+"<td>&nbsp;&nbsp;&nbsp;</td>"+"<td va=
+lign=3D'top' id=3D'"+$0c+"1'></td>"+"</tr></table>"+"<div style=3D'font-siz=
+e:.1em;height:1px;line-height:0;padding:0;padding-top:3px;padding-bottom:3p=
+x;margin:0;margin-right:9px;margin-bottom:4px;background:url(https://w3.ibm=
+.com/ui/v8/images/rule-h-gray-dots.gif) 0 50% repeat-x;'>&nbsp;</div>"+"<ta=
+ble border=3D'0' cellspacing=3D'0' cellpadding=3D'0' style=3D'width:100%;ma=
+rgin-bottom:6px;padding-left:16px;font-family:verdana,sans-serif;font-size:=
+"+Bluecard.FONT_SIZE+";'>"+"<tr>"+"<td style=3D'color:#333;'><b>Phone:</b><=
+/td>"+"<td id=3D'"+$0c+"2'></td>"+"</tr>"+"<tr>"+"<td style=3D'color:#333;'=
+><b>Mobile:</b></td>"+"<td id=3D'"+$0c+"3'></td>"+"</tr>"+"<tr>"+"<td style=
+=3D'color:#333;'><b>E-mail:</b></td>"+"<td id=3D'"+$0c+"4'></td>"+"</tr>"+"=
+<tr>"+"<td style=3D'color:#333;'><b>Notes&nbsp;mail:&nbsp;</b></td>"+"<td=
+ id=3D'"+$0c+"5'></td>"+"</tr></table>";d.body.appendChild($U);for(var i=3D=
+0;i<$02.length;i++){try{$02[i]=3Dd.getElementById($0c+i);$02[i].style.color=
+=3D"#333333";}catch(e){}};try{var $0e=3Dd.getElementById($0c+"x");$0e.oncli=
+ck=3D$a.$0G(self,self.$15);}catch(e){}};$h();};$e.$16=3D600;$e.$1a=3D"//w3.=
+ibm.com/bluepages/api/BluePagesPhoto.jsp?EMAIL=3D";$e.$1b=3D"<div style=3D'=
+font-size:.1em;height:1px;line-height:0;padding:0;padding-top:3px;padding-b=
+ottom: 3px;margin:0;"+"background:url(https://w3.ibm.com/ui/v8/images/rule-=
+h-gray-dots.gif) 0 50% repeat-x;'>&nbsp;</div>";function $i($0f,$0g,id,$0h,=
+$0i,event){var self=3Dthis;var $y;function $j(){if($i.$1c=3D=3D=3Dnull){$i.=
+$1c=3Dnew $e();};if(!$i.$1d){$i.$1d=3Dd.createElement("span");$a.$0J($i.$1d=
+,"position:absolute;cursor:pointer;display:none;z-index:"+(Bluecard.ZINDEX-=
+1)+";height:15px;padding:3px;background:#c0d6eb;font-size:"+Bluecard.FONT_S=
+IZE+";border:1px solid #669acc;font-family:verdana,sans-serif;color:#333;")=
+;try{$i.$1d.style.MozOpacity=3D"0.9";$i.$1d.style.opacity=3D"0.9";$i.$1d.st=
+yle.filter=3D"alpha(opacity=3D90)";}catch(e){};$i.$1d.innerHTML=3D"<nobr><i=
+mg src=3D'"+Bluecard.BASE_URL+"/img/icon.gif' width=3D'13' height=3D'12'"+"=
+style=3D'position: relative; top: 1px; left: -1px;'/>Click here for Bluecar=
+d</nobr>";d.body.appendChild($i.$1d);};$0g.onmouseover=3D$a.$0I(self,self.$=
+1e,$0i);$0g.onmouseout=3D$a.$0I(self,self.$1f,$0g.onmouseout);if(event!=3D=
+=3Dfalse){self.$1e(event);}};function $k(){$0j=3D$0f.$1g();$0j.$0U(Bluecard=
+.BASE_URL+Bluecard.LDAP_SERVICE+"?type=3D"+$0h+"&ref=3D"+window.location.ho=
+st+"&q=3D"+window.encodeURIComponent(id),Bluecard.MAXIMUM_LDAP_QUERY_TIME,$=
+a.$0F(self,self.$1h));};function $l(){try{window.clearTimeout($i.$1i);}catc=
+h(e){};$i.$1i=3Dnull;};this.$1j=3Dfunction(){$l();};this.$1e=3Dfunction(e){=
+$l();$i.$1d.onmouseover=3D$a.$0I(this,this.$1j,null);$i.$1d.onclick=3D$a.$0=
+I(this,this.$19,null);$i.$1d.onmouseout=3D$a.$0I(this,this.$1f,null);var $0=
+k=3D$a.$0O();var $0l=3D$a.$0N();var $0m=3D$a.$0Q($0g);var $0n=3D{'x':$0g.of=
+fsetWidth,'y':$0g.offsetHeight};var $0o=3D{'x':460,'y':220};$y=3D{'x':Math.=
+max($0m.x,$0k.x+1),'y':0,'lj':true,'dt':false};if($0m.x+$0o.x>($0l.x+$0k.x)=
+){$y.lj=3Dfalse;};if(($0m.y+$0n.y+4+$0o.y)>($0l.y+$0k.y)){$y.dt=3Dtrue;};if=
+(!$y.lj){if($a.$0K($0g,"display","display")=3D=3D"block"){$y.x=3D$0l.x-(Mat=
+h.min($0l.x+$0k.x-1,$0m.x+152));}else{$y.x=3D$0l.x-(Math.min($0l.x+$0k.x-1,=
+$0m.x+$0n.x));};if($a.$0D){$y.x+=3D$0k.x;}};if($y.dt){$y.y=3D$0l.y-($0m.y-$=
+0n.y);if($a.$0D){$y.y+=3D$0k.y-$0n.y;}else{$y.y-=3D$0n.y;};$y.y+=3D2;}else{=
+$y.y=3D$0m.y+2+$0n.y;};$a.$0L($i.$1d,$y);$i.$1d.style.display=3D"inline";};=
+this.$1k=3Dfunction(e){$i.$1d.style.display=3D"none";};this.$1f=3Dfunction(=
+e){$i.$1i=3Dwindow.setTimeout(function(){self.$1k();},$i.$16);};this.$19=3D=
+function(e){var $0p=3D(new Date()).getTime();$i.$1d.style.display=3D"none";=
+if(!$i.$1l[id]){$i.$1c.$13(this,$y,true);$k();};if($i.$1l[id]){$i.$1c.$13(t=
+his,$y,false);$i.$1c.$19(this,$i.$1l[id],$y);}};this.$15=3Dfunction(e){$i.$=
+1c.$14();};this.$1h=3Dfunction($0q,$Q){if(!$0q){$i.$1c.$18(this);return;};$=
+i.$1l[id]=3D$Q;$i.$1c.$19(this,$Q,$y);if(Bluecard.ST&&$i.$1m[id]){$i.$1c.$1=
+n(this,$i.$1m[id].data);}};$j();};$i.$16=3D600;$i.$1l=3Dnew Array();$i.$1d=
+=3Dnull;$i.$1i=3Dnull;$i.$1c=3Dnull;function $m(){var $0j=3Dnew $b();var $0=
+r=3D[];var self=3Dthis;var $0s=3D"__Bluecard_Enabled";var $0t=3D0;function=
+ $n($0u){if($0u.constructor=3D=3DString){return document.getElementById($0u=
+);}else{return $0u;}};function $o($0g,id,$0h,$0i,event){if($0g&&id&&$0h){if=
+($0g.getAttribute($0s)){return;};$0r[$0t]=3Dnew $i(self,$0g,id,$0h,$0i,even=
+t);$0t++;$0g.setAttribute($0s,true);}};function createAnalyzeFunction($0g,$=
+0i,$0v){return function(e){if($0i){try{$0i(e);}catch(e){}};if(!e&&window.ev=
+ent){e=3Dwindow.event;};self.$1o($0g,$0i,e,$0v);}};this.$1o=3Dfunction($0g,=
+$0i,e,$0v){if($0v){var $0w=3D$d.$12($0v);}else{var $0w=3D$d.$12($0g.href);}=
+;if($0w.status=3D=3D$d.$0Y){$o($0g,$0w.id,$0w.type,$0i,e);return;}else if($=
+0v){return;};$0w=3D$d.$12($0g.innerHTML);if($0w.status=3D=3D$d.$0Y){$o($0g,=
+$0w.id,$0w.type,$0i,e);return;};$0g.onmouseover=3D$0i;};this.doLoad=3Dfunct=
+ion(){try{if(Bluecard.ALWAYS_ADD){for(var i=3D0;i<Bluecard.ALWAYS_ADD.lengt=
+h;i++){try{$o($n(Bluecard.ALWAYS_ADD[i][1]),Bluecard.ALWAYS_ADD[i][0],$d.$0=
+W,null,false);}catch(e){}}}}catch(e){};try{if(Bluecard.NEVER_ADD){for(var=
+ i=3D0;i<Bluecard.NEVER_ADD.length;i++){try{var $0x=3D$n(Bluecard.NEVER_ADD=
+[i]);if($0x)$0x.setAttribute($0s,true);}catch(e){}}}}catch(e){};this.scan()=
+;};this.scan=3Dfunction(){var $0y=3Dd.getElementsByTagName("a");if($0y!=3Dn=
+ull){for(var i=3D0;i<$0y.length;i++){if($0y[i].getAttribute($0s))continue;v=
+ar $0z=3D$0y[i].getAttribute("bluecard");if($0z){$0z=3D$0z.toLowerCase();};=
+var $0v=3D($0z!=3D"false"&&$0z!=3D"true")?$0z:null;if(Bluecard.AUTO_SCAN&&$=
+0z!=3D"false"){$0y[i].onmouseover=3DcreateAnalyzeFunction($0y[i],$0y[i].onm=
+ouseover,$0v);}else if(!Bluecard.AUTO_SCAN&&($0z=3D=3D"true"||$0v)){$0y[i].=
+onmouseover=3DcreateAnalyzeFunction($0y[i],$0y[i].onmouseover,$0v);}}}};thi=
+s.dispatch=3Dfunction(id,$Q){$0j.$0V(id,$Q);};this.addItem=3Dfunction($0A,$=
+0x){var $0B=3D$n($0x);if($0B){$o($0B,$0A,$d.$0W,$0B.onmouseover,false);}};t=
+his.$1g=3Dfunction(){return $0j;}};Bluecard.finishLoad(new $m());};Bluecard=
+Namespace();
+
+
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.tap.ibm.com/widget/ets/tagadd/img/topleft-corner.gif
+
+R0lGODlhBwAGAIABAP///////yH5BAEAAAEALAAAAAAHAAYAAAIKhI8WcbvqWHwzFAA7
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.tap.ibm.com/widget/ets/tagadd/img/topright-corner.gif
+
+R0lGODlhBwAGAIABAP///////yH5BAEAAAEALAAAAAAHAAYAAAILhA8RmLrmFIyLrgIAOw==
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.tap.ibm.com/widget/ets/tagadd/img/information_blue.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAqhJREFUeNqkk8tPU0EUxr9bHpKWtmAhaYvIozw0kKCJgDGYmBg2JhCx
+URPCY+HCFVs1ceV/YIKJ6EoeQWOsdW0iRmokduGGVCCVp1CKyKul3nZm7oynNQF8bXSSyc3MnfOb
+73xzjqaUwv+M7F83vA9mPFyKTiVkT4pxp1ASCjIKyCFDyNHxW2dmD57XDiq4ODDlZYz3V9iVq6ms
+ALbcrMz+ji4QCK9hMpJYpYi+4J3zvt8A7fdDXqbzwdZqs6W+xIqVDYbojg5DKtjNWXDb8xD+Gof/
+1WyCdPcG77b79gBt9yYrOReB1iqLu9ZpRXB+G0JwNJQVAvT/w/wWNJOGOlc+Pm/F8eJlOAIlzwYf
+XpkzpSmUc1eFTbmPuWyYCG+C6Qw8JdF2yoW2Rjc4wViKIbS8jfIiO2qqbG6l8650bAbADKO7udyB
++eguOOcENEi6wPOJJfhoMs7ABMOurmNhPYaWE2XQGOveewW6saTQmo3wKkk3DHCDk0KJrnOVSDs0
+MRXJrCljRDdiqHEfgTL0kn0FJE+RWYJOM5GCJIikdWhxC9+SAgajyQ0ILiAYwTUKojN7AFqtbCSS
+cFhyyFVTBpaG/HghRcECklKTlIrdcghrsTg0Ta7sA5gYHg8to6zYQvVCUklKx+lyHD9aCHNeDvo6
+GjLeCJoVTjsCgU9p8PB+JSb1kanp+HWPq8DdVFOMtwR7+mYGj8c+QtHtKlONCidrS7GwHcNcKByh
+LEZ+KqTGa0+8Kp4cvHCp3lJZZMX04jrWN+OQQuJwgRnVpQ4K3sXYs9cJaDm9Qf8N32+l3Hj1kReK
+9XvqXK6WZg8c+bkZD77sJDH+bgZLofCqppn6gv6bvj/2Qno0XR7wKGV0kpM9kEknfckwjZoJQxr4
+6Hv/7b8307+M7wIMAKg/gntE4LHJAAAAAElFTkSuQmCC
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.tap.ibm.com/widget/ets/tagadd/img/collection_open_white.gif
+
+R0lGODlhEAAQAIABAP///////yH5BAEAAAEALAAAAAAQABAAAAIZjI+py+0PopwR0QsSlmu3C3FP
+UI3miaZpAQA7
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.tap.ibm.com/widget/ets/tagadd/img/bottom-right-corner.gif
+
+R0lGODlhBwAGAIABAP///////yH5BAEAAAEALAAAAAAHAAYAAAIKjA+HGpDojJt0FgA7
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.tap.ibm.com/widget/ets/tagadd/img/bottom-left-corner.gif
+
+R0lGODlhBwAGAIABAP///////yH5BAEAAAEALAAAAAAHAAYAAAIKRI6GB5q9mmRSFgA7
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.tap.ibm.com/widget/ets/tagadd/img/blue_plain_ets_logo.png
+
+iVBORw0KGgoAAAANSUhEUgAAADIAAAAZCAYAAABzVH1EAAAAAXNSR0IArs4c6QAAAAZiS0dEAGYA
+mQDMjyE0dgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kIEwkIAEwx5XAAAAAQdEVYdENv
+bW1lbnQARVRTIElDT07Iy2xVAAAAqElEQVRYw+1YyRHAIAiMjh3Zk9akNcWaklc+jsfGYyIGviDM
+7gI6CuPO69jA5LGJMRAGwkAYCAP5xFTJ6YyGE1kfXsXHZ9G6ceySijijq2Tk/P9oLVTWkj9mMJcD
+iSuppSixXiJy2dZC5qVZkVziWsv1AiK1tVAySGwt6wMEKAVGzWBtpDronMiVhrtHJXI3+9StNbrt
+amBStcg9UUis35Yn0GNil3+tG56dSG33YdgVAAAAAElFTkSuQmCC
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.ibm.com/ui/v8/images/rule-h-gray-dots.gif
+
+R0lGODlhAwABAIABADMzMwAAACH5BAEAAAEALAAAAAADAAEAAAICRFIAOw==
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.itso.ibm.com/icons/ecblank.gif
+
+R0lGODlhEAABAIAAAAAAAP///yH5BAEAAAEALAAAAAAQAAEAAAIEjI8ZBQA7
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.ibm.com/ui/v8/images/icon-link-rate.gif
+
+R0lGODlhFAANAOZOAKG63f///0R2u/z8/FB/v7nL5c3Nzfn5+Spbrfb29unp6ePj4+71/DFisViE
+wDZmsFKBwtDc7nOTvmeOxkJxuH6h0YSgx97i5IihxHyfzmeQx3yf0eru8qS/4snP2J+420ByuV6H
+wsfR3Ut1tMTIzOXo7Nzl8p632k59vjFjsXyfza3D4XGTw5quyOju95auybjBytbW1kZytuDg4NPW
+2mCKxGKLxG+XzYqq1a3C4IKgyeTt9+bm5lWAweju9oup1DFgrtPT032dx1qCtpew0p2zzkp5vNHf
+8FeDv+zs7EVzuUt4vK/H5rjL5f///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAE4ALAAAAAAUAA0AAAeCgE6Cg4ROFQGFiYkRAh6Kj4I4AhgHkIoEGkg8lk4AngA/BC4CFp8r
+iIUmDgIqHwUBTScZAjYiCoocLCivAQE5AkIkMQmPAzpGDAw7IEQGMwOWGxMdNUw9ErecShQpIQ1L
+MhecRwgPLQZFQAgvnDcQMEHEJSNDlZA+CwvQggM0SYOBAAA7
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.itso.ibm.com/itsoapps/redbooks.nsf/icon-link-email.gif?OpenImageResource
+
+R0lGODlhFAALAMQZAABmzP///6qqqgBHt7nV8aPI7c/i9ZC86OLu+uLu+QBaxABWwM/i9gBLuo+8
+6ABfx5C86aPI7ABfyJC96OPu+QBQvQBQvo+86QBVwP///wAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABkALAAAAAAUAAsAAAVgYCaOQGme5qgCQeu+ASCsGcvCcTyrdXu7NxkvI0kgEo9EgvJAOCU7QC2j
+YBiuCkP1qt2pFoRwGCwmYLyjSmHNjkTYFoF0nmkcDg7I5e44QCYNaCIDhIWGhYIiAouMjYwhADs=
+
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://w3.itso.ibm.com/itsoapps/redbooks.nsf/rbtech.gif?OpenImageResource
+
+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
+------=_NextPart_000_0000_3E3EA601.3433C47E
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://www.redbooks.ibm.com/cgi-bin/redbooks/count.cgi?id=TIPS0526
+
+R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+------=_NextPart_000_0000_3E3EA601.3433C47E--

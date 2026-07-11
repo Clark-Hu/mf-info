@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*-----------------------------------------------------
+w3 general styles for print media
+Used by: most w3 web pages 
+$Id: print.css,v 1.9.4.2 2004/08/11 22:11:08 coop Exp $
+-----------------------------------------------------*/
+body {
+	background: white;
+	font-family:arial,verdana,helvetica,sans-serif; 
+	font-size: 10pt;
+	color: #000;
+}
+#masthead {
+	color: #000; 
+	background-color: #fff;
+	height: 33px !important;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+#prt-w3-sitemark {
+	position:absolute; 
+	top:0;
+	left:0px; 
+	display:block !important;
+}
+#prt-ibm-logo	{
+	position:absolute;
+	top:10px;
+	right:19px;
+	display:block !important;
+}
+#site-title-only	{
+	position:absolute;
+	top:6px;
+	left:68px; 
+	padding-right:2em; /*moz bug*/
+	color:#000; 
+	background-color: #fff;
+	font-size:21px; 
+	font-weight:bold; 
+}
+
+#content,
+#content-head,
+#content-main,
+#content-sidebar {
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#content-head {margin-top: 44px !important;}
+#content-main {
+	float: none !important;
+	border-right: 0;
+	border-bottom: 1px dashed #000;
+}
+#content-sidebar	{
+	clear:left;
+	margin: 1em 0 0 0 !important;
+	width:40% !important;
+}
+
+a:link, a:visited {
+	text-decoration: underline;
+}
+
+.skip, 
+.access, 
+.portlet-icons,
+.terms,
+.noprint,
+#w3-sitemark, 
+#ibm-logo, 
+#personalization-links, 
+#site-title-user, 
+#persistent-nav, 
+#header-search, 
+#navigation, 
+#browser-warning,
+#content-head .hrule-dots,
+#page-tools-main,
+.page-tools-side,
+#r-col-search {display:none !important;}
+
+/* for portal pages */
+#tabs	{top:40px; left:0;}
+#left-content {left:0 !important;}
+#right-content {right:0;}
+#left-content, #right-content {
+	top:70px;
+	width:27%;
+	font-size: 8pt;
+}
+#center-content {
+	margin: 75px 27% 0 27%;
+	font-size: 8pt;
+}
+
+h2.portlet-head-blue-med,
+h2.portlet-head-gray-med,
+h2.portlet-head-green-med,
+h2.portlet-head-blue-dark,
+h2.portlet-head-gray-dark {color:#333;}
+
+/* printing forms */
+textarea {overflow:visible}

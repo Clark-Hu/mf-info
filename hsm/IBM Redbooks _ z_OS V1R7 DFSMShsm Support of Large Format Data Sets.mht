@@ -1,0 +1,1489 @@
+From: <Saved by UnMHT>
+Subject: =?iso-2022-jp?B?SUJNIFJlZGJvb2tzIHwgei9PUyBWMVI3IERGU01TaHNtIFN1cHBvcnQgb2YgTGFyZ2UgRm9ybWF0IERhdGEgU2V0cw==?=
+Date: Fri, Sep 24 2010 11:34:24 GMT+0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0000_1751A48D.10BAC36C";
+	type="text/html"
+
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets.htm
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "ht=
+tp://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+<meta content=3D"text/html; charset=3DUTF-8" http-equiv=3D"content-type">
+
+
+<title>IBM Redbooks | z/OS V1R7 DFSMShsm Support of Large Format Data Sets<=
+/title>
+<meta content=3D"With z/OS=C2=AE V1R7, DFSMShsm=E2=84=A2 has been enhanced=
+ to support the new large format sequential data sets." name=3D"Description=
+">
+<meta content=3D"TIPS0644, TIPS0644, Redbook, Redbooks, Technotez/OS V1R7=
+ DFSMShsm Support of Large Format Data Sets" name=3D"Keywords">
+<meta content=3D"Storage" name=3D"Subjects">
+<meta content=3D"Lovelace Mary" name=3D"Current Author">
+<meta content=3D"index,follow" name=3D"robots">
+<meta content=3D"IBM internal use only" name=3D"security">
+<meta content=3D"w3 v8 template generator" name=3D"source">
+<meta content=3D"US" name=3D"ibm.country">
+<meta content=3D"2003-12-30" scheme=3D"iso8601" name=3D"dc.date">
+<meta content=3D"en-US" scheme=3D"rfc1766" name=3D"dc.language">
+<meta content=3D"Copyright (c) 2003 IBM Corporation" name=3D"dc.rights">
+<meta content=3D"&lt;ZZ999&gt;" scheme=3D"IBM_ContentClassTaxonomy" name=3D=
+"dc.type">
+<meta content=3D"&lt;&gt;" scheme=3D"IBM_SubjectTaxonomy" name=3D"dc.subjec=
+t">
+<meta content=3D"IBM Corporation" name=3D"dc.publisher">
+<meta content=3D"&lt;&gt;" scheme=3D"W3CDTF" name=3D"ibm.effective">
+<meta content=3D"&lt;ZZ&gt;" scheme=3D"IBM_IndustryTaxonomy" name=3D"ibm.in=
+dustry">
+
+<script src=3D"DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files=
+/scripts.js" type=3D"text/javaScript"></script>
+<script src=3D"DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files=
+/localsearch.js" type=3D"text/javascript"></script>
+<script src=3D"DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files=
+/sortable.js" type=3D"text/javascript"></script>
+<link href=3D"DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/=
+v4-screen.css" type=3D"text/css" rel=3D"stylesheet"></link>
+<style media=3D"all" type=3D"text/css">
+<!--
+@import url("//w3.ibm.com/ui/v8/css/screen.css");
+@import url("//w3.ibm.com/ui/v8/css/interior.css");
+@import url("//w3.ibm.com/ui/v8/css/icons.css");
+@import url("//w3.ibm.com/ui/v8/css/search.css");
+@import url("//w3.ibm.com/ui/v8/css/tables.css");
+-->
+</style>
+<!-- print stylesheet MUST follow imported stylesheets -->
+<link href=3D"DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/=
+print.css" media=3D"print" type=3D"text/css" rel=3D"stylesheet"></link>
+<link title=3D"IBM Redbooks Intranet RSS feed" type=3D"application/rss+xml"=
+ rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/all.xml"></link>
+<link title=3D"IBM Redbooks/Application Development RSS feed" type=3D"appli=
+cation/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/aim.xm=
+l"></link>
+<link title=3D"IBM Redbooks/BladeCenter Intranet RSS feed" type=3D"applicat=
+ion/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/bladecent=
+er.xml"></link>
+<link title=3D"IBM Redbooks/Information Management software Intranet RSS fe=
+ed" type=3D"application/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.i=
+bm.com/rss/db2.xml"></link>
+<link title=3D"IBM Redbooks/System i Intranet RSS feed" type=3D"application=
+/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/iseries.xml"=
+></link>
+<link title=3D"IBM Redbooks/System p Intranet RSS feed" type=3D"application=
+/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/pseries.xml"=
+></link>
+<link title=3D"IBM Redbooks/System x Intranet RSS feed" type=3D"application=
+/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/xseries.xml"=
+></link>
+<link title=3D"IBM Redbooks/System z Intranet RSS feed" type=3D"application=
+/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/zseries.xml"=
+></link>
+<link title=3D"IBM Redbooks/System Storage Intranet RSS feed" type=3D"appli=
+cation/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/storag=
+e.xml"></link>
+<link title=3D"IBM Redbooks/Linux Intranet RSS feed" type=3D"application/rs=
+s+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/linux.xml"></li=
+nk>
+<link title=3D"IBM Redbooks/Lotus Intranet RSS feed" type=3D"application/rs=
+s+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/lotus.xml"></li=
+nk>
+<link title=3D"IBM Redbooks/Networking Intranet RSS feed" type=3D"applicati=
+on/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/networking=
+.xml"></link>
+<link title=3D"IBM Redbooks/On Demand Intranet RSS feed" type=3D"applicatio=
+n/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/ondemand.xm=
+l"></link>
+<link title=3D"IBM Redbooks/Solutions Intranet RSS feed" type=3D"applicatio=
+n/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/solutions.x=
+ml"></link>
+<link title=3D"IBM Redbooks/Tivoli Intranet RSS feed" type=3D"application/r=
+ss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/tivoli.xml"></=
+link>
+<link title=3D"IBM Redbooks/WebSphere Intranet RSS feed" type=3D"applicatio=
+n/rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/websphere.x=
+ml"></link>
+<link title=3D"IBM Redbooks/Windows Intranet RSS feed" type=3D"application/=
+rss+xml" rel=3D"alternate" href=3D"http://w3.itso.ibm.com/rss/windows.xml">=
+</link>
+<base href=3D"file:///W:/Work/mainframe/DFSMS/Ibm%20paper/"></base></head><=
+body text=3D"#000000" bgcolor=3D"#ffffff" class=3D"article" id=3D"w3-ibm-co=
+m" onload=3D"fixecblank()">
+<!-- start accessibility prolog -->
+<div class=3D"skip"><a accesskey=3D"2" href=3D"#content-main">Skip to main=
+ content</a></div>
+<div class=3D"skip"><a accesskey=3D"n" href=3D"#left-nav">Skip to navigatio=
+n</a></div>
+<div id=3D"access-info">
+	<p class=3D"access">The access keys for this page are:</p>
+	<ul class=3D"access">
+		<li>ALT plus 0 links to this site&#x27;s <a accesskey=3D"0" href=3D"http:=
+//w3.ibm.com/w3/access-stmt.html">Accessibility Statement.</a></li>
+		<li>ALT plus 1 links to the w3.ibm.com home page.</li>
+		<li>ALT plus 2 skips to main content.</li>
+		<li>ALT plus 4 skips to the search form.</li>
+		<li>ALT plus 9 links to the feedback page.</li>
+		<li>ALT plus N skips to navigation.</li>
+	</ul>
+	<p class=3D"access">Additional accessibility information for w3.ibm.com ca=
+n be found <a href=3D"http://w3.ibm.com/w3/access-stmt.html">on the w3 Acce=
+ssibility Statement page.</a></p>
+</div>
+<!-- end accessibility prolog -->
+<!-- start masthead //////////////////////////////////////////// -->
+<div id=3D"masthead">
+	<h2 class=3D"access">Start of masthead</h2>
+	<div id=3D"prt-w3-sitemark"><img width=3D"54" height=3D"33" alt=3D"" src=
+=3D"DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/id-w3-site=
+mark-simple.gif"></div>
+	<div id=3D"prt-ibm-logo"><img width=3D"44" height=3D"15" alt=3D"" src=3D"D=
+FSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/id-ibm-logo-bla=
+ck.gif"></div>
+	<div id=3D"w3-sitemark"><img width=3D"266" height=3D"70" usemap=3D"#sitema=
+rk_map" alt=3D"IBM Logo" src=3D"DFSMShsm%20Support%20of%20Large%20Format%20=
+Data%20Sets_files/id-w3-sitemark-large.gif"><map name=3D"sitemark_map" id=
+=3D"sitemark_map"><area accesskey=3D"1" href=3D"http://w3.ibm.com/" coords=
+=3D"0,0,130,70" alt=3D"Link to W3 Home Page" shape=3D"rect"></area></map></=
+div>
+	<div id=3D"site-title-only">IBM Redbooks</div>
+	<div id=3D"ibm-logo"><img width=3D"44" height=3D"15" alt=3D"" src=3D"DFSMS=
+hsm%20Support%20of%20Large%20Format%20Data%20Sets_files/id-ibm-logo.gif"></=
+div>
+	<div id=3D"persistent-nav"><a href=3D"http://w3.ibm.com/" id=3D"w3home">=
+ w3 Home </a><a href=3D"http://w3.ibm.com/bluepages/" id=3D"bluepages"> Blu=
+ePages </a><a href=3D"http://w3.ibm.com/help/" id=3D"helpnow"> HelpNow </a>=
+<a accesskey=3D"9" href=3D"http://w3.ibm.com/feedback/" id=3D"feedback"> Fe=
+edback </a></div>
+	<div id=3D"header-search">
+		<form id=3D"search" method=3D"get" action=3D"/cgi-bin/searchsite.cgi" ons=
+ubmit=3D"DoSearch();return false" name=3D"RBsearch">
+		<table cellspacing=3D"0" cellpadding=3D"0" class=3D"header-search">
+		<tbody><tr><td class=3D"label"><label for=3D"header-search-field">Search=
+ w3</label></td><td class=3D"field"><input type=3D"text" accesskey=3D"4" na=
+me=3D"query" id=3D"header-search-field" value=3D""></input></td><td class=
+=3D"submit"><label for=3D"header-search-btn" class=3D"access">go button</la=
+bel><input type=3D"image" src=3D"DFSMShsm%20Support%20of%20Large%20Format%2=
+0Data%20Sets_files/btn-go-dark.gif" alt=3D"Go" id=3D"header-search-btn" val=
+ue=3D""></input></td></tr>
+
+		<tr><td></td><td class=3D"limiter" colspan=3D"2"><input type=3D"hidden"=
+ name=3D"url" value=3D""></input><input type=3D"checkbox" value=3D"redbooks=
+" id=3D"lsearch" name=3D"lsearch" checked=3D"checked"></input><label for=3D=
+"lsearch"> Search IBM Redbooks</label></td></tr>
+
+
+		</tbody></table>
+		</form>
+	</div>
+
+	<div id=3D"browser-warning"><img width=3D"12" height=3D"10" alt=3D"Error"=
+ src=3D"DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/icon-s=
+ystem-status-alert.gif">
+This Web page is best used in a modern browser. Since your browser is
+no longer supported by IBM, please upgrade your web browser at the <a href=
+=3D"http://w3.ibm.com/download/">ISSI site</a>.</div>
+
+</div>
+<!-- stop masthead //////////////////////////////////////////// --><style=
+ media=3D"all" type=3D"text/css">
+<!--
+@import url("//w3.ibm.com/ui/v8/css/interior-1-col.css");
+@import url("//w3.ibm.com/ui/v8/css/interior-partial-sidebar.css");
+-->
+</style>&quot;
+<script type=3D"text/javascript" language=3D"JavaScript">
+<!--=20
+function fixecblank() {
+  lg =3D document.images.length;
+  for (x =3D 0; x < lg; x++) {
+    isrc =3D document.images[x].src;
+    i =3D isrc.indexOf("ecblank");
+    if (i !=3D -1) {
+      if ((document.images[x].width=3D=3D20) || (document.images[x].width=
+=3D=3D16)) {
+        document.images[x].width=3D0;
+      }
+    }
+  }
+}
+// -->
+</script>
+
+<!-- start navigation //////////////////////////////////////////// -->
+<div id=3D"navigation">
+	<h2 class=3D"access">Start of left navigation</h2>
+	<!-- start left nav -->
+=09
+	<div id=3D"left-nav">
+		<div class=3D"top-level">
+			<a href=3D"http://w3.itso.ibm.com/" id=3D"site-home">IBM Redbooks=C2=AE<=
+/a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/redpieces/">Draf=
+ts</a>=09
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/redbooks/">Redbo=
+oks</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/redpapers/">Redp=
+apers</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/tips/">Technotes=
+</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3addmats/=
+">Additional Materials</a>
+			<a href=3D"http://w3.itso.ibm.com/portals/">Redbooks Domains</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/residents.nsf/ResIndex?OpenVi=
+ew">Residencies</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/projects.nsf/ProjectIndex?Ope=
+nView">Projects</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/projects.nsf/WorkshopIndex?Op=
+enView">Workshops</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/cdroms?OpenView"=
+>Redbooks on CD</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3howtobuy=
+?Open">How to buy</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3about?Op=
+en">About Redbooks</a>
+			<a href=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3contact?=
+Open">Contact Us</a>
+			<a href=3D"https://w3.itso.ibm.com/itsoapps/redbooks.nsf/subscribe?OpenF=
+orm">Mailing List</a>
+			<a href=3D"http://w3.itso.ibm.com/rss.html">RSS feeds</a>
+		</div>
+	</div>
+	<!-- stop left nav -->
+	<!-- start Site related links -->
+	<div id=3D"related-links">		=09
+	<p class=3D"title"><strong>Related Links</strong></p>
+	<p><a href=3D"http://w3.ehone.ibm.com/public/applications/publications/cgi=
+bin/pbi.cgi">IBM Publications Center</a></p>
+	</div>
+	<!-- stop Site related links -->
+</div>
+<!-- stop navigation //////////////////////////////////////////// -->
+<!-- start content //////////////////////////////////////////// -->
+<div id=3D"content"><div id=3D"content-head">
+<p id=3D"date-stamp">Last updated 18 =E5=8D=81=E4=BA=8C=E6=9C=88 2006</p>
+<div class=3D"hrule-dots">&nbsp;</div>
+<p id=3D"breadcrumbs"></p>
+</div>
+<!-- start main content //////////////////////////////////////////// -->
+<div id=3D"content-main"><div id=3D"partial-sidebar">
+<h2 class=3D"access">Start of sidebar content</h2><div class=3D"bar-blue-me=
+d"><b>Profile</b></div>=20
+<div style=3D"font-size: 8pt;" class=3D"indent">=20
+
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody><tr valign=3D"top"><td width=3D"100%"><p><b>Publish Date</b>
+</p><p>18 =E5=8D=81=E4=BA=8C=E6=9C=88 2006</p></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%" class=3D"dotted"><img width=3D"1" hei=
+ght=3D"1" border=3D"0" alt=3D"" src=3D"DFSMShsm%20Support%20of%20Large%20Fo=
+rmat%20Data%20Sets_files/ecblank.gif"></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%"><p class=3D"small"><b>Rating: </b>Not=
+ yet rated</p></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%"><p class=3D"small"><img width=3D"20"=
+ height=3D"13" alt=3D"Rate this redbook" src=3D"DFSMShsm%20Support%20of%20L=
+arge%20Format%20Data%20Sets_files/0.gif"> <a class=3D"smallplainlink" href=
+=3D"http://w3.itso.ibm.com/itsoapps/redbooks.nsf/306ab6ae75c430bf85256c8800=
+75583c?OpenForm&amp;ParentUNID=3DD6DE34F569ADCB29852572440059611D">Rate thi=
+s Technote</a></p></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%" class=3D"dotted"><img width=3D"1" hei=
+ght=3D"1" border=3D"0" alt=3D"" src=3D"DFSMShsm%20Support%20of%20Large%20Fo=
+rmat%20Data%20Sets_files/ecblank.gif"></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%"><p class=3D"small"><b>Author(s)</b><b=
+r>
+Mary Lovelace<br>
+</p></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%" class=3D"dotted"><img width=3D"1" hei=
+ght=3D"1" border=3D"0" alt=3D"" src=3D"DFSMShsm%20Support%20of%20Large%20Fo=
+rmat%20Data%20Sets_files/ecblank.gif"></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%"><p class=3D"small"><b>IBM Form Number=
+</b><br>
+TIPS0644</p></td></tr>
+
+<tr valign=3D"top"><td width=3D"100%"><p class=3D"small"><b>Feedback</b><br>
+<img width=3D"20" height=3D"11" align=3D"top" src=3D"DFSMShsm%20Support%20o=
+f%20Large%20Format%20Data%20Sets_files/icon-link-email.gif"> <a href=3D"mai=
+lto:redbook@us.ibm.com">Send e-mail</a></p></td></tr>
+</tbody></table>
+</div>=20
+
+
+	<div id=3D"ibm-merchandising-module">
+	<!--IBM Web Merchandising Module-->
+	</div>
+</div>
+<p><img width=3D"280" height=3D"37" alt=3D"Redbooks Technote" src=3D"DFSMSh=
+sm%20Support%20of%20Large%20Format%20Data%20Sets_files/rbtech.gif"></p><p><=
+/p><h1>z/OS V1R7 DFSMShsm Support of Large Format Data Sets</h1><p>
+</p><div style=3D"font-size: 84%;"><i>For related information about this to=
+pic, refer to the following IBM Redbooks publication:</i>
+<p><a href=3D"http://w3.itso.ibm.com/itsoapps%5Credbooks.nsf/RedbookAbstrac=
+ts/SG247225.html">z/OS V1R7 DFSMS Technical Update, SG24-7225-00</a></p></d=
+iv><h2 class=3D"bar-blue-med-dark">Abstract</h2>
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody><tr valign=3D"top"><td width=3D"651"><p>With z/OS=C2=AE V1R7, DFSMSh=
+sm=E2=84=A2
+has been enhanced to support the new large format sequential data sets.
+This Technote provides an overview of this function.</p></td></tr>
+</tbody></table>
+<h2 class=3D"bar-gray-med-light">Contents</h2>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody><tr valign=3D"top"><td width=3D"100%"><p></p><div class=3D"ibm-domin=
+o-rtf">
+<p><b><font face=3D"Arial">DFSMShsm support of large format data sets</font=
+></b><br>
+<font face=3D"Arial" size=3D"2">DFSMShsm has been enhanced to support the
+new large format sequential data sets. Large format data sets can have
+greater than 65,535 tracks per volume. Before z/OS V1R7, most
+sequential data sets were limited to 65,535 tracks on each volume,
+although most hardware storage devices supported far more tracks per
+volume. To support this hardware capability, z/OS V1R7 enables users to
+create new large format data sets, which are physical sequential data
+sets with the ability to grow beyond the previous size limit. Large
+format data sets are not required to have greater than 65,535 tracks at
+initial allocation, but when allocated in large format they can expand
+to greater than 65,535 tracks. z/OS V1R7 also introduces the concept of
+a basic format data set to designate a sequential data set that is
+neither extended format nor large format. A basic format data set
+therefore may not have any more than 65,535 tracks per volume. Large
+format data sets are supported by DFSMShsm in the same manner as basic
+format data sets in typical operations involving:</font>
+</p><ul>
+<li type=3D"disc"><font face=3D"Arial" size=3D"2">Migration and recall</fon=
+t>
+</li><li type=3D"disc"><font face=3D"Arial" size=3D"2">Backup and recovery<=
+/font>
+</li><li type=3D"disc"><font face=3D"Arial" size=3D"2">ABACKUP and ARECOVER=
+</font></li></ul>
+<br>
+<b><font face=3D"Arial">Large format journal data set</font></b><br>
+<font face=3D"Arial" size=3D"2">DFSMShsm also supports the use of a large
+format data set for its journal data set. A larger journal data set can
+allow more DFSMShsm activity to take place between journal backups and
+helps to minimize occurrences of journal full conditions. After all
+systems in the HSMplex are at z/OS V1R7, the following procedure can be
+followed to migrate the journal data set to a large format data set:</font>
+<ol type=3D"1">
+<li><font face=3D"Arial" size=3D"2">Shut down all but one of the DFSMShsm=
+ subsystems in the HSMplex.</font>
+</li><li><font face=3D"Arial" size=3D"2">Either hold all DFSMShsm functions=
+ or set DFSMShsm to emergency mode.</font>
+</li><li><font face=3D"Arial" size=3D"2">Back up the control data sets usin=
+g the </font><font face=3D"Courier New" size=3D"2">BACKVOL CDS</font><font=
+ face=3D"Arial" size=3D"2"> command. This creates a backup of the journal=
+ and then nulls the journal.</font>
+</li><li><font face=3D"Arial" size=3D"2">Stop the remaining DFSMShsm subsys=
+tem.</font>
+</li><li><font face=3D"Arial" size=3D"2">Rename the current journal data se=
+t.</font>
+</li><li><font face=3D"Arial" size=3D"2">Allocate the new large format jour=
+nal data set</font>
+</li><li><font face=3D"Arial" size=3D"2">Ensure that the JOURNAL DD stateme=
+nt in the DFSMShsm startup procedure points to the new journal data set.</f=
+ont>
+</li><li><font face=3D"Arial" size=3D"2">Restart the DFSMShsm hosts.</font>=
+</li></ol>
+<br>
+<font face=3D"Arial" size=3D"2">Should you need to fall back to using a
+basic format journal data set, the same procedure as above can be used
+to replace the current large format data set with a new basic format
+data set.</font><br>
+<br>
+<font face=3D"Arial" size=3D"2">Note that if the used space in the journal
+grows as a consequence of the data set being allocated with a larger
+size, journal backups will take longer to complete due to DFSMShsm
+having to process a larger data set. This will increase the length of
+time that DFSMShsm functions are held during CDS backup. In addition,
+increasing the size of the journal might cause the journal backup to
+fail as the space allocated to its backup copies could no longer be
+enough. To prevent this from happening, rename your current journal
+backup data sets, and create new backup data sets of sufficient size.
+The backup data sets may be defined as large format data sets.</font><br>
+<br>
+<b><font face=3D"Arial">Coexistence considerations</font></b><br>
+<font face=3D"Arial" size=3D"2">A coexistence PTF is required so that
+lower-level releases of DFSMShsm will fail operations involving large
+format data sets. Because large format data sets cannot be processed on
+hosts prior to z/OS V1R7, care must be taken when migrating data sets
+in an HSMplex where not all hosts are at this level. Any attempts to
+recall these data sets from a lower-level system will fail, which is
+especially problematic for implicit recalls. Similarly, attempts to
+recover large format data sets will fail on pre-z/OS V1R7 hosts, and
+large format data sets included in an ABARS aggregate can only be
+restored using ARECOVER if the recovery system is at z/OS V1R7.</font><br>
+<br>
+<font face=3D"Arial" size=3D"2"> In order to use a large format journal
+data set, all systems in the HSMplex must be at z/OS V1R7. The
+toleration PTF ensures that when a lower-level release of DFSMShsm
+attempts to open a large format journal data set, message ARC0509E is
+issued and DFSMShsm is stopped. Refer to APAR OA08865 for the correct
+toleration PTF. </font></div></td></tr>
+</tbody></table>
+<h2 class=3D"bar-gray-med-dark">Special Notices</h2>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody><tr valign=3D"top"><td width=3D"100%" style=3D"font-size: 84%;"><p>T=
+hese
+pages are Web versions of IBM Redbooks- and Redpapers-in-progress. They
+are published here for those who need the information now and may
+contain spelling, layout and grammatical errors. This material has not
+been submitted to any formal IBM test and is published AS IS. It has
+not been the subject of rigorous review. Your feedback is welcomed to
+improve the usefulness of the material to others. </p><p>IBM assumes
+no responsibility for its accuracy or completeness. The use of this
+information or the implementation of any of these techniques is a
+customer responsibility and depends upon the customer&#x27;s ability to
+evaluate and integrate them into the customer&#x27;s operational
+environment. </p></td></tr>
+</tbody></table>
+<p class=3D"terms"><a href=3D"http://w3.ibm.com/w3/info_terms_of_use.html">=
+Terms of use</a></p>
+</div>
+<!-- stop main content -->=20
+<img width=3D"0" vspace=3D"0" hspace=3D"0" height=3D"0" border=3D"0" nosave=
+=3D"" alt=3D"" src=3D"DFSMShsm%20Support%20of%20Large%20Format%20Data%20Set=
+s_files/count.gif"></div></body></html>
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/scripts.js
+
+// popup window
+function popup( url, type, height, width ) {
+newWin=3Dwindow.open(url,'popupWindow','height=3D'+height+',width=3D'+width=
++',resizable=3Dyes,menubar=3Dno,status=3Dno,toolbar=3Dno,scrollbars=3Dyes')=
+;=20
+newWin.focus();=20
+void(0);
+}
+
+function toggle(c,r) {
+	var c =3D document.getElementById(c);
+	var r =3D document.getElementById(r);
+	if(c.checked) {r.disabled=3Dfalse;}
+	else {r.checked=3Dfalse;r.disabled=3Dtrue;}=20
+}
+
+
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/localsearch.js
+
+function DoSearch(n){
+//alert(n.toString());
+var loc=3Ddocument.forms[0].lsearch.checked;
+if (n>0) var st=3Ddocument.forms[n].query.value;
+else {n=3D0; var st=3Ddocument.forms[0].query.value}
+
+//var fl=3Ddocument.forms.length;
+//alert(fl.toString());
+//if (st=3D=3D'') st=3Ddocument.forms[1].q.value;
+if (st=3D=3D'') alert("Enter one or more keywords in the 'Search' box. For=
+ an exact phrase search, enclose keywords in double quotes.");
+else {  if (loc || n>0)
+	{
+		var sepStr =3D "+AND+";
+		if (st.toUpperCase().indexOf(' AND ')!=3D-1) sepStr =3D "+";
+		if (st.toUpperCase().indexOf(' OR ')!=3D-1) sepStr =3D "+";
+		if (st.toUpperCase().indexOf(' NOT ')!=3D-1) sepStr =3D "+";
+		//if (st.toUpperCase().indexOf('"')!=3D-1) sepStr =3D "+";
+	=09
+		var target =3D "http://w3.itso.ibm.com/cgi-bin/searchsite.cgi?query=3D"+q=
+ueryFormat(st, ' ', sepStr)
+
+		if (n>0) {
+			fuzzy=3D'';
+			if (document.forms[n].SearchFuzzy.checked) fuzzy =3D '&SearchFuzzy=3DTRU=
+E';
+			target =3D target + '&SearchOrder=3D' + (document.forms[n].SearchOrder.o=
+ptions[document.forms[n].SearchOrder.selectedIndex].value) + fuzzy;
+			}
+		window.location.href =3D target
+	}
+	else
+		window.location.href=3D"http://w3.ibm.com/search/w3results.jsp?qt=3D"+st
+     }
+}
+
+function queryFormat(origStr, findText, replaceText) {
+	var pos =3D 0=09
+	var len =3D findText.length
+=09
+	pos =3D origStr.indexOf(findText)
+	while (pos !=3D -1) {
+		var q =3D 0
+		var newSep =3D replaceText
+		preString =3D origStr.substring(0, pos)=09
+	=09
+		// skip text in quotes
+		for (var i =3D 0; i < preString.length+1; i++) {
+		   if (preString.charAt(i)=3D=3D'"') q++;
+		}
+		if (q/2 !=3D Math.round(q/2)) newSep =3D '+'
+	=09
+		postString =3D origStr.substring(pos+1, origStr.length)
+		origStr =3D preString + newSep + postString
+		pos =3D origStr.indexOf(findText)
+	=09
+	}
+	return origStr
+}
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/sortable.js
+
+/*
+  SortTable
+  version 2
+  7th April 2007
+  Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/
+ =20
+  Instructions:
+  Download this file
+  Add <script src=3D"sorttable.js"></script> to your HTML
+  Add class=3D"sortable" to any table you'd like to make sortable
+  Click on the headers to sort
+ =20
+  Thanks to many, many people for contributions and suggestions.
+  Licenced as X11: http://www.kryogenix.org/code/browser/licence.html
+  This basically means: do what you want with it.
+*/
+
+=20
+var stIsIE =3D /*@cc_on!@*/false;
+
+sorttable =3D {
+  init: function() {
+    // quit if this function has already been called
+    if (arguments.callee.done) return;
+    // flag this function so we don't do the same thing twice
+    arguments.callee.done =3D true;
+    // kill the timer
+    if (_timer) clearInterval(_timer);
+   =20
+    if (!document.createElement || !document.getElementsByTagName) return;
+   =20
+    sorttable.DATE_RE =3D /^(\d\d?)[\/\.-](\d\d?)[\/\.-]((\d\d)?\d\d)$/;
+   =20
+    forEach(document.getElementsByTagName('table'), function(table) {
+      if (table.className.search(/\bsortable\b/) !=3D -1) {
+        sorttable.makeSortable(table);
+      }
+    });
+   =20
+  },
+ =20
+  makeSortable: function(table) {
+    if (table.getElementsByTagName('thead').length =3D=3D 0) {
+      // table doesn't have a tHead. Since it should have, create one and
+      // put the first table row in it.
+      the =3D document.createElement('thead');
+      the.appendChild(table.rows[0]);
+      table.insertBefore(the,table.firstChild);
+    }
+    // Safari doesn't support table.tHead, sigh
+    if (table.tHead =3D=3D null) table.tHead =3D table.getElementsByTagName=
+('thead')[0];
+   =20
+    if (table.tHead.rows.length !=3D 1) return; // can't cope with two head=
+er rows
+   =20
+    // Sorttable v1 put rows with a class of "sortbottom" at the bottom (as
+    // "total" rows, for example). This is B&R, since what you're supposed
+    // to do is put them in a tfoot. So, if there are sortbottom rows,
+    // for backwards compatibility, move them to tfoot (creating it if need=
+ed).
+    sortbottomrows =3D [];
+    for (var i=3D0; i<table.rows.length; i++) {
+      if (table.rows[i].className.search(/\bsortbottom\b/) !=3D -1) {
+        sortbottomrows[sortbottomrows.length] =3D table.rows[i];
+      }
+    }
+    if (sortbottomrows) {
+      if (table.tFoot =3D=3D null) {
+        // table doesn't have a tfoot. Create one.
+        tfo =3D document.createElement('tfoot');
+        table.appendChild(tfo);
+      }
+      for (var i=3D0; i<sortbottomrows.length; i++) {
+        tfo.appendChild(sortbottomrows[i]);
+      }
+      delete sortbottomrows;
+    }
+   =20
+    // work through each column and calculate its type
+    headrow =3D table.tHead.rows[0].cells;
+    for (var i=3D0; i<headrow.length; i++) {
+      // manually override the type with a sorttable_type attribute
+      if (!headrow[i].className.match(/\bsorttable_nosort\b/)) { // skip th=
+is col
+        mtch =3D headrow[i].className.match(/\bsorttable_([a-z0-9]+)\b/);
+        if (mtch) { override =3D mtch[1]; }
+	      if (mtch && typeof sorttable["sort_"+override] =3D=3D 'function') {
+	        headrow[i].sorttable_sortfunction =3D sorttable["sort_"+override];
+	      } else {
+	        headrow[i].sorttable_sortfunction =3D sorttable.guessType(table,i);
+	      }
+	      // make it clickable to sort
+	      headrow[i].sorttable_columnindex =3D i;
+	      headrow[i].sorttable_tbody =3D table.tBodies[0];
+	      dean_addEvent(headrow[i],"click", function(e) {
+
+          if (this.className.search(/\bsorttable_sorted\b/) !=3D -1) {
+            // if we're already sorted by this column, just=20
+            // reverse the table, which is quicker
+            sorttable.reverse(this.sorttable_tbody);
+            this.className =3D this.className.replace('sorttable_sorted',
+                                                    'sorttable_sorted_rever=
+se');
+            this.removeChild(document.getElementById('sorttable_sortfwdind'=
+));
+            sortrevind =3D document.createElement('span');
+            sortrevind.id =3D "sorttable_sortrevind";
+            sortrevind.innerHTML =3D '&nbsp;<img src=3D"//w3.ibm.com/ui/v8/=
+images/icon-link-sort-d-dark.gif">';
+            this.appendChild(sortrevind);
+            return;
+          }
+          if (this.className.search(/\bsorttable_sorted_reverse\b/) !=3D -1=
+) {
+            // if we're already sorted by this column in reverse, just=20
+            // re-reverse the table, which is quicker
+            sorttable.reverse(this.sorttable_tbody);
+            this.className =3D this.className.replace('sorttable_sorted_rev=
+erse',
+                                                    'sorttable_sorted');
+            this.removeChild(document.getElementById('sorttable_sortrevind'=
+));
+            sortfwdind =3D document.createElement('span');
+            sortfwdind.id =3D "sorttable_sortfwdind";
+            sortfwdind.innerHTML =3D '&nbsp;<img src=3D"//w3.ibm.com/ui/v8/=
+images/icon-link-sort-a-dark.gif">';
+            this.appendChild(sortfwdind);
+            return;
+          }
+         =20
+          // remove sorttable_sorted classes
+          theadrow =3D this.parentNode;
+          forEach(theadrow.childNodes, function(cell) {
+            if (cell.nodeType =3D=3D 1) { // an element
+              cell.className =3D cell.className.replace('sorttable_sorted_r=
+everse','');
+              cell.className =3D cell.className.replace('sorttable_sorted',=
+'');
+            }
+          });
+          sortfwdind =3D document.getElementById('sorttable_sortfwdind');
+          if (sortfwdind) { sortfwdind.parentNode.removeChild(sortfwdind);=
+ }		 =20
+          sortrevind =3D document.getElementById('sorttable_sortrevind');
+          if (sortrevind) { sortrevind.parentNode.removeChild(sortrevind);=
+ }		 =20
+         =20
+          this.className +=3D ' sorttable_sorted';
+          sortfwdind =3D document.createElement('span');
+          sortfwdind.id =3D "sorttable_sortfwdind";
+          sortfwdind.innerHTML =3D '&nbsp;<img src=3D"//w3.ibm.com/ui/v8/im=
+ages/icon-link-sort-a-dark.gif">';
+          this.appendChild(sortfwdind);
+
+	        // build an array to sort. This is a Schwartzian transform thing,
+	        // i.e., we "decorate" each row with the actual sort key,
+	        // sort based on the sort keys, and then put the rows back in order
+	        // which is a lot faster because you only do getInnerText once per=
+ row
+	        row_array =3D [];
+	        col =3D this.sorttable_columnindex;
+	        rows =3D this.sorttable_tbody.rows;
+	        for (var j=3D0; j<rows.length; j++) {
+	          row_array[row_array.length] =3D [sorttable.getInnerText(rows[j].=
+cells[col]), rows[j]];
+	        }
+	        /* If you want a stable sort, uncomment the following line */
+	        //sorttable.shaker_sort(row_array, this.sorttable_sortfunction);
+	        /* and comment out this one */
+	        row_array.sort(this.sorttable_sortfunction);
+	       =20
+	        tb =3D this.sorttable_tbody;
+	        for (var j=3D0; j<row_array.length; j++) {
+	          tb.appendChild(row_array[j][1]);
+	        }
+	       =20
+	        delete row_array;
+	      });
+	    }
+    }
+  },
+ =20
+  guessType: function(table, column) {
+    // guess the type of a column based on its first non-blank row
+    sortfn =3D sorttable.sort_alpha;
+    for (var i=3D0; i<table.tBodies[0].rows.length; i++) {
+      text =3D sorttable.getInnerText(table.tBodies[0].rows[i].cells[column=
+]);
+      if (text !=3D '') {
+        if (text.match(/^-?[=A3$=A4]?[\d,.]+%?$/)) {
+          return sorttable.sort_numeric;
+        }
+        // check for a date: dd/mm/yyyy or dd/mm/yy=20
+        // can have / or . or - as separator
+        // can be mm/dd as well
+        possdate =3D text.match(sorttable.DATE_RE)
+        if (possdate) {
+          // looks like a date
+          first =3D parseInt(possdate[1]);
+          second =3D parseInt(possdate[2]);
+          if (first > 12) {
+            // definitely dd/mm
+            return sorttable.sort_ddmm;
+          } else if (second > 12) {
+            return sorttable.sort_mmdd;
+          } else {
+            // looks like a date, but we can't tell which, so assume
+            // that it's dd/mm (English imperialism!) and keep looking
+            sortfn =3D sorttable.sort_ddmm;
+          }
+        }
+      }
+    }
+    return sortfn;
+  },
+ =20
+  getInnerText: function(node) {
+    // gets the text we want to use for sorting for a cell.
+    // strips leading and trailing whitespace.
+    // this is *not* a generic getInnerText function; it's special to sortt=
+able.
+    // for example, you can override the cell text with a customkey attribu=
+te.
+    // it also gets .value for <input> fields.
+   =20
+    hasInputs =3D (typeof node.getElementsByTagName =3D=3D 'function') &&
+                 node.getElementsByTagName('input').length;
+   =20
+    if (node.getAttribute("sorttable_customkey") !=3D null) {
+      return node.getAttribute("sorttable_customkey");
+    }
+    else if (typeof node.textContent !=3D 'undefined' && !hasInputs) {
+      return node.textContent.replace(/^\s+|\s+$/g, '');
+    }
+    else if (typeof node.innerText !=3D 'undefined' && !hasInputs) {
+      return node.innerText.replace(/^\s+|\s+$/g, '');
+    }
+    else if (typeof node.text !=3D 'undefined' && !hasInputs) {
+      return node.text.replace(/^\s+|\s+$/g, '');
+    }
+    else {
+      switch (node.nodeType) {
+        case 3:
+          if (node.nodeName.toLowerCase() =3D=3D 'input') {
+            return node.value.replace(/^\s+|\s+$/g, '');
+          }
+        case 4:
+          return node.nodeValue.replace(/^\s+|\s+$/g, '');
+          break;
+        case 1:
+        case 11:
+          var innerText =3D '';
+          for (var i =3D 0; i < node.childNodes.length; i++) {
+            innerText +=3D sorttable.getInnerText(node.childNodes[i]);
+          }
+          return innerText.replace(/^\s+|\s+$/g, '');
+          break;
+        default:
+          return '';
+      }
+    }
+  },
+ =20
+  reverse: function(tbody) {
+    // reverse the rows in a tbody
+    newrows =3D [];
+    for (var i=3D0; i<tbody.rows.length; i++) {
+      newrows[newrows.length] =3D tbody.rows[i];
+    }
+    for (var i=3Dnewrows.length-1; i>=3D0; i--) {
+       tbody.appendChild(newrows[i]);
+    }
+    delete newrows;
+  },
+ =20
+  /* sort functions
+     each sort function takes two parameters, a and b
+     you are comparing a[0] and b[0] */
+  sort_numeric: function(a,b) {
+    aa =3D parseFloat(a[0].replace(/[^0-9.-]/g,''));
+    if (isNaN(aa)) aa =3D 0;
+    bb =3D parseFloat(b[0].replace(/[^0-9.-]/g,''));=20
+    if (isNaN(bb)) bb =3D 0;
+    return aa-bb;
+  },
+  sort_alpha: function(a,b) {
+    if (a[0]=3D=3Db[0]) return 0;
+    if (a[0]<b[0]) return -1;
+    return 1;
+  },
+  sort_ddmm: function(a,b) {
+    mtch =3D a[0].match(sorttable.DATE_RE);
+    y =3D mtch[3]; m =3D mtch[2]; d =3D mtch[1];
+    if (m.length =3D=3D 1) m =3D '0'+m;
+    if (d.length =3D=3D 1) d =3D '0'+d;
+    dt1 =3D y+m+d;
+    mtch =3D b[0].match(sorttable.DATE_RE);
+    y =3D mtch[3]; m =3D mtch[2]; d =3D mtch[1];
+    if (m.length =3D=3D 1) m =3D '0'+m;
+    if (d.length =3D=3D 1) d =3D '0'+d;
+    dt2 =3D y+m+d;
+    if (dt1=3D=3Ddt2) return 0;
+    if (dt1<dt2) return -1;
+    return 1;
+  },
+  sort_mmdd: function(a,b) {
+    mtch =3D a[0].match(sorttable.DATE_RE);
+    y =3D mtch[3]; d =3D mtch[2]; m =3D mtch[1];
+    if (m.length =3D=3D 1) m =3D '0'+m;
+    if (d.length =3D=3D 1) d =3D '0'+d;
+    dt1 =3D y+m+d;
+    mtch =3D b[0].match(sorttable.DATE_RE);
+    y =3D mtch[3]; d =3D mtch[2]; m =3D mtch[1];
+    if (m.length =3D=3D 1) m =3D '0'+m;
+    if (d.length =3D=3D 1) d =3D '0'+d;
+    dt2 =3D y+m+d;
+    if (dt1=3D=3Ddt2) return 0;
+    if (dt1<dt2) return -1;
+    return 1;
+  },
+ =20
+  shaker_sort: function(list, comp_func) {
+    // A stable sort function to allow multi-level sorting of data
+    // see: http://en.wikipedia.org/wiki/Cocktail_sort
+    // thanks to Joseph Nahmias
+    var b =3D 0;
+    var t =3D list.length - 1;
+    var swap =3D true;
+
+    while(swap) {
+        swap =3D false;
+        for(var i =3D b; i < t; ++i) {
+            if ( comp_func(list[i], list[i+1]) > 0 ) {
+                var q =3D list[i]; list[i] =3D list[i+1]; list[i+1] =3D q;
+                swap =3D true;
+            }
+        } // for
+        t--;
+
+        if (!swap) break;
+
+        for(var i =3D t; i > b; --i) {
+            if ( comp_func(list[i], list[i-1]) < 0 ) {
+                var q =3D list[i]; list[i] =3D list[i-1]; list[i-1] =3D q;
+                swap =3D true;
+            }
+        } // for
+        b++;
+
+    } // while(swap)
+  } =20
+}
+
+/* ******************************************************************
+   Supporting functions: bundled here to avoid depending on a library
+   ****************************************************************** */
+
+// Dean Edwards/Matthias Miller/John Resig
+
+/* for Mozilla/Opera9 */
+if (document.addEventListener) {
+    document.addEventListener("DOMContentLoaded", sorttable.init, false);
+}
+
+/* for Internet Explorer */
+/*@cc_on @*/
+/*@if (@_win32)
+    document.write("<script id=3D__ie_onload defer src=3Djavascript:void(0)=
+><\/script>");
+    var script =3D document.getElementById("__ie_onload");
+    script.onreadystatechange =3D function() {
+        if (this.readyState =3D=3D "complete") {
+            sorttable.init(); // call the onload handler
+        }
+    };
+/*@end @*/
+
+/* for Safari */
+if (/WebKit/i.test(navigator.userAgent)) { // sniff
+    var _timer =3D setInterval(function() {
+        if (/loaded|complete/.test(document.readyState)) {
+            sorttable.init(); // call the onload handler
+        }
+    }, 10);
+}
+
+/* for other browsers */
+window.onload =3D sorttable.init;
+
+// written by Dean Edwards, 2005
+// with input from Tino Zijdel, Matthias Miller, Diego Perini
+
+// http://dean.edwards.name/weblog/2005/10/add-event/
+
+function dean_addEvent(element, type, handler) {
+	if (element.addEventListener) {
+		element.addEventListener(type, handler, false);
+	} else {
+		// assign each event handler a unique ID
+		if (!handler.$$guid) handler.$$guid =3D dean_addEvent.guid++;
+		// create a hash table of event types for the element
+		if (!element.events) element.events =3D {};
+		// create a hash table of event handlers for each element/event pair
+		var handlers =3D element.events[type];
+		if (!handlers) {
+			handlers =3D element.events[type] =3D {};
+			// store the existing event handler (if there is one)
+			if (element["on" + type]) {
+				handlers[0] =3D element["on" + type];
+			}
+		}
+		// store the event handler in the hash table
+		handlers[handler.$$guid] =3D handler;
+		// assign a global event handler to do all the work
+		element["on" + type] =3D handleEvent;
+	}
+};
+// a counter used to create unique IDs
+dean_addEvent.guid =3D 1;
+
+function removeEvent(element, type, handler) {
+	if (element.removeEventListener) {
+		element.removeEventListener(type, handler, false);
+	} else {
+		// delete the event handler from the hash table
+		if (element.events && element.events[type]) {
+			delete element.events[type][handler.$$guid];
+		}
+	}
+};
+
+function handleEvent(event) {
+	var returnValue =3D true;
+	// grab the event object (IE uses a global event object)
+	event =3D event || fixEvent(((this.ownerDocument || this.document || this)=
+.parentWindow || window).event);
+	// get a reference to the hash table of event handlers
+	var handlers =3D this.events[event.type];
+	// execute each event handler
+	for (var i in handlers) {
+		this.$$handleEvent =3D handlers[i];
+		if (this.$$handleEvent(event) =3D=3D=3D false) {
+			returnValue =3D false;
+		}
+	}
+	return returnValue;
+};
+
+function fixEvent(event) {
+	// add W3C standard event methods
+	event.preventDefault =3D fixEvent.preventDefault;
+	event.stopPropagation =3D fixEvent.stopPropagation;
+	return event;
+};
+fixEvent.preventDefault =3D function() {
+	this.returnValue =3D false;
+};
+fixEvent.stopPropagation =3D function() {
+  this.cancelBubble =3D true;
+}
+
+// Dean's forEach: http://dean.edwards.name/base/forEach.js
+/*
+	forEach, version 1.0
+	Copyright 2006, Dean Edwards
+	License: http://www.opensource.org/licenses/mit-license.php
+*/
+
+// array-like enumeration
+if (!Array.forEach) { // mozilla already supports this
+	Array.forEach =3D function(array, block, context) {
+		for (var i =3D 0; i < array.length; i++) {
+			block.call(context, array[i], i, array);
+		}
+	};
+}
+
+// generic enumeration
+Function.prototype.forEach =3D function(object, block, context) {
+	for (var key in object) {
+		if (typeof this.prototype[key] =3D=3D "undefined") {
+			block.call(context, object[key], key, object);
+		}
+	}
+};
+
+// character enumeration
+String.forEach =3D function(string, block, context) {
+	Array.forEach(string.split(""), function(chr, index) {
+		block.call(context, chr, index, string);
+	});
+};
+
+// globally resolve forEach enumeration
+var forEach =3D function(object, block, context) {
+	if (object) {
+		var resolve =3D Object; // default
+		if (object instanceof Function) {
+			// functions have a "length" property
+			resolve =3D Function;
+		} else if (object.forEach instanceof Function) {
+			// the object implements a custom forEach method so use that
+			object.forEach(block, context);
+			return;
+		} else if (typeof object =3D=3D "string") {
+			// the object is a string
+			resolve =3D String;
+		} else if (typeof object.length =3D=3D "number") {
+			// the object is array-like
+			resolve =3D Array;
+		}
+		resolve.forEach(object, block, context);
+	}
+};
+
+
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/v4-screen.css
+
+/*-----------------------------------------------------
+w3 general styles for v4 screen media
+Used by: w3 web pages for displaying in version 4 browsers like Netscape Na=
+vigator 4.7
+$Id: v4-screen.css,v 1.6 2003/12/18 22:16:55 kuahmed Exp $
+-----------------------------------------------------*/
+/* next line blocks modern browsers from parsing but lets NN4 through */
+/*/*/ /*/
+
+#masthead	{
+	position:absolute; top:0; left:0; width:100%; color:#000; z-index:1;=20
+}
+
+html,body	{background:#fff; margin:0; padding:0 0 50px 0; font-size:13px;}
+html,body,p	{color:#000; font-family:verdana,arial,helvetica,sans-serif;}
+a img	{border:0 solid #f00;}
+
+#w3-sitemark	{position:absolute; top:0; left:0; clip:rect(0, 110%, 70px, 0p=
+x); layer-background-color:#4477bb;}
+#ibm-logo	{position:absolute; left:99%; top:13px;}
+#site-title-plus	{
+	position:absolute; top:26px; left:131px; color:#fff; font-size:21px; font-=
+size:21px; font-weight:bold; font-family:arial,verdana,helvetica,sans-serif=
+;=20
+}
+#site-title-only	{
+	position:absolute; top:35px; left:131px; color:#fff; font-size:21px; font-=
+size:21px; font-weight:bold; font-family:arial,verdana,helvetica,sans-serif=
+;=20
+}
+#browser-warning	{position:absolute; left:160px; top:77px; font-weight:bold=
+; color:#f00; padding:6px;}
+
+#content,
+#left-content,
+#center-content,
+#right-content,
+#navigation,
+#persistent-nav,
+#personalization-links,
+#header-search,
+#tabs,
+#site-title-user,
+#site-sub-title,
+#edit-layout,
+.access	{display:none;}
+
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/print.css
+
+@charset "utf-8";
+/*-----------------------------------------------------
+w3 general styles for print media
+Used by: most w3 web pages=20
+$Id: print.css,v 1.9.4.2 2004/08/11 22:11:08 coop Exp $
+-----------------------------------------------------*/
+body {
+	background: white;
+	font-family:arial,verdana,helvetica,sans-serif;=20
+	font-size: 10pt;
+	color: #000;
+}
+#masthead {
+	color: #000;=20
+	background-color: #fff;
+	height: 33px !important;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+#prt-w3-sitemark {
+	position:absolute;=20
+	top:0;
+	left:0px;=20
+	display:block !important;
+}
+#prt-ibm-logo	{
+	position:absolute;
+	top:10px;
+	right:19px;
+	display:block !important;
+}
+#site-title-only	{
+	position:absolute;
+	top:6px;
+	left:68px;=20
+	padding-right:2em; /*moz bug*/
+	color:#000;=20
+	background-color: #fff;
+	font-size:21px;=20
+	font-weight:bold;=20
+}
+
+#content,
+#content-head,
+#content-main,
+#content-sidebar {
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#content-head {margin-top: 44px !important;}
+#content-main {
+	float: none !important;
+	border-right: 0;
+	border-bottom: 1px dashed #000;
+}
+#content-sidebar	{
+	clear:left;
+	margin: 1em 0 0 0 !important;
+	width:40% !important;
+}
+
+a:link, a:visited {
+	text-decoration: underline;
+}
+
+.skip,=20
+.access,=20
+.portlet-icons,
+.terms,
+.noprint,
+#w3-sitemark,=20
+#ibm-logo,=20
+#personalization-links,=20
+#site-title-user,=20
+#persistent-nav,=20
+#header-search,=20
+#navigation,=20
+#browser-warning,
+#content-head .hrule-dots,
+#page-tools-main,
+.page-tools-side,
+#r-col-search {display:none !important;}
+
+/* for portal pages */
+#tabs	{top:40px; left:0;}
+#left-content {left:0 !important;}
+#right-content {right:0;}
+#left-content, #right-content {
+	top:70px;
+	width:27%;
+	font-size: 8pt;
+}
+#center-content {
+	margin: 75px 27% 0 27%;
+	font-size: 8pt;
+}
+
+h2.portlet-head-blue-med,
+h2.portlet-head-gray-med,
+h2.portlet-head-green-med,
+h2.portlet-head-blue-dark,
+h2.portlet-head-gray-dark {color:#333;}
+
+/* printing forms */
+textarea {overflow:visible}
+
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/id-w3-sitemark-simple.gif
+
+R0lGODlhNgAhAKIFAFBQUNnZ2Y+PjyoqKgEBAf///wAAAAAAACH5BAEAAAUALAAAAAA2ACEAAAP/
+WLrc/nAJMAgZQITIuy9CZY3jIHzoJ5CZMLFp/KzW2QQ0YctyMG4QnwXISwGGHdqu6BECmpYBE6X8
+HAlTFdJzLVxHT4fo5xCSLKiKNDd6nHUONqH1cSreRIUZLD7nk1tfNQ1yaAx7hlpzEmdhC4JkjDBN
+VwNEiFgMb4OSI0sMEwAUnn0kl5uLC2NbcW8arSQ7bGNSeme1M6KjYHmIuF8mpgpynxE4JXmrBEBj
+GbHDfjEBIo4gZyd7Gs8Fq7gp06zE1mS0BYjVKTTVt14l0D/iRVEMkOAWYWwvwjR/HF2dNbZlW4WP
+FZdE5m4JU0Dr2rtiEdQ0UEYCFKpltlJB0fjuQk21QvMWRAIE5xCqJZg4vfMWZKSqTX8oYlxgD0C/
+ThBBwjpTJtYffRxNNtrJp0w3XQ4juOqZtEyIizazTMERqkW/BAA7
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/id-ibm-logo-black.gif
+
+R0lGODlhLAAPAJEDAAAAAD4+Pn9/f////yH5BAEAAAMALAAAAAAsAA8AAAJahA8RyDLDwHsxzIuz
+3nzHtHyGVT0hYnXqymKIa5jHxFBoi+fce4m9IRCldEQdj/b5SV6HYfG5OtokgxNSEgQ4mtBuJvZR
+iEYQXqzMLUO8xilDLHKgz0qybVAAADs=
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/id-w3-sitemark-large.gif
+
+R0lGODlhCgFGAPcAAER3u////16KxY2s1Uh6vE9/v0d5vGiRyEl7vUl6vWKNxmaQx0t8vV6KxEp7
+vXufz0x9vnOZzG2VylGBwE1+vnKYzE5+v12JxFqHw3GYy3mdzmWPx3WbzVOCwFeFwlmGw019vlSD
+wVKBwFWDwVaEwomp1Et8vlyJxFiFwoqq1FCAv3qezlyIxI6t1l+LxVSCwViGwour1WCMxWOOxmyU
+yluIw3abzW+Wy4ip1GeQyGSOxmGMxXidznCXy2qTyXGXy1GAwGuTyWmSyG6VyneczYys1XmezmSP
+x2yUyWqSyW6Wyn+i0FaEwWCLxYio1Iyr1X6h0HSazHWazXygz5Gv17TJ5M3b7VCAwH2gz4io0+bt
+9pu220V4vI+t1sHS6EZ4vPb4/IKk0u3y+Ieo02mSyYen0/X4+7DF4qrB4ISm0qjA3+vx+JSx2FuI
+xIGj0YCi0JCu1+Tr9YOl0trk8bPI44ao06zD4YSl0oCj0eHp9MDR6LjL5Xyfz9fi8ZKw19ji8X2g
+0I+u17XK5JOx2HSazYuq1H6g0HufzrHG47bK5MnY7Jez2eLq9anB4OPq9YWm0oan0q/E4nOazcTU
+6YCj0J+53MnY67/Q6K3E4brN5oKk0ff5/LTI5O/0+bvO5oeo1Ozx+Ian08fW6/P2+rLG436h0X2h
+z6nA4IWn0n6hz4qq1fX4/LLH46zC4YCi0YOk0qnB39nj8aa+3+fu9sPT6a3D4d/o9Ovw+Nnk8cjX
+66O83pKv14ur1HecznaczbXJ5ODo9Ji02t/o83+i0Zaz2Y6t1bzO56vC4KG63ZCu1qK73Xqfz7HG
+4qe/35y228bW6oGk0pOx14Ol0cXV6rnN5urv987b7cbV6q7E4o6u1qW+3n+h0Jy3273O573P54uq
+1WiSyJWy2Iqp1IWn03iczp653IGk0Ymp1aC63OPr9QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAKAUYA
+AAj/AC8QAECwoMGCXAQoXKiwzcGHBS0wnEix4sQJEDNq3Mixo8ePIEOKHEmypMYUxZZAwfKgpcuW
+K2KOGUCz5oA0MY3oNKKhpwYeQB+oikE0RoqjSEsoXYqjqVMcTrJIhRKhqlWrFbJWyJDhx48eYHvc
+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
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/id-ibm-logo.gif
+
+R0lGODlhLAAPAPcAAEJzvf//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAALAAPAAAIbQADCBwo
+EADBgwASHgyQsOHChhAjSpxIsSLFhQUxEjT4UGFHiyBDioS4kWRBjidRDlSZcqTLlxJLOsRoUuNK
+mDhxyvT4ESVLnzmDjtwJVObNoy2FKvXIcqXNjCWRIjW4FCbDp01v/lQ4U2vBgAAAOw==
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/btn-go-dark.gif
+
+R0lGODlhFwAUAMQAAAAziAtqsv///2Kl5wZJnwZLoQdRpApjrgdVpgZOowZOogpmsAlgrQlcqgpo
+sQdSpAhYqAhYqQZPowdRpQZPovj7/QpmrwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAA
+AAAALAAAAAAXABQAAAWRICCOZGmOQ6qubCsOQSzPNP3WOH7nfLz3uR+wJhQYBbKjcfZyOI2jigMq
+Mjodr4UWqrUAuAvw60CGkssCAFp9eDHe0CMDCk+/X408tBFP6/0NLxAQERFKaRCHIhEQLwiPjyWR
+JJAvBg8GE5ebBpydmJcvCRIKpQkJCqcKFKqopi8FsbKztLQvBLi5uru7J76/IQA7
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/icon-system-status-alert.gif
+
+R0lGODlhDAAKAKIEAP/MAJyaY///AAAAAP///wAAAAAAAAAAACH5BAEAAAQALAAAAAAMAAoAAAMh
+SKoi+wyAAJeQtN4xpgac91xgJ0ZSmhFkqbJprAZ0bdMJADs=
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/ecblank.gif
+
+R0lGODlhEAABAIAAAAAAAP///yH5BAEAAAEALAAAAAAQAAEAAAIEjI8ZBQA7
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/0.gif
+
+R0lGODlhFAANAOZOAKG63f///0R2u/z8/FB/v7nL5c3Nzfn5+Spbrfb29unp6ePj4+71/DFisViE
+wDZmsFKBwtDc7nOTvmeOxkJxuH6h0YSgx97i5IihxHyfzmeQx3yf0eru8qS/4snP2J+420ByuV6H
+wsfR3Ut1tMTIzOXo7Nzl8p632k59vjFjsXyfza3D4XGTw5quyOju95auybjBytbW1kZytuDg4NPW
+2mCKxGKLxG+XzYqq1a3C4IKgyeTt9+bm5lWAweju9oup1DFgrtPT032dx1qCtpew0p2zzkp5vNHf
+8FeDv+zs7EVzuUt4vK/H5rjL5f///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAE4ALAAAAAAUAA0AAAeCgE6Cg4ROFQGFiYkRAh6Kj4I4AhgHkIoEGkg8lk4AngA/BC4CFp8r
+iIUmDgIqHwUBTScZAjYiCoocLCivAQE5AkIkMQmPAzpGDAw7IEQGMwOWGxMdNUw9ErecShQpIQ1L
+MhecRwgPLQZFQAgvnDcQMEHEJSNDlZA+CwvQggM0SYOBAAA7
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/icon-link-email.gif
+
+R0lGODlhFAALAMQZAABmzP///6qqqgBHt7nV8aPI7c/i9ZC86OLu+uLu+QBaxABWwM/i9gBLuo+8
+6ABfx5C86aPI7ABfyJC96OPu+QBQvQBQvo+86QBVwP///wAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABkALAAAAAAUAAsAAAVgYCaOQGme5qgCQeu+ASCsGcvCcTyrdXu7NxkvI0kgEo9EgvJAOCU7QC2j
+YBiuCkP1qt2pFoRwGCwmYLyjSmHNjkTYFoF0nmkcDg7I5e44QCYNaCIDhIWGhYIiAouMjYwhADs=
+
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/rbtech.gif
+
+R0lGODlhGAElAOYAAIiUlv/t7f9xT6WlpfwqFP9kdP8nOf9CUv9TYv+rjf8SJqoGBGNjY7y8v6uz
+tf8zSFJSUv3JzfyjqYODiA4ODjU1Nf/ayf/Z3P+YdPRdPv24oJeipkRCQf/KsP+KZfFHMf+MlJMI
+CCYlJf+1vU8ACIxrbf93hP/q2ePDw8QDAfgUB/+cpnQHC2s5MfUEAtoAAP+BWlMhHv9JJ+vW1v+U
+Zy0HBaicnP8AEGZocMfIzJ2fpff39+/v79/f35+fn//394SMlOfp7HNzczs/S0lMVdbW1vHx8tXW
+2M/Pz1haYuPk5f8IHMgfEXN2fvf//8bGxtkpFbW1td7n55CMjP//96itsdoYCecAANKansbGzoB+
+fsZYScc4KotVSe/397W9xs7W1tbOzv9WL/+Ej7W9vf/v97iCfc26uP+Mc721tf9jPe/n5+a2sM7O
+1v+ttf+9wv87GOWFdf+cf38lHP+UnKB7e+/v9+alpf+lgHtzc3tjYy0xPv8AGAAAAP///wAAACH5
+BAAAAAAALAAAAAAYASUAAAf/gH6Cg4SFhoNIU0QiFH19FBVCRYeUlZaXmJmam5ydnp+goaKjl0ET
+FRwME1NaSY2OfUk8pLS1tre4ubq7lkFaQg07hwOvfRUaFsKUZQHNzs1lVLg/zz9+OzzZ2byG2NrK
+3OHi490DPuCFPCgSHzWwMR5yFpQHS0sK9vgKCgYFEbZ08i0p4IcYhYMVyPlxdZCCD4UQI+IqEgVd
+IRRYtsBRAQVWnzgYEliQVujBDT4nUfJZiXKJiVogVPJBUNBjQnIQPD6UyLOnJyRBKlHBgoWJFSsE
+ZMSA1SWBhg4nDJlcmbIqSwm0YqqkOcCmwpywdvocS7Zbj0tm7ixgwgWGGg9d/2BBOHHCggUnJamy
+TKnyxgNro7Se5OoVp86yiMvusGgIy5k5C6Bk8IABjxlYHCzUtRCgZFUFBQo80MtnyQVSgmfWhHVz
+HFhHYhPLnu1nhpktIbh8EOCBBp467zQ47XCX0NSVBgT9QEB6hCFqzSxF95OaMGtBO4IwHoQtyCxL
+2dd4MfS6T+xK32irv+WFxxsJErqcYZE7QwYBNDDEddQi/3C8g4ymkgGAubEXHysM8sMKB+BzjwEm
+nEaIBAbcg8AFIFRlnSMVBMFAQwx8h10URDREgQhCnEXIDj5wYGIFE4hY3k49/CLEjUj4wcMpJibx
+xHpAgtIDGwi84IILL9RRAv8LkTFxH2UcMAUDZXho4BlVyQkSwYEJ+hGAgHytpECXfoywhF796LVh
+HyJU4FEfRCizAwNvwkJBA4PwEGWdbE7ix4yC4OCRCDsgIQKffWgR5KKZSIFEkVe4kNQcKNAngxhi
+2DdlIzXEcN+UNGgAoCDH8ZGlH28c6NwPB8hk1Q1LvOHHD6NZdSZVayIahSBTIOoIBUFRQaevFQgD
+aBHF3MlDMXyex+izgrRxBhRGEpCUACzMQAITcFz6ARQffKBRt2KoIcC58xiHJmAxpWSaH1uqWYAC
+MtEUr0yuqtaVr44wcA2zJ745gR89AHyoRw78qdMO5eHgxwSDCpHEoNtBC+T/EyhAESkc9p0bQxsk
+hABFt0ykwMTI1pKbgbk7kERqVQZccIEb9Kr0gCAm8EWTHxLopcAPdOBrwhgH5srBFAc7IoIfSHhE
+QRE7aOHVvkprV56/MzYw6Cx7OvKjH27C4qfFjGYRxgcyfEoZBnHEgAQJJCwABxMLLJACuATAkTe5
+CUjFF6wH8qHAP34wlxIdglxw6w0KBGCCTAdI0yquq/0qhR9ROL0D1cYI0rSdO0AMi8N++OARBwrD
+AkDXd16TdB9+CvrrrmQvGkQDW1ibAQyVoeGBBiTwUAMJSC0QQt1GWas8HGKIGCBppN1gAOF+TH5S
+lwHcKrjjehHkx+Mprbk0/8FO88A56uSDLoRHQgiS+XXldd0H6X68zsFZQYRRBBhhOF87WTzoQRbA
+MIgqoCAFKXgBAeLxlA7MIAZFaAEJVBCCCh7PSQKAggpUYC02HOI4VqEKaMogCOvx4QEIKABzVNK4
+AujlJdTRUOU65wcplM90mBFEDzQnO0e0D3NeKc/WBjEsO6Xof7QJAgCAAAAAqKgHX9hCAo0UEuLU
+RQ8lSEMNQkACFtAnBEz4gBiOYgUVYCEAo3oe9P7GhwJIbo34atzjVDIGQRAtfDO8yRqSZb7T6VBz
+64PFDx0QRERBgBBPYNavGKCiTQAAB5CMZCSP8IlH4oCStcvCEpkIIAcEwf9uKbgCAeTwlAs4BQs1
+6IEe4NbFL67FZFDAQiOvhBIFmMAEJtxe9aIXuBa+UBDVyaMggsBHHDoCfTsEXQ/78MP3cSh1daLA
+LEUXzQFwAgd7yKY2tZmDT2BzD928hQ6yqYNdOICJQEiYIAAwA1AaCQYJoAwanNKFGAShBKz0ogUX
+EAcbzJKWprIGrfD1DxPeYx8I5Qf36GhHNQnTD8S0Ux9zmL5f7SCQPhQEIeHnqx8OYgqK/JU1NWHJ
+JGRzCJP0ZjbDaYtx7qGcutgAOrMgCB5sAAXuFCUazjUlOcihBSJoQBhKEIMuzqELZrCBD/xHS+kN
+gmgykVWrUrICKgh0Vlj/daFKYBhMzt0kor/igTH7gEwess99hUQUsApRBAiElAJMvUQOskk/UHyT
+pbVwKUxz0UQm+kkKBqxbAiOlggwkQA4CgMG5uFADDkwgDU9Igw3yoIWxVaJUBBJEz2TiHBN2CTrQ
+8EMBqlJHP0B1MA8F6yMmesw/qu+sftjoM8tDASJ4ZAqHQMKH3qTOTcx1D3XNQROGsIck6MAIgxBu
+Nolw3EBlswE6IMIemoBJSxohutPFpB+ua9IhNCGcOJDuHohwye3qoLvfFcUSl9gDvARhAwEQ7GBv
+IIAORAAD9hHDB+DABVbkYQoNAAwmQHgqA8kEK1NdSZfMZI8l3GyOJ/He/2n1NSjXhnWsZVUmbJ3Z
+ufJM4HNKE8YTGkDirxXhdQPjxG/pV4Vt0lUQDXBxcZ073m0SgcZNsLEgjGBSF3dTxjngMZBD0VcA
+EPAaQNgBF443xSug4SkakIHyCPCPilkCs4AZgVUS5FnN6uXBMhStQzlHgctpDXQYFkQRAOkR0sm2
+wwsLmyMcsINkKYOafUixb18sCOIO4QhGuKsfxKuDHPS4Cn74ZhIa0OJsUlLRjNYmJV06MJc2wQ85
+mEA2JxBkSvshxsANRRWAwMQvDGIDYGDD8dz5ATwkQAwbVIELVoCNTxB4ECM4EAhEqyFraBW1K5DJ
+ElawgpqhJFdJiIKc2f/06fKVziu9Yo0wMNoHrB1mrMV6XY78QG2x5OCRnK7EigXxWwDAmJxH4DOo
+B/ZNPCV6pe/eg7sF/U1MalMQeqUxcheSzVA8AZ0bQMQGnLCFuoGSN1BwAWHv4IXL2ZovmUUVaV7S
+M748QEAqSVC8wmSVXPEpCRBllghcdNYnvKkCyzYPNFW+LI80oIhs8oHU7OSnCQyh0DoYgp4LMW4/
+UDoHObB0o2GqBB3oANGCjnc3ky5o4u5hEPX2OTn7vFKg91i7nQgCOoHgcCdsgM4FR14GrPCCsh8A
+CQG08iVuLYhUVYUgATAALwdEwh/IvS+mqtcMXwcLdS6TT2fZgfzqJIL/WQAq0R6BABJC6hF/+XwI
+OYDkBJRw80P03KUyxkG+DcF0eHcenH64N427uXkZc1PU6x14Tb9uByxwITIIZEIBzgCGHYAhrprA
+spYOdDN43T2EgxvEZkWY663McAqD5wBg9OQrROuQ73Zy9+FB7IgiAIDxZP0OcyPvBwAY/caGuDxd
+jU7+Kmy+EJ9fOryVHvp+j17qLxWENslPfiWEggfrBQIZuOMAAHxBCmsQASgQBlnwfzzwBOMRCmMQ
+GqEBQ7PCgAwoIY5TISuxBBDSGYRQbCfxABEQABCYIE/AACLIAA3AA7tFARAQFNwBABWQLEQQBumg
+Ba9DAYw0CD4wgiQo/whOoAU4mAZ+8ARuZScVcA6DAE45gFJEAHRPF358dn6DsHlFd3Tsx37p135L
+yH6l53620AObBAB0lidI4ABVUAVk0AZesANZgARpBBHUIDMnIGCF8AMyA4eYwANFoIKGQAVB0ANF
+0ANWlh186IejsAOByFRD0ACRpwMO0wBDYHnqlk3m9mnk9Fsp9luXVoWYmE325wdOh29Tx297sG89
+Rgpc2IVtoAxpFARkQAYJiESueAkTgAPcl4Q4sHPJxWdKsFzIlWPyZgS6+DBTl4mgx34AMHW/BXLw
+d2nAGH/pNmOkYAf9h04AQIZZUIAOsAFfgHuvuI2DQHnppQQ4MASbyItzfNZ9yyVeyKhp49VjQ4Bc
+wghe8JaLdOV07tZoK0V5dKVN7kYLPBCGG9BEAPB1T+Bw3FiQlXAE4ZiQWEcIPbdO24QDm2gE6khX
+mPSO7/dp4jVe+2gETgd6R5CRlWeQIkkWSpAD49gJQLdvPBdkuFCSJ5lcKdmNObCQI1mTNnmTOJmT
+OrmTPNmTBhkIADs=
+------=_NextPart_000_0000_1751A48D.10BAC36C
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///W:/Work/mainframe/DFSMS/Ibm%20paper/DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/count.gif
+
+R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+------=_NextPart_000_0000_1751A48D.10BAC36C--

@@ -1,0 +1,301 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+<title>IBM Redbooks | z/OS V1R7 DFSMShsm Support of Large Format Data Sets</title>
+<meta name="Description" content="With z/OS® V1R7, DFSMShsm™ has been enhanced to support the new large format sequential data sets.">
+<meta name="Keywords" content="TIPS0644, TIPS0644, Redbook, Redbooks, Technotez/OS V1R7 DFSMShsm Support of Large Format Data Sets">
+<meta name="Subjects" content="Storage">
+<meta name="Current Author" content="Lovelace Mary">
+<meta name="robots" content="index,follow">
+<meta name="security" content="IBM internal use only">
+<meta name="source" content="w3 v8 template generator">
+<meta name="ibm.country" content="US">
+<meta name="dc.date" scheme="iso8601" content="2003-12-30">
+<meta name="dc.language" scheme="rfc1766" content="en-US">
+<meta name="dc.rights" content="Copyright (c) 2003 IBM Corporation">
+<meta name="dc.type" scheme="IBM_ContentClassTaxonomy" content="&lt;ZZ999&gt;">
+<meta name="dc.subject" scheme="IBM_SubjectTaxonomy" content="&lt;&gt;">
+<meta name="dc.publisher" content="IBM Corporation">
+<meta name="ibm.effective" scheme="W3CDTF" content="&lt;&gt;">
+<meta name="ibm.industry" scheme="IBM_IndustryTaxonomy" content="&lt;ZZ&gt;">
+
+<script type="text/javaScript" src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/scripts.js"></script>
+<script type="text/javascript" src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/localsearch.js"></script>
+<script type="text/javascript" src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/sortable.js"></script>
+<link rel="stylesheet" type="text/css" href="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/v4-screen.css">
+<style type="text/css" media="all">
+<!--
+@import url("//w3.ibm.com/ui/v8/css/screen.css");
+@import url("//w3.ibm.com/ui/v8/css/interior.css");
+@import url("//w3.ibm.com/ui/v8/css/icons.css");
+@import url("//w3.ibm.com/ui/v8/css/search.css");
+@import url("//w3.ibm.com/ui/v8/css/tables.css");
+-->
+</style>
+<!-- print stylesheet MUST follow imported stylesheets -->
+<link rel="stylesheet" type="text/css" media="print" href="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/print.css">
+<link href="http://w3.itso.ibm.com/rss/all.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/aim.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/Application Development RSS feed">
+<link href="http://w3.itso.ibm.com/rss/bladecenter.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/BladeCenter Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/db2.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/Information Management software Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/iseries.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/System i Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/pseries.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/System p Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/xseries.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/System x Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/zseries.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/System z Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/storage.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/System Storage Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/linux.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/Linux Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/lotus.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/Lotus Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/networking.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/Networking Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/ondemand.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/On Demand Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/solutions.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/Solutions Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/tivoli.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/Tivoli Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/websphere.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/WebSphere Intranet RSS feed">
+<link href="http://w3.itso.ibm.com/rss/windows.xml" rel="alternate" type="application/rss+xml" title="IBM Redbooks/Windows Intranet RSS feed">
+</head><body onload="fixecblank()" id="w3-ibm-com" class="article" bgcolor="#ffffff" text="#000000">
+<!-- start accessibility prolog -->
+<div class="skip"><a href="#content-main" accesskey="2">Skip to main content</a></div>
+<div class="skip"><a href="#left-nav" accesskey="n">Skip to navigation</a></div>
+<div id="access-info">
+	<p class="access">The access keys for this page are:</p>
+	<ul class="access">
+		<li>ALT plus 0 links to this site's <a href="http://w3.ibm.com/w3/access-stmt.html" accesskey="0">Accessibility Statement.</a></li>
+		<li>ALT plus 1 links to the w3.ibm.com home page.</li>
+		<li>ALT plus 2 skips to main content.</li>
+		<li>ALT plus 4 skips to the search form.</li>
+		<li>ALT plus 9 links to the feedback page.</li>
+		<li>ALT plus N skips to navigation.</li>
+	</ul>
+	<p class="access">Additional accessibility information for w3.ibm.com can be found <a href="http://w3.ibm.com/w3/access-stmt.html">on the w3 Accessibility Statement page.</a></p>
+</div>
+<!-- end accessibility prolog -->
+<!-- start masthead //////////////////////////////////////////// -->
+<div id="masthead">
+	<h2 class="access">Start of masthead</h2>
+	<div id="prt-w3-sitemark"><img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/id-w3-sitemark-simple.gif" alt="" height="33" width="54"></div>
+	<div id="prt-ibm-logo"><img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/id-ibm-logo-black.gif" alt="" height="15" width="44"></div>
+	<div id="w3-sitemark"><img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/id-w3-sitemark-large.gif" alt="IBM Logo" usemap="#sitemark_map" height="70" width="266"><map id="sitemark_map" name="sitemark_map"><area shape="rect" alt="Link to W3 Home Page" coords="0,0,130,70" href="http://w3.ibm.com/" accesskey="1"></map></div>
+	<div id="site-title-only">IBM Redbooks</div>
+	<div id="ibm-logo"><img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/id-ibm-logo.gif" alt="" height="15" width="44"></div>
+	<div id="persistent-nav"><a id="w3home" href="http://w3.ibm.com/"> w3 Home </a><a id="bluepages" href="http://w3.ibm.com/bluepages/"> BluePages </a><a id="helpnow" href="http://w3.ibm.com/help/"> HelpNow </a><a id="feedback" href="http://w3.ibm.com/feedback/" accesskey="9"> Feedback </a></div>
+	<div id="header-search">
+		<form name="RBsearch" onsubmit="DoSearch();return false" action="/cgi-bin/searchsite.cgi" method="get" id="search">
+		<table class="header-search" cellpadding="0" cellspacing="0">
+		<tbody><tr><td class="label"><label for="header-search-field">Search w3</label></td><td class="field"><input id="header-search-field" name="query" accesskey="4" type="text"></td><td class="submit"><label class="access" for="header-search-btn">go button</label><input id="header-search-btn" alt="Go" src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/btn-go-dark.gif" type="image"></td></tr>
+
+		<tr><td></td><td colspan="2" class="limiter"><input name="url" value="" type="hidden"><input name="lsearch" id="lsearch" value="redbooks" checked="checked" type="checkbox"><label for="lsearch"> Search IBM Redbooks</label></td></tr>
+
+
+		</tbody></table>
+		</form>
+	</div>
+
+	<div id="browser-warning"><img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/icon-system-status-alert.gif" alt="Error" height="10" width="12">
+This Web page is best used in a modern browser. Since your browser is
+no longer supported by IBM, please upgrade your web browser at the <a href="http://w3.ibm.com/download/">ISSI site</a>.</div>
+
+</div>
+<!-- stop masthead //////////////////////////////////////////// --><style type="text/css" media="all">
+<!--
+@import url("//w3.ibm.com/ui/v8/css/interior-1-col.css");
+@import url("//w3.ibm.com/ui/v8/css/interior-partial-sidebar.css");
+-->
+</style>"
+<script language="JavaScript" type="text/javascript">
+<!-- 
+function fixecblank() {
+  lg = document.images.length;
+  for (x = 0; x < lg; x++) {
+    isrc = document.images[x].src;
+    i = isrc.indexOf("ecblank");
+    if (i != -1) {
+      if ((document.images[x].width==20) || (document.images[x].width==16)) {
+        document.images[x].width=0;
+      }
+    }
+  }
+}
+// -->
+</script>
+
+<!-- start navigation //////////////////////////////////////////// -->
+<div id="navigation">
+	<h2 class="access">Start of left navigation</h2>
+	<!-- start left nav -->
+	
+	<div id="left-nav">
+		<div class="top-level">
+			<a id="site-home" href="http://w3.itso.ibm.com/">IBM Redbooks®</a>
+			<a href="http://w3.itso.ibm.com/itsoapps/redbooks.nsf/redpieces/">Drafts</a>	
+			<a href="http://w3.itso.ibm.com/itsoapps/redbooks.nsf/redbooks/">Redbooks</a>
+			<a href="http://w3.itso.ibm.com/itsoapps/redbooks.nsf/redpapers/">Redpapers</a>
+			<a href="http://w3.itso.ibm.com/itsoapps/redbooks.nsf/tips/">Technotes</a>
+			<a href="http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3addmats/">Additional Materials</a>
+			<a href="http://w3.itso.ibm.com/portals/">Redbooks Domains</a>
+			<a href="http://w3.itso.ibm.com/itsoapps/residents.nsf/ResIndex?OpenView">Residencies</a>
+			<a href="http://w3.itso.ibm.com/itsoapps/projects.nsf/ProjectIndex?OpenView">Projects</a>
+			<a href="http://w3.itso.ibm.com/itsoapps/projects.nsf/WorkshopIndex?OpenView">Workshops</a>
+			<a href="http://w3.itso.ibm.com/itsoapps/redbooks.nsf/cdroms?OpenView">Redbooks on CD</a>
+			<a href="http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3howtobuy?Open">How to buy</a>
+			<a href="http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3about?Open">About Redbooks</a>
+			<a href="http://w3.itso.ibm.com/itsoapps/redbooks.nsf/pages/w3contact?Open">Contact Us</a>
+			<a href="https://w3.itso.ibm.com/itsoapps/redbooks.nsf/subscribe?OpenForm">Mailing List</a>
+			<a href="http://w3.itso.ibm.com/rss.html">RSS feeds</a>
+		</div>
+	</div>
+	<!-- stop left nav -->
+	<!-- start Site related links -->
+	<div id="related-links">			
+	<p class="title"><strong>Related Links</strong></p>
+	<p><a href="http://w3.ehone.ibm.com/public/applications/publications/cgibin/pbi.cgi">IBM Publications Center</a></p>
+	</div>
+	<!-- stop Site related links -->
+</div>
+<!-- stop navigation //////////////////////////////////////////// -->
+<!-- start content //////////////////////////////////////////// -->
+<div id="content"><div id="content-head">
+<p id="date-stamp">Last updated 18 十二月 2006</p>
+<div class="hrule-dots">&nbsp;</div>
+<p id="breadcrumbs"></p>
+</div>
+<!-- start main content //////////////////////////////////////////// -->
+<div id="content-main"><div id="partial-sidebar">
+<h2 class="access">Start of sidebar content</h2><div class="bar-blue-med"><b>Profile</b></div> 
+<div class="indent" style="font-size: 8pt;"> 
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="top"><td width="100%"><p><b>Publish Date</b>
+</p><p>18 十二月 2006</p></td></tr>
+
+<tr valign="top"><td class="dotted" width="100%"><img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/ecblank.gif" alt="" border="0" height="1" width="1"></td></tr>
+
+<tr valign="top"><td width="100%"><p class="small"><b>Rating: </b>Not yet rated</p></td></tr>
+
+<tr valign="top"><td width="100%"><p class="small"><img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/0.gif" alt="Rate this redbook" height="13" width="20"> <a href="http://w3.itso.ibm.com/itsoapps/redbooks.nsf/306ab6ae75c430bf85256c880075583c?OpenForm&amp;ParentUNID=D6DE34F569ADCB29852572440059611D" class="smallplainlink">Rate this Technote</a></p></td></tr>
+
+<tr valign="top"><td class="dotted" width="100%"><img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/ecblank.gif" alt="" border="0" height="1" width="1"></td></tr>
+
+<tr valign="top"><td width="100%"><p class="small"><b>Author(s)</b><br>
+Mary Lovelace<br>
+</p></td></tr>
+
+<tr valign="top"><td class="dotted" width="100%"><img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/ecblank.gif" alt="" border="0" height="1" width="1"></td></tr>
+
+<tr valign="top"><td width="100%"><p class="small"><b>IBM Form Number</b><br>
+TIPS0644</p></td></tr>
+
+<tr valign="top"><td width="100%"><p class="small"><b>Feedback</b><br>
+<img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/icon-link-email.gif" align="top" height="11" width="20"> <a href="mailto:redbook@us.ibm.com">Send e-mail</a></p></td></tr>
+</tbody></table>
+</div> 
+
+
+	<div id="ibm-merchandising-module">
+	<!--IBM Web Merchandising Module-->
+	</div>
+</div>
+<p><img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/rbtech.gif" alt="Redbooks Technote" height="37" width="280"></p><p></p><h1>z/OS V1R7 DFSMShsm Support of Large Format Data Sets</h1><p>
+</p><div style="font-size: 84%;"><i>For related information about this topic, refer to the following IBM Redbooks publication:</i>
+<p><a href="http://w3.itso.ibm.com/itsoapps%5Credbooks.nsf/RedbookAbstracts/SG247225.html">z/OS V1R7 DFSMS Technical Update, SG24-7225-00</a></p></div><h2 class="bar-blue-med-dark">Abstract</h2>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr valign="top"><td width="651"><p>With z/OS® V1R7, DFSMShsm™
+has been enhanced to support the new large format sequential data sets.
+This Technote provides an overview of this function.</p></td></tr>
+</tbody></table>
+<h2 class="bar-gray-med-light">Contents</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="top"><td width="100%"><p></p><div class="ibm-domino-rtf">
+<p><b><font face="Arial">DFSMShsm support of large format data sets</font></b><br>
+<font size="2" face="Arial">DFSMShsm has been enhanced to support the
+new large format sequential data sets. Large format data sets can have
+greater than 65,535 tracks per volume. Before z/OS V1R7, most
+sequential data sets were limited to 65,535 tracks on each volume,
+although most hardware storage devices supported far more tracks per
+volume. To support this hardware capability, z/OS V1R7 enables users to
+create new large format data sets, which are physical sequential data
+sets with the ability to grow beyond the previous size limit. Large
+format data sets are not required to have greater than 65,535 tracks at
+initial allocation, but when allocated in large format they can expand
+to greater than 65,535 tracks. z/OS V1R7 also introduces the concept of
+a basic format data set to designate a sequential data set that is
+neither extended format nor large format. A basic format data set
+therefore may not have any more than 65,535 tracks per volume. Large
+format data sets are supported by DFSMShsm in the same manner as basic
+format data sets in typical operations involving:</font>
+</p><ul>
+<li type="disc"><font size="2" face="Arial">Migration and recall</font>
+</li><li type="disc"><font size="2" face="Arial">Backup and recovery</font>
+</li><li type="disc"><font size="2" face="Arial">ABACKUP and ARECOVER</font></li></ul>
+<br>
+<b><font face="Arial">Large format journal data set</font></b><br>
+<font size="2" face="Arial">DFSMShsm also supports the use of a large
+format data set for its journal data set. A larger journal data set can
+allow more DFSMShsm activity to take place between journal backups and
+helps to minimize occurrences of journal full conditions. After all
+systems in the HSMplex are at z/OS V1R7, the following procedure can be
+followed to migrate the journal data set to a large format data set:</font>
+<ol type="1">
+<li><font size="2" face="Arial">Shut down all but one of the DFSMShsm subsystems in the HSMplex.</font>
+</li><li><font size="2" face="Arial">Either hold all DFSMShsm functions or set DFSMShsm to emergency mode.</font>
+</li><li><font size="2" face="Arial">Back up the control data sets using the </font><font size="2" face="Courier New">BACKVOL CDS</font><font size="2" face="Arial"> command. This creates a backup of the journal and then nulls the journal.</font>
+</li><li><font size="2" face="Arial">Stop the remaining DFSMShsm subsystem.</font>
+</li><li><font size="2" face="Arial">Rename the current journal data set.</font>
+</li><li><font size="2" face="Arial">Allocate the new large format journal data set</font>
+</li><li><font size="2" face="Arial">Ensure that the JOURNAL DD statement in the DFSMShsm startup procedure points to the new journal data set.</font>
+</li><li><font size="2" face="Arial">Restart the DFSMShsm hosts.</font></li></ol>
+<br>
+<font size="2" face="Arial">Should you need to fall back to using a
+basic format journal data set, the same procedure as above can be used
+to replace the current large format data set with a new basic format
+data set.</font><br>
+<br>
+<font size="2" face="Arial">Note that if the used space in the journal
+grows as a consequence of the data set being allocated with a larger
+size, journal backups will take longer to complete due to DFSMShsm
+having to process a larger data set. This will increase the length of
+time that DFSMShsm functions are held during CDS backup. In addition,
+increasing the size of the journal might cause the journal backup to
+fail as the space allocated to its backup copies could no longer be
+enough. To prevent this from happening, rename your current journal
+backup data sets, and create new backup data sets of sufficient size.
+The backup data sets may be defined as large format data sets.</font><br>
+<br>
+<b><font face="Arial">Coexistence considerations</font></b><br>
+<font size="2" face="Arial">A coexistence PTF is required so that
+lower-level releases of DFSMShsm will fail operations involving large
+format data sets. Because large format data sets cannot be processed on
+hosts prior to z/OS V1R7, care must be taken when migrating data sets
+in an HSMplex where not all hosts are at this level. Any attempts to
+recall these data sets from a lower-level system will fail, which is
+especially problematic for implicit recalls. Similarly, attempts to
+recover large format data sets will fail on pre-z/OS V1R7 hosts, and
+large format data sets included in an ABARS aggregate can only be
+restored using ARECOVER if the recovery system is at z/OS V1R7.</font><br>
+<br>
+<font size="2" face="Arial"> In order to use a large format journal
+data set, all systems in the HSMplex must be at z/OS V1R7. The
+toleration PTF ensures that when a lower-level release of DFSMShsm
+attempts to open a large format journal data set, message ARC0509E is
+issued and DFSMShsm is stopped. Refer to APAR OA08865 for the correct
+toleration PTF. </font></div></td></tr>
+</tbody></table>
+<h2 class="bar-gray-med-dark">Special Notices</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="top"><td style="font-size: 84%;" width="100%"><p>These
+pages are Web versions of IBM Redbooks- and Redpapers-in-progress. They
+are published here for those who need the information now and may
+contain spelling, layout and grammatical errors. This material has not
+been submitted to any formal IBM test and is published AS IS. It has
+not been the subject of rigorous review. Your feedback is welcomed to
+improve the usefulness of the material to others. </p><p>IBM assumes
+no responsibility for its accuracy or completeness. The use of this
+information or the implementation of any of these techniques is a
+customer responsibility and depends upon the customer's ability to
+evaluate and integrate them into the customer's operational
+environment. </p></td></tr>
+</tbody></table>
+<p class="terms"><a href="http://w3.ibm.com/w3/info_terms_of_use.html">Terms of use</a></p>
+</div>
+<!-- stop main content --> 
+<img src="DFSMShsm%20Support%20of%20Large%20Format%20Data%20Sets_files/count.gif" alt="" nosave="" border="0" height="0" hspace="0" vspace="0" width="0"></div></body></html>

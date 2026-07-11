@@ -1,0 +1,39 @@
+/*-----------------------------------------------------
+w3 general styles for v4 screen media
+Used by: w3 web pages for displaying in version 4 browsers like Netscape Navigator 4.7
+$Id: v4-screen.css,v 1.6 2003/12/18 22:16:55 kuahmed Exp $
+-----------------------------------------------------*/
+/* next line blocks modern browsers from parsing but lets NN4 through */
+/*/*/ /*/
+
+#masthead	{
+	position:absolute; top:0; left:0; width:100%; color:#000; z-index:1; 
+}
+
+html,body	{background:#fff; margin:0; padding:0 0 50px 0; font-size:13px;}
+html,body,p	{color:#000; font-family:verdana,arial,helvetica,sans-serif;}
+a img	{border:0 solid #f00;}
+
+#w3-sitemark	{position:absolute; top:0; left:0; clip:rect(0, 110%, 70px, 0px); layer-background-color:#4477bb;}
+#ibm-logo	{position:absolute; left:99%; top:13px;}
+#site-title-plus	{
+	position:absolute; top:26px; left:131px; color:#fff; font-size:21px; font-size:21px; font-weight:bold; font-family:arial,verdana,helvetica,sans-serif; 
+}
+#site-title-only	{
+	position:absolute; top:35px; left:131px; color:#fff; font-size:21px; font-size:21px; font-weight:bold; font-family:arial,verdana,helvetica,sans-serif; 
+}
+#browser-warning	{position:absolute; left:160px; top:77px; font-weight:bold; color:#f00; padding:6px;}
+
+#content,
+#left-content,
+#center-content,
+#right-content,
+#navigation,
+#persistent-nav,
+#personalization-links,
+#header-search,
+#tabs,
+#site-title-user,
+#site-sub-title,
+#edit-layout,
+.access	{display:none;}
