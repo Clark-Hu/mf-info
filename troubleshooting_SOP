@@ -1,0 +1,488 @@
+值得，而且我认为这是**最高收益的 skill 之一**。
+
+它不应该叫某个具体技术 skill，比如 `rexx`、`jcl`、`sort`，而应该是一个横向的 **troubleshooting / problem-solving skill**，专门告诉 Agent：
+
+```text
+遇到问题时先查哪里
+如何利用本地 manual
+如何利用 message manual
+如何利用 user guide
+如何利用 KB
+如何给出结论
+如何沉淀新问题
+```
+
+在不能联网的前提下，这个 skill 非常重要。它相当于给 Agent 一个本地排障 SOP。
+
+---
+
+# 建议位置
+
+可以放在：
+
+```text
+skills/troubleshooting/SKILL.md
+```
+
+或者：
+
+```text
+skills/problem-solving/SKILL.md
+```
+
+我更推荐：
+
+```text
+skills/troubleshooting/SKILL.md
+```
+
+因为语义最明确。
+
+---
+
+# 它的定位
+
+可以这样定义：
+
+```markdown
+# Troubleshooting Skill
+
+This skill defines the standard operating procedure for diagnosing mainframe
+errors, messages, abends, return codes, failed jobs, unexpected utility behavior,
+and environment-specific operational problems.
+
+Use this skill whenever the user asks about a concrete problem, failure,
+message, abend, RC, or unexpected result.
+```
+
+---
+
+# 触发条件
+
+在 `AGENTS.md` 里写：
+
+```markdown
+## Troubleshooting Skill
+
+For any question involving an error message, abend, return code, failed job,
+unexpected utility behavior, or environment-specific operational issue, first
+read `skills/troubleshooting/SKILL.md`.
+
+This skill defines the local lookup order, use of message manuals, user guides,
+KB notes, and final answer format.
+```
+
+这样 Agent 就知道什么时候查。
+
+---
+
+# 建议 SOP 查询顺序
+
+我建议顺序是：
+
+```text
+1. 用户提供的错误信息 / joblog / sysout / member 内容
+2. kb/errors/ 和 kb/incidents/
+3. relevant skills/
+4. local message manual
+5. local user guide / reference manual
+6. approved code examples
+7. bookshelf / PDF bookmarks / TOC
+8. general reasoning
+9. 生成 KB entry
+```
+
+但可以更精确一点：
+
+## 如果是 message / abend / RC
+
+优先：
+
+```text
+kb/errors/
+本地 message manual
+本地 user guide
+相关 incident
+```
+
+## 如果是代码生成 / 修改
+
+优先：
+
+```text
+skills/<topic>/
+code/approved/
+Manual or user guide
+```
+
+## 如果是工具行为不理解
+
+优先：
+
+```text
+user guide
+reference manual
+message manual
+kb/howto/
+```
+
+---
+
+# `skills/troubleshooting/SKILL.md` 示例
+
+可以直接写成这样：
+
+```markdown
+# Troubleshooting Skill
+
+This skill defines the local SOP for diagnosing technical problems in this
+workspace, especially when internet access is unavailable.
+
+Use this skill for:
+
+- error messages
+- abends
+- return codes
+- failed jobs
+- joblog / sysout analysis
+- utility failures
+- unexpected product behavior
+- environment-specific operational issues
+
+## Core Principle
+
+Prefer local evidence and local manuals over generic assumptions.
+
+Do not guess the meaning of a message, abend, or return code if a local message
+manual or prior KB entry may exist.
+
+## Standard Lookup Order
+
+When diagnosing a problem, use this order:
+
+1. User-provided evidence
+   - joblog
+   - sysout
+   - JCL
+   - PROC
+   - REXX
+   - utility control statements
+   - command output
+   - screenshots or copied text
+
+2. Local KB
+   - `kb/errors/`
+   - `kb/incidents/`
+   - `kb/howto/`
+   - `kb/decisions/`
+
+3. Relevant technical skill
+   - `skills/jcl/`
+   - `skills/rexx/`
+   - `skills/sort/`
+   - `skills/smf/`
+   - product-specific skills if present
+
+4. Local message manuals
+   - IBM message manuals
+   - vendor message manuals
+   - product-specific message references
+
+5. Local user guides / reference manuals
+   - IBM user guides
+   - vendor user guides
+   - utility reference manuals
+
+6. Approved examples
+   - `code/approved/`
+
+7. Other local references
+   - `bookshelf/`
+   - `pdf-bookmarks/`
+   - TOC files
+   - copied context files if the user explicitly points to them
+
+8. General reasoning
+   - only after checking relevant local sources where practical
+
+## Message Manual Rule
+
+If the problem includes a message ID, abend code, return code, or reason code:
+
+1. Identify the product or component if possible.
+2. Search local KB first.
+3. Search the relevant message manual.
+4. Extract:
+   - message meaning
+   - cause
+   - system action
+   - user response / operator response
+   - return code / reason code meaning if available
+5. Then map the manual explanation back to the user's concrete evidence.
+
+Do not provide a final confident explanation based only on memory if a local
+message manual is available.
+
+## User Guide Rule
+
+If the problem is about expected behavior, syntax, parameters, utility usage,
+or product workflow, search the relevant user guide or reference manual.
+
+Use the message manual for errors.
+Use the user guide or reference manual for intended usage and syntax.
+
+## TOC and Bookmark Rule
+
+If full-text search is poor, use:
+
+- table of contents
+- PDF bookmarks
+- local index files
+- manual filenames
+- known chapter names
+
+Prefer searching specific manuals over scanning unrelated documents.
+
+## Answer Format
+
+For troubleshooting answers, use this structure when practical:
+
+1. Short diagnosis
+2. Evidence used
+3. Likely cause
+4. Fix or next action
+5. Validation step
+6. Related local references
+7. KB entry suggestion if this is a reusable finding
+
+## Uncertainty Rule
+
+If local manuals or KB do not contain the answer, say so briefly.
+
+Distinguish between:
+
+- confirmed by local manual
+- inferred from evidence
+- suggested next diagnostic step
+
+## KB Capture Rule
+
+After resolving or clarifying a non-trivial issue, suggest a concise KB entry:
+
+- suggested path under `kb/`
+- title
+- symptom
+- context
+- cause
+- fix
+- notes
+
+Keep the KB suggestion short and easy to save.
+```
+
+---
+
+# 还可以加一个 manual index
+
+你提到“IBM 或 vendor 都有自己的 msg manual，可以把文件名写在值得地方，或者直接利用 IBM TOC”。
+
+这个非常对。  
+我建议不要把所有 manual 都塞进 skill，而是建一个轻量索引：
+
+```text
+kb/manual-index.md
+```
+
+或者：
+
+```text
+Manual/INDEX.md
+```
+
+更推荐：
+
+```text
+Manual/INDEX.md
+```
+
+内容类似：
+
+```markdown
+# Local Manual Index
+
+## IBM z/OS
+
+### Messages
+
+- `Manual/IBM/zOS/MVS System Messages Vol 1.pdf`
+- `Manual/IBM/zOS/MVS System Messages Vol 2.pdf`
+- `Manual/IBM/zOS/DFSORT Messages Codes and Diagnosis Guide.pdf`
+- `Manual/IBM/zOS/TSO E Messages.pdf`
+- `Manual/IBM/zOS/IDCAMS Messages.pdf`
+
+### JCL
+
+- `Manual/IBM/zOS/MVS JCL Reference.pdf`
+- `Manual/IBM/zOS/MVS JCL User Guide.pdf`
+
+### DFSMS / Catalog / IDCAMS
+
+- `Manual/IBM/zOS/DFSMS Access Method Services Commands.pdf`
+- `Manual/IBM/zOS/DFSMS Managing Catalogs.pdf`
+
+### REXX
+
+- `Manual/IBM/zOS/TSO E REXX Reference.pdf`
+- `Manual/IBM/zOS/TSO E REXX User Guide.pdf`
+
+## Vendor Products
+
+### CA 1 / TMS
+
+- `Manual/Broadcom/CA1/Message Reference.pdf`
+- `Manual/Broadcom/CA1/User Guide.pdf`
+
+### CA Disk
+
+- `Manual/Broadcom/CADisk/Messages.pdf`
+- `Manual/Broadcom/CADisk/User Guide.pdf`
+
+### HSM
+
+- `Manual/IBM/zOS/DFSMShsm Messages.pdf`
+- `Manual/IBM/zOS/DFSMShsm Storage Administration.pdf`
+
+### RMM
+
+- `Manual/IBM/zOS/DFSMSrmm Messages and Codes.pdf`
+- `Manual/IBM/zOS/DFSMSrmm Implementation and Customization Guide.pdf`
+```
+
+这样 `troubleshooting skill` 只需要说：
+
+```markdown
+For product manual lookup, use `Manual/INDEX.md` first.
+```
+
+---
+
+# Skill 里不要硬编码太多文件名
+
+建议原则：
+
+```text
+Skill 写 SOP
+Manual/INDEX.md 写具体文件名
+kb 写经验
+pdf-bookmarks 写定位辅助
+```
+
+也就是说：
+
+- `skills/troubleshooting/SKILL.md`：解决问题的方法论；
+- `Manual/INDEX.md`：本地有哪些书；
+- `kb/errors/`：以前踩过什么坑；
+- `pdf-bookmarks/`：哪些 PDF 章节好找；
+- `bookshelf/`：按主题粗分类。
+
+这样比较干净。
+
+---
+
+# 可以在 AGENTS.md 里加的简短规则
+
+```markdown
+## Troubleshooting SOP
+
+For error messages, abends, return codes, failed jobs, sysout analysis, or
+unexpected product behavior, first read:
+
+`skills/troubleshooting/SKILL.md`
+
+Then follow its local lookup order:
+
+1. user-provided evidence
+2. `kb/`
+3. relevant `skills/`
+4. `Manual/INDEX.md`
+5. product message manuals
+6. product user guides / reference manuals
+7. approved examples if code changes are needed
+8. general reasoning
+
+When a reusable finding is reached, suggest a short KB entry under `kb/`.
+```
+
+这段放 AGENTS.md 就够。
+
+---
+
+# 更进一步：按产品建立 message manual mapping
+
+如果你后面愿意再加一点点，可以建：
+
+```text
+Manual/message-manual-map.md
+```
+
+内容：
+
+```markdown
+# Message Manual Map
+
+## IBM
+
+| Prefix / Area | Product / Component | Manual |
+|---|---|---|
+| IEC | MVS allocation / data management | `Manual/IBM/zOS/MVS System Messages ...` |
+| IEF | JES/JCL/converter/interpreter | `Manual/IBM/zOS/MVS System Messages ...` |
+| IDC | IDCAMS / DFSMS AMS | `Manual/IBM/zOS/DFSMS Access Method Services Messages ...` |
+| ICE | DFSORT | `Manual/IBM/zOS/DFSORT Messages Codes and Diagnosis Guide.pdf` |
+| IRX | TSO/E REXX | `Manual/IBM/zOS/TSO E Messages.pdf` |
+| IKJ | TSO/E | `Manual/IBM/zOS/TSO E Messages.pdf` |
+| ARC | DFSMShsm | `Manual/IBM/zOS/DFSMShsm Messages.pdf` |
+| EDG | DFSMSrmm | `Manual/IBM/zOS/DFSMSrmm Messages and Codes.pdf` |
+
+## Broadcom / CA
+
+| Prefix / Area | Product / Component | Manual |
+|---|---|---|
+| CAD | CA Disk | `Manual/Broadcom/CADisk/Messages.pdf` |
+| TMS | CA 1 / TMS | `Manual/Broadcom/CA1/Message Reference.pdf` |
+```
+
+这对 Agent 非常有用。  
+但这个可以晚点做，不必一开始就全。
+
+---
+
+# 结论
+
+非常值得做。
+
+我建议新增：
+
+```text
+skills/troubleshooting/SKILL.md
+Manual/INDEX.md
+```
+
+可选新增：
+
+```text
+Manual/message-manual-map.md
+```
+
+核心逻辑是：
+
+```text
+遇到问题：
+先看 evidence
+再查 kb
+再查 troubleshooting skill
+再查 Manual/INDEX.md
+再定位 message manual / user guide
+最后才泛泛推理
+```
+
+这比单纯让 Agent“凭经验回答”可靠得多，特别适合不能联网的主机运维环境。
