@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/hashicorp/terraform
+HostUrl=https://codeload.github.com/hashicorp/terraform/zip/refs/heads/main

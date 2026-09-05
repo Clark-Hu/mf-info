@@ -1,0 +1,84 @@
+// Copyright IBM Corp. 2014, 2026
+// SPDX-License-Identifier: BUSL-1.1
+
+package json
+
+type MessageType string
+
+const (
+	// Generic messages
+	MessageVersion    MessageType = "version"
+	MessageLog        MessageType = "log"
+	MessageDiagnostic MessageType = "diagnostic"
+
+	// Operation results
+	MessageResourceDrift           MessageType = "resource_drift"
+	MessagePlannedChange           MessageType = "planned_change"
+	MessagePlannedActionInvocation MessageType = "planned_action_invocation"
+	MessageChangeSummary           MessageType = "change_summary"
+	MessageOutputs                 MessageType = "outputs"
+
+	// Hook-driven messages
+	MessageApplyStart        MessageType = "apply_start"
+	MessageApplyProgress     MessageType = "apply_progress"
+	MessageApplyComplete     MessageType = "apply_complete"
+	MessageApplyErrored      MessageType = "apply_errored"
+	MessageProvisionStart    MessageType = "provision_start"
+	MessageProvisionProgress MessageType = "provision_progress"
+	MessageProvisionComplete MessageType = "provision_complete"
+	MessageProvisionErrored  MessageType = "provision_errored"
+	MessageRefreshStart      MessageType = "refresh_start"
+	MessageRefreshComplete   MessageType = "refresh_complete"
+
+	// Ephemeral operation messages
+	MessageEphemeralOpStart    MessageType = "ephemeral_op_start"
+	MessageEphemeralOpProgress MessageType = "ephemeral_op_progress"
+	MessageEphemeralOpComplete MessageType = "ephemeral_op_complete"
+	MessageEphemeralOpErrored  MessageType = "ephemeral_op_errored"
+
+	// Test messages
+	MessageTestAbstract  MessageType = "test_abstract"
+	MessageTestFile      MessageType = "test_file"
+	MessageTestRun       MessageType = "test_run"
+	MessageTestPlan      MessageType = "test_plan"
+	MessageTestState     MessageType = "test_state"
+	MessageTestSummary   MessageType = "test_summary"
+	MessageTestCleanup   MessageType = "test_cleanup"
+	MessageTestInterrupt MessageType = "test_interrupt"
+	MessageTestStatus    MessageType = "test_status"
+	MessageTestRetry     MessageType = "test_retry"
+
+	// List messages
+	MessageListStart         MessageType = "list_start"
+	MessageListResourceFound MessageType = "list_resource_found"
+	MessageListComplete      MessageType = "list_complete"
+
+	// Action messages
+	MessageActionStart    MessageType = "action_start"
+	MessageActionProgress MessageType = "action_progress"
+	MessageActionComplete MessageType = "action_complete"
+	MessageActionErrored  MessageType = "action_errored"
+
+	// Policy messages
+	MessagePolicyInfo             MessageType = "policy_info"
+	MessagePolicyDiagnostic       MessageType = "policy_diagnostic"
+	MessagePolicyEvaluationResult MessageType = "policy_result"
+	MessagePolicyQuerySummary     MessageType = "policy_query_summary"
+
+	// Provider installation messages
+	InstallProvidersStart             MessageType = "provider_installation_start"
+	InstallStateStoreProviderStart    MessageType = "state_store_provider_installation_start"
+	LogReusingPreviousProviderVersion MessageType = "provider_query_use_previous_version"
+	LogFindingMatchingVersion         MessageType = "provider_query_use_constraints"
+	LogFindingLatestVersion           MessageType = "provider_query_use_latest"
+
+	// Dependency lock file messages
+	// Uses provider-oriented language in case we add a module lock file in future.
+	ProviderLockfileCreated MessageType = "provider_lockfile_created"
+	ProviderLockfileUpdated MessageType = "provider_lockfile_updated"
+
+	// Provider trust-related message (currently used only in PSS context)
+	ProviderInteractiveApproval  MessageType = "provider_interactive_approval"
+	ProviderInteractiveRejection MessageType = "provider_interactive_rejection"
+	ProviderAutomaticApproval    MessageType = "provider_automatic_approval"
+)
