@@ -1,0 +1,412 @@
+可以，建议你把它定位成一个 **“Mainframe Operations Portal / 信息中心”**，而不是简单页面。你现在的需求非常适合做成：
+
+```text
+Region / Environment / LPAR / Storage Group
+多维度容量看板
+```
+
+重点展示：
+
+- 当前 Storage Group 使用率
+- 历史增长趋势
+- 环比/同比增长
+- 预计耗尽时间
+- 高风险 SG 排名
+- Region / Prod / Dev / Test / Sandbox 汇总视图
+
+---
+
+## 1. 如果公司内网限制多，优先选这个技术路线
+
+我建议：
+
+```text
+后端：Java / Node.js / Python，按公司标准
+前端：React + TypeScript
+UI：公司允许的组件库
+图表：ECharts / Recharts / AntV / Highcharts，按公司仓库允许情况
+数据存储：PostgreSQL / DB2 / SQLite / 内部数据库
+采集：z/OSMF / Zowe / 定时 Job
+```
+
+如果你们公司仓库里有以下任何一个，优先用：
+
+```text
+React
+TypeScript
+ECharts
+Ant Design
+Material UI
+Recharts
+Tailwind
+Bootstrap
+```
+
+其中 **ECharts** 很适合运维大屏、容量趋势、堆叠面积图、热力图；**Recharts** 更适合 React 项目内轻量集成。Grafana 本身是非常成熟的开源可视化平台，支持多数据源和 JSON 化 dashboard，适合做容量趋势和运维指标展示；如果公司允许部署 Grafana，可以直接作为图表层或嵌入门户。([en.wikipedia.org](https://en.wikipedia.org/wiki/Grafana?utm_source=openai))
+
+---
+
+## 2. 不建议纯 JavaScript 手搓 UI
+
+你已经感觉到“纯 JavaScript 效果不够”，这是正常的。
+
+商业级效果主要来自：
+
+```text
+设计系统 + 组件库 + 图表库 + 数据模型
+```
+
+不是靠 Copilot 随机生成页面。
+
+建议让 Copilot/Agent 按照固定规范生成代码，比如：
+
+```text
+- 所有页面使用同一个 Layout
+- 所有卡片使用统一 Card 组件
+- 所有表格使用统一 DataTable
+- 所有状态颜色统一
+- 所有图表配置统一
+- 所有接口返回统一 DTO
+```
+
+---
+
+## 3. 可以给 Agent 准备的“skill”/提示词模板
+
+你可以在仓库里准备一个 `copilot-instructions.md` 或类似文档，让 Agent 按统一风格生成。
+
+示例：
+
+```markdown
+# Operations Portal UI Guidelines
+
+You are building an enterprise mainframe operations portal.
+
+## Tech Stack
+- React + TypeScript
+- Company approved UI components only
+- Company approved chart library only
+- No external CDN
+- No unapproved npm packages
+
+## Visual Style
+- Enterprise dashboard style
+- Dense but readable layout
+- Support dark mode if possible
+- Use card-based summary
+- Use status colors:
+  - Green: < 70%
+  - Yellow: 70% - 85%
+  - Orange: 85% - 95%
+  - Red: >= 95%
+
+## Required Pages
+1. Global Overview
+2. Region Overview
+3. Environment Overview
+4. Storage Group Detail
+5. Trend Analysis
+6. Risk List
+
+## Storage Group Table Columns
+- Region
+- Environment
+- System
+- LPAR
+- Storage Group
+- Total GB
+- Used GB
+- Free GB
+- Used %
+- 7-day growth
+- 30-day growth
+- Forecast days remaining
+- Last collect time
+- Status
+
+## Chart Requirements
+- Usage trend line chart
+- Used vs free stacked bar
+- Top 10 high usage SG
+- Top 10 fastest growing SG
+- Region comparison
+- Environment comparison
+```
+
+这样 Agent 生成出来的代码会稳定很多。
+
+---
+
+## 4. 页面设计建议
+
+### 首页：Global Overview
+
+顶部放汇总卡片：
+
+```text
+Total Storage
+Used Storage
+Average Usage
+Critical SG Count
+Warning SG Count
+Fastest Growing SG
+```
+
+中间放图表：
+
+```text
+- 各 Region 使用率对比
+- Prod / Dev / Test / Sandbox 使用率对比
+- 最近 30/90 天总使用量趋势
+```
+
+底部放风险列表：
+
+```text
+- 使用率最高的 Storage Group
+- 增长最快的 Storage Group
+- 预计最早耗尽的 Storage Group
+```
+
+---
+
+### 列表页：Storage Group List
+
+你需要一个非常清晰的表格：
+
+```text
+Region | Env | System | LPAR | SG | Used % | Used GB | Free GB | 30d Growth | Forecast | Status
+```
+
+功能建议：
+
+```text
+筛选：Region / Env / LPAR / Status
+排序：Used % / Growth / Forecast days
+搜索：SG 名称
+导出：CSV
+点击 SG 进入详情页
+```
+
+颜色规则建议：
+
+```text
+< 70%     Normal
+70-85%    Notice
+85-95%    Warning
+>=95%     Critical
+```
+
+---
+
+### 详情页：Storage Group Detail
+
+一个 SG 的详情页建议包括：
+
+```text
+- 当前容量卡片
+- 近 30/90/180 天趋势
+- 每日增长量柱状图
+- 线性预测
+- 最近采集记录
+- 关联 VOLSER / SMS class / LPAR 信息
+```
+
+趋势图建议：
+
+```text
+x-axis: date
+y-axis: used percentage / used GB
+series:
+  - used GB
+  - free GB
+  - used %
+```
+
+---
+
+## 5. 开源系统可以参考什么？
+
+### A. Grafana
+
+如果你只想快速展示运维指标，Grafana 是最值得参考的。它本身就是开源分析和可视化 Web 应用，支持多种数据源，并且 dashboard 可以用 JSON 定义、版本化和共享。([en.wikipedia.org](https://en.wikipedia.org/wiki/Grafana?utm_source=openai))
+
+适合参考：
+
+```text
+- Dashboard 布局
+- 时间范围选择器
+- Panel 设计
+- 告警状态颜色
+- 变量筛选器
+```
+
+如果公司允许，你甚至可以：
+
+```text
+你的门户负责权限、导航、资产模型
+Grafana 负责图表展示
+```
+
+---
+
+### B. Backstage
+
+Backstage 更像内部开发者门户/平台门户，有插件体系，也有 Kubernetes、Grafana 等集成生态。官方文档显示它支持 Kubernetes 插件，插件目录里也能看到 Grafana 等集成方向。([backstage.io](https://backstage.io/docs/next/features/kubernetes/?utm_source=openai))
+
+适合参考：
+
+```text
+- 多系统信息中心
+- Catalog 模型
+- 插件式页面
+- Team/System/Component 组织方式
+```
+
+不过如果你只是做 Storage Group 信息中心，Backstage 可能有点重。
+
+---
+
+### C. ForgePortal
+
+ForgePortal 是一个开源、自托管的内部开发者门户，技术栈包括 PostgreSQL、Fastify、React、TypeScript，并提供 Kubernetes、Grafana 等插件能力。([github.com](https://github.com/forgeportal/forgeportal?utm_source=openai))
+
+适合参考：
+
+```text
+- Portal 型产品结构
+- 插件化思路
+- Grafana dashboard 嵌入
+- 内部平台导航
+```
+
+---
+
+### D. React Admin Dashboard 模板
+
+如果你只是想要页面设计感，可以参考开源 React dashboard 模板。例如有些模板基于 React、Vite、TypeScript、Tailwind、Recharts，提供 dashboard、charts、tables、dark mode 等基础能力。([github.com](https://github.com/towerneon/shadcndashboard-ui?utm_source=openai))
+
+适合参考：
+
+```text
+- 首页布局
+- 卡片样式
+- 图表排版
+- 表格样式
+- 深色模式
+```
+
+但要注意：这些模板不是运维系统，只是 UI 起点。
+
+---
+
+## 6. 我建议你的最小可行版本
+
+第一版不要做太大，先做这几个模块：
+
+```text
+1. Region / Env / LPAR / Storage Group 元数据管理
+2. Storage Group 每日采集表
+3. 首页总览
+4. SG 列表页
+5. SG 详情趋势页
+```
+
+数据模型可以先这样：
+
+```text
+storage_group
+- id
+- region
+- environment
+- system_name
+- lpar
+- storage_group_name
+- total_gb
+- used_gb
+- free_gb
+- used_percent
+- collect_time
+
+storage_group_daily_snapshot
+- id
+- storage_group_id
+- snapshot_date
+- total_gb
+- used_gb
+- free_gb
+- used_percent
+```
+
+---
+
+## 7. 图表建议
+
+你当前场景最有价值的图表是：
+
+```text
+1. 使用率趋势折线图
+2. Used/Free 堆叠面积图
+3. Top 10 高使用率 SG 横向柱状图
+4. Top 10 增长最快 SG 横向柱状图
+5. Region 使用率热力图
+6. Env 对比柱状图
+7. 预计耗尽时间风险表
+```
+
+其中最关键的是：
+
+```text
+列表页 + 趋势图 + 风险排序
+```
+
+不要一开始做太多花哨大屏。
+
+---
+
+## 8. 简短建议
+
+如果公司允许部署：
+
+```text
+优先参考 Grafana
+```
+
+如果要自己做门户：
+
+```text
+React + TypeScript + 公司组件库 + ECharts/Recharts
+```
+
+如果要参考开源门户：
+
+```text
+Backstage / ForgePortal
+```
+
+如果只是要页面设计感：
+
+```text
+参考 React Admin Dashboard / shadcn dashboard 模板
+```
+
+给 Copilot/Agent 的核心要求是：
+
+```text
+不要让它自由发挥，而是提供统一 UI 规范、数据模型、页面清单、颜色规则、图表规则。
+```
+
+你的场景最推荐的落地方案是：
+
+```text
+自研轻量 Portal + 数据库存储历史快照 + 图表库展示趋势
+```
+
+Grafana 可作为参考或嵌入式图表层。
+
+---
+Learn more:
+1. [Grafana](https://en.wikipedia.org/wiki/Grafana?utm_source=openai)
+2. [Kubernetes | Backstage Software Catalog and Developer Platform](https://backstage.io/docs/next/features/kubernetes/?utm_source=openai)
+3. [GitHub - forgeportal/forgeportal: The Internal Developer Portal that developers actually love. Open-source, self-hosted, built on PostgreSQL, Fastify, React, and TypeScript. A modern Backstage alternative that ships in days, not months. · GitHub](https://github.com/forgeportal/forgeportal?utm_source=openai)
+4. [GitHub - towerneon/shadcndashboard-ui: Free, open source admin dashboard built with React + vite, shadcn/ui, Tailwind CSS, and TypeScript. · GitHub](https://github.com/towerneon/shadcndashboard-ui?utm_source=openai)
